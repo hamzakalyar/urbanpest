@@ -29,5 +29,22 @@ RewriteRule ^contact/?$ /contact.php [L]
 # Prevent directory browsing
 Options -Indexes
 
-# Error pages (optional)
-# ErrorDocument 404 /404.php
+# Block access to sensitive data files, logs, and hidden dotfiles
+<FilesMatch "\.(json|txt|log|ini|env|sql|bak|git.*)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Defensive Security Headers
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), camera=(), microphone=()"
+</IfModule>

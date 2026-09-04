@@ -7,11 +7,20 @@ $pageTitle = 'Contact Us — UrbanPest';
 $pageDescription = 'Get in touch with UrbanPest for a free pest management consultation. Contact our team of specialists today.';
 $currentPage = 'contact';
 
+require_once __DIR__ . '/partials/security.php';
 require_once __DIR__ . '/data/services.php';
+require_once __DIR__ . '/data/config.php';
+
+initSecuritySession();
+emitSecurityHeaders();
+
 include __DIR__ . '/partials/header.php';
 
 $formSuccess = isset($_GET['success']) && $_GET['success'] === '1';
-$formError = isset($_GET['error']) && $_GET['error'] === '1';
+$errorType = $_GET['error'] ?? '';
+$selectedService = $_GET['service'] ?? '';
+$old = $_SESSION['form_old'] ?? [];
+$formErrors = $_SESSION['form_errors'] ?? [];
 ?>
 
 <!-- Page Hero -->
@@ -41,19 +50,29 @@ include __DIR__ . '/partials/page-hero.php';
         <h2 style="margin-bottom: var(--space-xl);">Request a Consultation</h2>
 
         <?php if ($formSuccess): ?>
-          <div class="form-success" style="margin-bottom: var(--space-xl);">
+          <div class="form-success" style="margin-bottom: var(--space-xl); padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); background: rgba(15,169,104,0.12); border: 1px solid var(--color-emerald); color: var(--color-emerald); font-weight: 600;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; vertical-align:middle; margin-right:8px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            Thank you! Your message has been received. Our team will contact you within 24 hours.
+            Thank you! Your enquiry has been received and routed to our commercial team. We will contact you shortly.
           </div>
         <?php endif; ?>
 
-        <?php if ($formError): ?>
-          <div class="form-error-banner">
+        <?php if ($errorType === 'ratelimit'): ?>
+          <div class="form-error-banner" style="margin-bottom: var(--space-xl); padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); background: rgba(239,68,68,0.1); border: 1px solid #EF4444; color: #DC2626; font-weight: 600;">
+            Submission rate limit reached. Please wait a moment before sending another message.
+          </div>
+        <?php elseif ($errorType === 'csrf'): ?>
+          <div class="form-error-banner" style="margin-bottom: var(--space-xl); padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); background: rgba(239,68,68,0.1); border: 1px solid #EF4444; color: #DC2626; font-weight: 600;">
+            Security token expired. Please refresh the page and submit again.
+          </div>
+        <?php elseif ($errorType): ?>
+          <div class="form-error-banner" style="margin-bottom: var(--space-xl); padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); background: rgba(239,68,68,0.1); border: 1px solid #EF4444; color: #DC2626; font-weight: 600;">
             There was an error submitting your form. Please check your inputs and try again.
           </div>
         <?php endif; ?>
 
         <form id="contactForm" action="/contact-handler.php" method="POST" novalidate>
+          <?php echo renderCSRFField(); ?>
+          <?php echo renderHoneypotField(); ?>
           <div class="grid grid-2 grid-gap-lg">
             <div class="form-group">
               <label class="form-label" for="contact-name">Full Name <span class="required">*</span></label>
@@ -88,7 +107,7 @@ include __DIR__ . '/partials/page-hero.php';
               <?php foreach ($serviceCategories as $cat): ?>
                 <optgroup label="<?php echo htmlspecialchars($cat['name']); ?>">
                   <?php foreach ($cat['subservices'] as $svc): ?>
-                    <option value="<?php echo htmlspecialchars($svc['slug']); ?>"><?php echo htmlspecialchars($svc['name']); ?></option>
+                    <option value="<?php echo htmlspecialchars($svc['slug']); ?>" <?php echo ($selectedService === $svc['slug']) ? 'selected' : ''; ?>><?php echo htmlspecialchars($svc['name']); ?></option>
                   <?php endforeach; ?>
                 </optgroup>
               <?php endforeach; ?>

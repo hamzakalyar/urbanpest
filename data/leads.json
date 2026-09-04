@@ -1,0 +1,83 @@
+[
+    {
+        "id": "lead_6a9aa564b5ccb",
+        "created_at": "2026-09-04 11:03:00",
+        "name": "Evelyn Reed",
+        "company": "Global Biotech Pharma",
+        "email": "e.reed@biotechpharma.com",
+        "phone": "+44 7900 112233",
+        "service": "fly-control",
+        "service_name": "Fly Control",
+        "message": "We require immediate commercial UV fly control and digital sanitation monitoring for our pharmaceutical clean packaging line.",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+        "notes": [
+            {
+                "date": "2026-09-04 11:03:00",
+                "author": "System",
+                "text": "Commercial enquiry received via website quote form."
+            }
+        ]
+    },
+    {
+        "id": "lead_66d89a101f3e1",
+        "created_at": "2026-09-04 11:20:14",
+        "name": "James Thornton",
+        "company": "Cotswold Food Logistics Ltd",
+        "email": "james.thornton@cotswoldlogistics.co.uk",
+        "phone": "+44 7890 123456",
+        "service": "rodent-control",
+        "service_name": "Rodent Control",
+        "message": "We require a comprehensive perimeter survey for our new 40,000 sq ft chilled distribution hub following recent signs of exterior rodent activity near dock bay 4.",
+        "status": "new",
+        "ip": "192.168.1.45",
+        "notes": [
+            {
+                "date": "2026-09-04 11:25:00",
+                "author": "System",
+                "text": "Initial enquiry received via website quote form."
+            }
+        ]
+    },
+    {
+        "id": "lead_66d88b442a8b2",
+        "created_at": "2026-09-04 09:45:22",
+        "name": "Dr. Aris Thorne",
+        "company": "Apex BioPharma Laboratories",
+        "email": "a.thorne@apexbiopharma.com",
+        "phone": "+44 7700 900123",
+        "service": "disinfection-services",
+        "service_name": "Disinfection Services",
+        "message": "Routine ISO Class 7 cleanroom bio-decontamination and ATP surface validation required before upcoming MHRA regulatory compliance inspection.",
+        "status": "survey_scheduled",
+        "ip": "10.0.4.12",
+        "notes": [
+            {
+                "date": "2026-09-04 10:00:15",
+                "author": "Admin",
+                "text": "Spoke with Dr. Thorne. Scheduled preliminary on-site swab assessment for Monday 10:00 AM."
+            }
+        ]
+    },
+    {
+        "id": "lead_66d87c331c9d3",
+        "created_at": "2026-09-03 16:15:30",
+        "name": "Sarah Jenkins",
+        "company": "Crown Plaza Grand Hotel",
+        "email": "s.jenkins@crownplazahospitality.co.uk",
+        "phone": "+44 7911 234567",
+        "service": "insect-control",
+        "service_name": "Insect Control",
+        "message": "Looking for a proactive, discrete bed bug and cockroach management contract for our 180-room hotel and commercial kitchen facility.",
+        "status": "contacted",
+        "ip": "172.16.8.91",
+        "notes": [
+            {
+                "date": "2026-09-03 17:30:00",
+                "author": "Admin",
+                "text": "Sent hotel hospitality IPM proposal brochure via email. Awaiting response from procurement team."
+            }
+        ]
+    }
+]

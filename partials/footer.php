@@ -138,6 +138,9 @@
       </div>
     </footer>
 
+    <!-- Floating WhatsApp Action Widget -->
+    <?php include __DIR__ . '/whatsapp-widget.php'; ?>
+
     <!-- JavaScript -->
     <script src="/js/nav.js"></script>
     <script src="/js/carousel.js"></script>

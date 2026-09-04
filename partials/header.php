@@ -8,6 +8,12 @@
  *   $currentPage     — Current page identifier for nav highlighting
  */
 
+require_once __DIR__ . '/../data/config.php';
+require_once __DIR__ . '/security.php';
+
+initSecuritySession();
+emitSecurityHeaders();
+
 $pageTitle       = $pageTitle ?? 'UrbanPest — Precision Pest Protection for Modern Business';
 $pageDescription = $pageDescription ?? 'UrbanPest delivers science-led commercial pest control and digital pest monitoring solutions to businesses across 90+ countries. Protect your facilities, your people, and your brand.';
 $currentPage     = $currentPage ?? 'home';
