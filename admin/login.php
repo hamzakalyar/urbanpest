@@ -43,19 +43,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/admin.css">
-  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 </head>
 <body class="admin-body">
   <div class="login-wrap">
     <div class="login-card">
       <div class="login-header">
-        <div style="display:inline-flex; align-items:center; justify-content:center; width:52px; height:52px; border-radius:14px; background:linear-gradient(135deg, #0FA968, #0B1F3A); box-shadow:0 8px 18px rgba(15,169,104,0.3); color:#fff;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
+        <div style="margin-bottom: 12px;">
+          <img src="/assets/images/logo-shield.png" alt="UrbanX Pest Control" style="height: 64px; width: auto; object-fit: contain;">
         </div>
-        <h1>UrbanPest Admin</h1>
+        <h1>UrbanX Admin</h1>
         <p>Commercial Lead Management & Telemetry</p>
       </div>
 

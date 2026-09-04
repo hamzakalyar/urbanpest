@@ -16,15 +16,8 @@ require_once __DIR__ . '/../data/config.php';
         <div class="footer-grid">
           <!-- Brand Column -->
           <div class="footer-brand">
-            <a href="/index.php" class="logo" aria-label="UrbanPest Home">
-              <svg class="logo-icon" width="36" height="36" viewBox="0 0 40 40" fill="none">
-                <path d="M20 3L5 10v10c0 9.55 6.4 18.48 15 20.5 8.6-2.02 15-10.95 15-20.5V10L20 3z" fill="#FFFFFF" opacity="0.15"/>
-                <circle cx="20" cy="18" r="4" fill="#0FA968"/>
-                <circle cx="20" cy="18" r="8" fill="none" stroke="#0FA968" stroke-width="1.5" opacity="0.5"/>
-                <circle cx="20" cy="18" r="12" fill="none" stroke="#0FA968" stroke-width="1" opacity="0.3"/>
-                <line x1="20" y1="18" x2="28" y2="10" stroke="#0FA968" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-              </svg>
-              <span class="logo-text" style="color:#fff;">Urban<span>Pest</span></span>
+            <a href="/index.php" class="logo" aria-label="UrbanX Pest Control" style="display:inline-block; background:#FFFFFF; padding: 6px 12px; border-radius: 8px;">
+              <img src="/assets/images/logo-horizontal.png" alt="UrbanX Pest Control" style="height: 40px; width: auto; display: block;">
             </a>
             <p style="margin-top: 10px; color: #94A3B8; font-size: 0.875rem; line-height: 1.6;">
               Precision commercial pest management and digital connected biosecurity. Operating exclusively across Perth CBD, Osborne Park, Welshpool, Canning Vale, Fremantle, and Western Australia.

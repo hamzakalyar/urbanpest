@@ -35,20 +35,18 @@ $currentPage = $adminCurrentPage ?? 'dashboard';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/admin.css">
-  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 </head>
 <body class="admin-body">
   <div class="admin-layout">
     <!-- Sidebar -->
     <aside class="admin-sidebar">
       <a href="/admin/index.php" class="admin-brand">
-        <div class="admin-brand-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
-        </div>
+        <img src="/assets/images/logo-shield.png" alt="UrbanX" style="height: 28px; width: auto; object-fit: contain; margin-right: 8px;">
         <div class="admin-brand-text">
-          UrbanPest <span>Admin</span>
+          UrbanX <span>Admin</span>
         </div>
       </a>
 
