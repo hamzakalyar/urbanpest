@@ -1,0 +1,33 @@
+# UrbanPest — Apache Rewrite Rules (Optional)
+# Enable clean URLs: /services/rodent-control → services-single.php?slug=rodent-control
+
+RewriteEngine On
+RewriteBase /
+
+# Services clean URLs
+RewriteRule ^services/?$ /services.php [L]
+RewriteRule ^services/([a-z0-9-]+)/?$ /services-single.php?slug=$1 [L,QSA]
+
+# Industries clean URLs
+RewriteRule ^industries/?$ /industries.php [L]
+RewriteRule ^industries/([a-z0-9-]+)/?$ /industries-single.php?slug=$1 [L,QSA]
+
+# About clean URLs
+RewriteRule ^about/?$ /about.php [L]
+RewriteRule ^about/sustainability/?$ /about-sustainability.php [L]
+RewriteRule ^about/innovation/?$ /about-innovation.php [L]
+RewriteRule ^about/locations/?$ /about-locations.php [L]
+RewriteRule ^about/careers/?$ /about-careers.php [L]
+
+# Insights clean URLs
+RewriteRule ^insights/?$ /insights.php [L,QSA]
+RewriteRule ^insights/([a-z0-9-]+)/?$ /insights-single.php?slug=$1 [L,QSA]
+
+# Contact
+RewriteRule ^contact/?$ /contact.php [L]
+
+# Prevent directory browsing
+Options -Indexes
+
+# Error pages (optional)
+# ErrorDocument 404 /404.php
