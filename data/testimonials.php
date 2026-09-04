@@ -34,10 +34,10 @@ $testimonials = [
         'sector'  => 'Pharmaceutical'
     ],
     [
-        'quote'   => 'UrbanPest has been our pest management partner for three years across our Victorian retail locations. Their consistency, reliability, and prompt responsiveness set them apart. Their reporting has become an essential tool for our store compliance teams.',
+        'quote'   => 'UrbanPest has been our pest management partner for three years across our Western Australian retail locations. Their consistency, reliability, and prompt responsiveness set them apart. Their reporting has become an essential tool for our store compliance teams.',
         'name'    => 'Karen Mitchell',
         'role'    => 'Facilities Compliance Manager',
-        'company' => 'Melbourne Fresh Retail Group',
+        'company' => 'Perth Fresh Retail Group',
         'sector'  => 'Food Retail'
     ]
 ];

@@ -15,6 +15,9 @@ $urls = [
     'http://localhost:8000/industries-single.php?slug=food-processing',
     'http://localhost:8000/about.php',
     'http://localhost:8000/about-locations.php',
+    'http://localhost:8000/about-careers.php',
+    'http://localhost:8000/about-sustainability.php',
+    'http://localhost:8000/about-innovation.php',
     'http://localhost:8000/contact.php',
     'http://localhost:8000/admin/index.php',
     'http://localhost:8000/admin/leads.php'
@@ -35,19 +38,20 @@ foreach ($urls as $url) {
     preg_match('/HTTP\/\S+\s+(\d+)/', $statusLine, $m);
     $code = isset($m[1]) ? (int)$m[1] : 0;
     
-    // Check for Melbourne phone presence and no fatal PHP errors
+    // Check for phone presence and Perth presence and no fatal PHP errors
     $hasPhone = (strpos($html, '+61 410 148 126') !== false || strpos($html, '410 148 126') !== false);
+    $hasPerth = (stripos($html, 'Perth') !== false || stripos($url, 'admin') !== false);
     $hasFatal = (stripos($html, 'Fatal error') !== false || stripos($html, 'Parse error') !== false);
     
     $status = ($code >= 200 && $code < 400 && !$hasFatal) ? 'PASS' : 'FAIL';
     if ($status === 'FAIL') {
         $allOk = false;
     }
-    echo sprintf("[%s] HTTP %d | Has Melbourne Phone: %s | %s\n", $status, $code, $hasPhone ? 'YES' : 'NO', $url);
+    echo sprintf("[%s] HTTP %d | Phone: %s | Perth: %s | %s\n", $status, $code, $hasPhone ? 'YES' : 'NO', $hasPerth ? 'YES' : 'NO', $url);
 }
 
 if ($allOk) {
-    echo "\n=== ALL MELBOURNE ENTERPRISE ROUTES VERIFIED PERFECTLY (100%) ===\n";
+    echo "\n=== ALL PERTH ENTERPRISE ROUTES VERIFIED PERFECTLY (100%) ===\n";
     exit(0);
 } else {
     echo "\n=== SOME ROUTES FAILED VERIFICATION ===\n";

@@ -1,13 +1,13 @@
 {
-    "company_name": "UrbanPest Melbourne Commercial Pest Control",
+    "company_name": "UrbanPest Perth Commercial Pest Control",
     "phone_display": "+61 410 148 126",
     "phone_raw": "+61410148126",
     "email_contact": "commercial@urbanpest.com.au",
     "whatsapp_number": "+61410148126",
-    "whatsapp_msg": "Hello UrbanPest Melbourne, I would like to request a commercial pest inspection for our facility.",
+    "whatsapp_msg": "Hello UrbanPest Perth, I would like to request a commercial pest inspection for our facility.",
     "emergency_phone": "+61 410 148 126",
-    "headquarters": "Level 14, 380 Docklands Drive, Melbourne VIC 3008",
-    "service_area": "Greater Melbourne & Regional Victoria Commercial Hubs",
+    "headquarters": "Level 28, 140 St Georges Terrace, Perth WA 6000",
+    "service_area": "Greater Perth & Western Australia Commercial Corridors",
     "admin_username": "admin",
     "admin_password_hash": "$2y$10$f3N9YQh6jK5u9B8O3KkJQ.E2D9v6rS/YhKqX6aZ/0q2O9l5j8s1uG"
 }

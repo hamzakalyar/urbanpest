@@ -25,19 +25,19 @@ $formErrors = $_SESSION['form_errors'] ?? [];
 
 <!-- Page Hero -->
 <?php
-$heroTitle       = 'Melbourne Commercial Dispatch & Audits';
-$heroDesc        = 'Victorian licensed commercial biosecurity technicians and field consultants standing by across Greater Melbourne. Request a site survey, compliance audit, or urgent technical dispatch.';
-$heroTag         = 'Melbourne Commercial Division — Licensed Victorian Operators';
+$heroTitle       = 'Perth Commercial Dispatch & Audits';
+$heroDesc        = 'Western Australia licensed commercial technicians and field consultants standing by across Greater Perth. Request a site survey, compliance audit, or urgent technical dispatch.';
+$heroTag         = 'Perth Commercial Division — Licensed WA Operators';
 $heroBadge       = 'Same-Day Commercial Dispatch';
 $heroImage       = '/assets/images/customer-dispatch.jpg';
 $heroStatVal     = '+61 410 148 126';
-$heroStatLabel   = 'Melbourne Technical Line';
+$heroStatLabel   = 'Perth Technical Line';
 $heroCtaText     = 'Request Site Survey';
 $heroCtaLink     = '#consultation-form';
 $heroWaLink      = getWhatsAppLink('Commercial Facility Audit');
 $heroBreadcrumbs = [
     ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'Melbourne Contact & Dispatch']
+    ['label' => 'Perth Contact & Dispatch']
 ];
 include __DIR__ . '/partials/page-hero.php';
 ?>
@@ -127,7 +127,7 @@ include __DIR__ . '/partials/page-hero.php';
 
       <!-- Contact Info -->
       <div>
-        <h2 style="margin-bottom: var(--space-xl);">Melbourne Commercial Headquarters</h2>
+        <h2 style="margin-bottom: var(--space-xl);">Perth Commercial Headquarters</h2>
 
         <div class="contact-info">
           <div class="contact-info-item">
@@ -137,7 +137,7 @@ include __DIR__ . '/partials/page-hero.php';
             <div>
               <h4>Direct Telephone Dispatch</h4>
               <p><a href="tel:<?php echo htmlspecialchars($appConfig['phone_raw'] ?? '+61410148126'); ?>" style="color:var(--color-emerald); font-weight:700;"><?php echo htmlspecialchars($appConfig['phone_display'] ?? '+61 410 148 126'); ?></a></p>
-              <p>Mon–Fri, 7:00 AM – 7:00 PM AEST (24/7 for Contracted Clients)</p>
+              <p>Mon–Fri, 7:00 AM – 7:00 PM AWST (24/7 for Contracted Clients)</p>
             </div>
           </div>
 
@@ -168,21 +168,21 @@ include __DIR__ . '/partials/page-hero.php';
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
             </div>
             <div>
-              <h4>Melbourne Commercial Division</h4>
-              <p>UrbanPest Australia Pty Ltd<br><?php echo htmlspecialchars($appConfig['headquarters'] ?? 'Level 14, 380 Docklands Drive, Melbourne VIC 3008'); ?></p>
-              <p style="font-size: 0.8rem; color: #64748B;">Operating exclusively across Greater Melbourne & Victoria</p>
+              <h4>Perth Commercial Division</h4>
+              <p>UrbanPest Australia Pty Ltd<br><?php echo htmlspecialchars($appConfig['headquarters'] ?? 'Level 28, 140 St Georges Terrace, Perth WA 6000'); ?></p>
+              <p style="font-size: 0.8rem; color: #64748B;">Operating exclusively across Greater Perth & Western Australia</p>
             </div>
           </div>
         </div>
 
-        <!-- Melbourne Service Coverage Hubs -->
+        <!-- Perth Service Coverage Hubs -->
         <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; margin-top: var(--space-xl);">
           <div style="display:flex; align-items:center; gap:8px; margin-bottom: 8px;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
-            <strong style="color: #0B1F3A; font-size: 0.9rem;">Melbourne Operational Corridors</strong>
+            <strong style="color: #0B1F3A; font-size: 0.9rem;">Perth Operational Corridors</strong>
           </div>
           <p style="font-size: 0.825rem; color: #64748B; margin: 0; line-height: 1.5;">
-            Mobile rapid-response units stationed throughout Melbourne CBD, Docklands, Tullamarine Logistics Precinct, Dandenong South Industrial Estate, Laverton North Distribution Hubs, and Campbellfield.
+            Mobile rapid-response units stationed throughout Perth CBD, Welshpool & Kewdale Logistics Precinct, Canning Vale Warehousing, Osborne Park Commercial Precinct, Malaga, and Kwinana Industrial Strip.
           </p>
         </div>
       </div>

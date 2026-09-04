@@ -1,20 +1,20 @@
 <?php
-$pageTitle = 'Careers — UrbanPest';
-$pageDescription = 'Join UrbanPest\'s global team. Explore career opportunities in pest management, technology, science, and more.';
+$pageTitle = 'Careers in Perth — UrbanPest Commercial Biosecurity';
+$pageDescription = 'Join UrbanPest Western Australia. Explore commercial biosecurity and pest management career opportunities across Greater Perth.';
 $currentPage = 'about';
 include __DIR__ . '/partials/header.php';
 ?>
 
 <!-- Page Hero -->
 <?php
-$heroTitle       = 'Careers at UrbanPest';
-$heroDesc        = 'Join a world-class team of entomologists, certified technicians, IoT engineers, and data analysts redefining commercial biosecurity across the globe.';
-$heroTag         = 'GLOBAL TALENT // TECHNICAL ACADEMY';
-$heroBadge       = 'Global Training Academy Certified';
+$heroTitle       = 'Careers at UrbanPest Perth';
+$heroDesc        = 'Join a dedicated Western Australian team of licensed commercial technicians, field biologists, and IoT specialists delivering biosecurity across Greater Perth.';
+$heroTag         = 'PERTH COMMERCIAL TEAM // WA OPERATIONS';
+$heroBadge       = 'WA Department of Health Certified';
 $heroImage       = '/assets/images/hero-technician.jpg';
 $heroWatermark   = 'CAREERS';
-$heroStatVal     = '15,000+';
-$heroStatLabel   = 'Global Team Members';
+$heroStatVal     = '100%';
+$heroStatLabel   = 'WA Licensed Specialists';
 $heroCtaText     = 'View Open Positions';
 $heroCtaLink     = '#openings';
 $heroBreadcrumbs = [
@@ -30,24 +30,24 @@ include __DIR__ . '/partials/page-hero.php';
     <span class="section-label">Why Join Us</span>
     <h2 class="section-title">Build a Career That Makes a Difference</h2>
     <p style="font-size: var(--text-md); color: var(--color-text-muted); line-height: var(--leading-relaxed);">
-      At UrbanPest, you'll be part of a global team of 15,000+ professionals working to protect businesses, communities, and environments. Whether you're a field technician, data scientist, entomologist, or sales professional — you'll find meaningful work, continuous development, and the opportunity to shape the future of a vital industry.
+      At UrbanPest, you'll be part of a dedicated Western Australian team of biosecurity professionals protecting commercial facilities, food supply chains, logistics hubs, and workplaces across Greater Perth. Whether you're an experienced licensed technician, field biologist, or service coordinator, you'll find supportive leadership, top-tier equipment, and clear career progression.
     </p>
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section section-alt" id="openings">
   <div class="container">
     <div class="section-header">
       <span class="section-label">Open Positions</span>
-      <h2 class="section-title">Current Opportunities</h2>
+      <h2 class="section-title">Current Perth Opportunities</h2>
     </div>
 
     <div class="grid grid-auto grid-gap-lg">
       <?php
       $jobs = [
-        ['title' => 'Senior Service Technician', 'location' => 'London, UK', 'type' => 'Full-time', 'dept' => 'Operations'],
-        ['title' => 'Data Scientist — Pest Analytics', 'location' => 'Berlin, Germany', 'type' => 'Full-time', 'dept' => 'Technology'],
-        ['title' => 'Global Account Manager', 'location' => 'New York, USA', 'type' => 'Full-time', 'dept' => 'Commercial'],
+        ['title' => 'Senior Commercial Pest Technician', 'location' => 'Perth, WA (Welshpool Logistics Base)', 'type' => 'Full-time', 'dept' => 'Operations'],
+        ['title' => 'Commercial Biosecurity & IPM Specialist', 'location' => 'Perth, WA (Canning Vale & Metro)', 'type' => 'Full-time', 'dept' => 'Technical'],
+        ['title' => 'Commercial Key Account Manager', 'location' => 'Perth CBD, WA', 'type' => 'Full-time', 'dept' => 'Commercial'],
       ];
       foreach ($jobs as $job):
       ?>

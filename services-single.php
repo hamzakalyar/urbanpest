@@ -25,7 +25,7 @@ include __DIR__ . '/partials/header.php';
 $heroTitle       = $service['name'];
 $heroDesc        = $service['short_desc'];
 $heroTag         = isset($service['accent_tag']) ? $service['accent_tag'] : 'SPECIALISED SERVICE DIVISION';
-$heroBadge       = isset($service['badge_text']) ? $service['badge_text'] : 'Licensed Melbourne Specialists';
+$heroBadge       = isset($service['badge_text']) ? $service['badge_text'] : 'Licensed Perth Specialists';
 $heroImage       = isset($service['image']) ? $service['image'] : '/assets/images/hero-technician.jpg';
 $heroWatermark   = isset($service['watermark']) ? $service['watermark'] : strtoupper($service['name']);
 $heroStatVal     = isset($service['stat_val']) ? $service['stat_val'] : '99.5%';
@@ -53,13 +53,13 @@ include __DIR__ . '/partials/page-hero.php';
         </div>
         <div>
           <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; color: #0FA968; margin-bottom: 2px;">
-            Melbourne Commercial Technical Dispatch
+            Perth Commercial Technical Dispatch
           </div>
           <h3 style="font-family: var(--font-heading); font-size: 1.15rem; color: #0B1F3A; margin: 0; font-weight: 700;">
-            Need Fast-Track <?php echo htmlspecialchars($service['name']); ?> Assessment in Melbourne?
+            Need Fast-Track <?php echo htmlspecialchars($service['name']); ?> Assessment in Perth?
           </h3>
           <p style="font-size: 0.875rem; color: #64748B; margin: 2px 0 0 0;">
-            Direct technical dispatch with on-duty Victorian licensed technicians for same-day facility survey across Greater Melbourne.
+            Direct technical dispatch with on-duty WA licensed technicians for same-day facility survey across Greater Perth.
           </p>
         </div>
       </div>

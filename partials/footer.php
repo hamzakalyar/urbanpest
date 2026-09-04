@@ -1,7 +1,7 @@
 <?php
 /**
- * UrbanPest Melbourne — Footer Partial
- * Operating exclusively in Greater Melbourne & Regional Victoria Commercial Hubs.
+ * UrbanPest Perth — Footer Partial
+ * Operating exclusively in Greater Perth & Western Australia Commercial Hubs.
  * Direct Line: +61 410 148 126
  */
 global $appConfig;
@@ -27,13 +27,13 @@ require_once __DIR__ . '/../data/config.php';
               <span class="logo-text" style="color:#fff;">Urban<span>Pest</span></span>
             </a>
             <p style="margin-top: 10px; color: #94A3B8; font-size: 0.875rem; line-height: 1.6;">
-              Precision commercial pest management and digital connected biosecurity. Operating exclusively across Melbourne CBD, Docklands, Tullamarine, Dandenong, and Regional Victoria.
+              Precision commercial pest management and digital connected biosecurity. Operating exclusively across Perth CBD, Osborne Park, Welshpool, Canning Vale, Fremantle, and Western Australia.
             </p>
             
             <div style="margin-top: 16px; font-size: 0.85rem; color: #CBD5E1;">
               <p style="margin: 0 0 6px 0; display: flex; align-items: center; gap: 8px;">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Level 14, 380 Docklands Drive, Melbourne VIC 3008</span>
+                <span>Level 28, 140 St Georges Terrace, Perth WA 6000</span>
               </p>
               <p style="margin: 0 0 6px 0; display: flex; align-items: center; gap: 8px;">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -61,9 +61,9 @@ require_once __DIR__ . '/../data/config.php';
             </ul>
           </div>
 
-          <!-- Melbourne Industries -->
+          <!-- Perth Industries -->
           <div class="footer-col">
-            <h5>Melbourne Sectors</h5>
+            <h5>Perth Sectors</h5>
             <ul>
               <li><a href="/industries-single.php?slug=food-processing">Food Manufacturing</a></li>
               <li><a href="/industries-single.php?slug=logistics-warehousing">Logistics & Supply Chain</a></li>
@@ -77,13 +77,13 @@ require_once __DIR__ . '/../data/config.php';
 
           <!-- Company -->
           <div class="footer-col">
-            <h5>Company & Compliance</h5>
+            <h5>Company & Operations</h5>
             <ul>
-              <li><a href="/about.php">Our Melbourne Operation</a></li>
+              <li><a href="/about.php">Our Perth Operation</a></li>
               <li><a href="/about-sustainability.php">Environmental IPM</a></li>
               <li><a href="/about-innovation.php">UrbanPest Connect</a></li>
-              <li><a href="/about-locations.php">Melbourne Service Map</a></li>
-              <li><a href="/about-careers.php">Melbourne Careers</a></li>
+              <li><a href="/about-locations.php">Perth Service Map</a></li>
+              <li><a href="/about-careers.php">Perth Careers</a></li>
               <li><a href="/insights.php">Audit & Regulatory Hub</a></li>
               <li><a href="/admin/index.php">Staff Portal</a></li>
             </ul>
@@ -93,21 +93,21 @@ require_once __DIR__ . '/../data/config.php';
           <div class="footer-col">
             <h5>Service Response</h5>
             <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 14px; border-radius: 8px; margin-bottom: 12px;">
-              <span style="font-size: 0.75rem; text-transform: uppercase; color: #34D399; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Melbourne Rapid Triage</span>
+              <span style="font-size: 0.75rem; text-transform: uppercase; color: #34D399; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Perth Rapid Triage</span>
               <strong style="color: #fff; font-size: 0.925rem; display: block; margin-bottom: 4px;">Same-Day Commercial Dispatch</strong>
-              <p style="font-size: 0.775rem; color: #94A3B8; margin: 0;">CBD, Docklands, Tullamarine, Dandenong, Campbellfield & Laverton.</p>
+              <p style="font-size: 0.775rem; color: #94A3B8; margin: 0;">CBD, Welshpool, Canning Vale, Osborne Park, Fremantle & Kwinana.</p>
             </div>
             <a href="/contact.php" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;">Book Commercial Audit</a>
           </div>
         </div>
 
-        <!-- Melbourne Customer Guarantees & Trust Factors -->
+        <!-- Perth Customer Guarantees & Trust Factors -->
         <div class="footer-certs">
           <div class="footer-cert">
             <div class="footer-cert-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             </div>
-            <span>Same-Day Melbourne Dispatch</span>
+            <span>Same-Day Perth Dispatch</span>
           </div>
           <div class="footer-cert">
             <div class="footer-cert-icon">
@@ -131,10 +131,10 @@ require_once __DIR__ . '/../data/config.php';
 
         <!-- Bottom Row -->
         <div class="footer-bottom">
-          <p>&copy; <?php echo date('Y'); ?> UrbanPest Australia Pty Ltd (ABN 68 142 901 345). Operating exclusively in Greater Melbourne, Victoria.</p>
+          <p>&copy; <?php echo date('Y'); ?> UrbanPest Australia Pty Ltd (ABN 68 142 901 345). Operating exclusively in Greater Perth, Western Australia.</p>
           <div class="footer-legal">
             <a href="#">Privacy Policy (Australia)</a>
-            <a href="#">Victorian Health Compliance</a>
+            <a href="#">WA Health Compliance</a>
             <a href="#">Terms of Commercial Service</a>
             <a href="#">Whistleblower & Modern Slavery</a>
           </div>

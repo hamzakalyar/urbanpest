@@ -13,16 +13,16 @@ include __DIR__ . '/partials/header.php';
 
 <!-- Page Hero -->
 <?php
-$heroTitle       = 'Melbourne Commercial Pest Solutions';
-$heroDesc        = 'Complete commercial pest management backed by entomological science, delivered by certified Victorian technicians across Greater Melbourne and regional commercial corridors.';
-$heroTag         = 'Melbourne Commercial Division — AS 3660 & HACCP Certified';
-$heroBadge       = 'AEPMA & HACCP Australia Endorsed';
+$heroTitle       = 'Perth Commercial Pest Solutions';
+$heroDesc        = 'Complete commercial pest management backed by entomological science, delivered by certified WA technicians across Greater Perth and Western Australia commercial corridors.';
+$heroTag         = 'Perth Commercial Division — Fast Local Service';
+$heroBadge       = 'Licensed WA Pest Specialists';
 $heroImage       = '/assets/images/hero-technician.jpg';
 $heroStatVal     = '100%';
-$heroStatLabel   = 'Melbourne Operational Coverage';
+$heroStatLabel   = 'Perth Operational Coverage';
 $heroCtaText     = 'Request Commercial Assessment';
 $heroCtaLink     = '/contact.php';
-$heroWaLink      = getWhatsAppLink('Commercial Pest Solutions');
+$heroWaLink      = getWhatsAppLink('Perth Commercial Pest Solutions');
 $heroBreadcrumbs = [
     ['label' => 'Home', 'url' => '/index.php'],
     ['label' => 'Commercial Services']

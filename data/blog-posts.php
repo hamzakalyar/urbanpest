@@ -94,17 +94,17 @@ $blogPosts = [
         'read_time' => '4 min read'
     ],
     [
-        'slug'     => 'urbanpest-expands-eco-fleet-and-ipm-across-melbourne',
-        'title'    => 'UrbanPest Expands Low-Emission Fleet & Sustainable IPM Across Melbourne',
+        'slug'     => 'urbanpest-expands-eco-fleet-and-ipm-across-perth',
+        'title'    => 'UrbanPest Expands Low-Emission Fleet & Sustainable IPM Across Perth',
         'category' => 'Company News',
-        'excerpt'  => 'Our Melbourne operations expand hybrid fleet coverage and targeted low-toxicity integrated pest management across Greater Melbourne.',
-        'body'     => '<p>UrbanPest is pleased to announce the expansion of our low-emission commercial fleet and targeted low-toxicity IPM treatments across Greater Melbourne — providing local businesses with powerful, environmentally responsible pest defense.</p>
+        'excerpt'  => 'Our Perth operations expand hybrid fleet coverage and targeted low-toxicity integrated pest management across Greater Perth.',
+        'body'     => '<p>UrbanPest is pleased to announce the expansion of our low-emission commercial fleet and targeted low-toxicity IPM treatments across Greater Perth — providing local businesses with powerful, environmentally responsible pest defense.</p>
         <h3>Environmentally Conscious Pest Defense</h3>
-        <p>This initiative focuses on three key pillars. First, our Melbourne service vehicles integrate hybrid and low-emission vehicles equipped for rapid metropolitan dispatch. Second, intelligent route scheduling groups technician visits along major Melbourne industrial and commercial corridors (Tullamarine, Dandenong, Campbellfield, and CBD), reducing travel time and emissions. Third, we emphasise targeted gel baiting, pheromone surveillance, and physical barrier proofing over blanket chemical sprays.</p>
-        <h3>Benefits for Melbourne Commercial Facilities</h3>
+        <p>This initiative focuses on three key pillars. First, our Perth service vehicles integrate hybrid and low-emission vehicles equipped for rapid metropolitan dispatch. Second, intelligent route scheduling groups technician visits along major Perth industrial and commercial corridors (Welshpool, Kewdale, Canning Vale, Osborne Park, and Perth CBD), reducing travel time and emissions. Third, we emphasise targeted gel baiting, pheromone surveillance, and physical barrier proofing over blanket chemical sprays.</p>
+        <h3>Benefits for Perth Commercial Facilities</h3>
         <p>Commercial clients enjoy rapid same-day response with minimal operational disruption and reduced chemical exposure in work environments. Our digital service summaries provide facility managers with transparent documentation for health audits and environmental goals.</p>
-        <p>"Our commitment is to protect Melbourne businesses effectively while respecting our local urban environment," said the UrbanPest Operations Team.</p>',
-        'author'   => 'UrbanPest Melbourne Operations',
+        <p>"Our commitment is to protect Perth businesses effectively while respecting our local Western Australian environment," said the UrbanPest Operations Team.</p>',
+        'author'   => 'UrbanPest Perth Operations',
         'date'     => '2024-08-18',
         'image'    => '/assets/images/green-fleet.jpg',
         'read_time' => '3 min read'

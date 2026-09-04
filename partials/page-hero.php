@@ -1,9 +1,9 @@
 <?php
 /**
- * UrbanPest Melbourne — Corporate Enterprise Page Hero Component
+ * UrbanPest Perth — Corporate Enterprise Page Hero Component
  * Inspired by Rentokil Australia corporate enterprise standards:
- * Clean white/off-white canvas, authoritative typography, Australian regulatory seals,
- * direct Melbourne phone (+61 410 148 126), and direct WhatsApp dispatch.
+ * Clean white/off-white canvas, authoritative typography,
+ * direct Perth phone (+61 410 148 126), and direct WhatsApp dispatch.
  *
  * Expected variables (all optional with defaults):
  * - $heroTitle (string)
@@ -22,10 +22,10 @@
 global $appConfig;
 require_once __DIR__ . '/../data/config.php';
 
-$heroTitle       = !empty($heroTitle) ? $heroTitle : 'Melbourne Commercial Pest Management';
-$heroDesc        = !empty($heroDesc) ? $heroDesc : 'Professional, proactive pest management and rapid technical dispatch across Greater Melbourne commercial facilities.';
-$heroTag         = !empty($heroTag) ? $heroTag : 'Melbourne Commercial Division — Fast Local Service';
-$heroBadge       = !empty($heroBadge) ? $heroBadge : 'Licensed Melbourne Pest Specialists';
+$heroTitle       = !empty($heroTitle) ? $heroTitle : 'Perth Commercial Pest Management';
+$heroDesc        = !empty($heroDesc) ? $heroDesc : 'Professional, proactive pest management and rapid technical dispatch across Greater Perth commercial facilities.';
+$heroTag         = !empty($heroTag) ? $heroTag : 'Perth Commercial Division — Fast Local Service';
+$heroBadge       = !empty($heroBadge) ? $heroBadge : 'Licensed Perth Pest Specialists';
 $heroImage       = !empty($heroImage) ? $heroImage : '/assets/images/hero-technician.jpg';
 $heroStatVal     = !empty($heroStatVal) ? $heroStatVal : 'Same-Day';
 $heroStatLabel   = !empty($heroStatLabel) ? $heroStatLabel : 'Service Dispatch';
@@ -93,7 +93,7 @@ $heroBreadcrumbs = !empty($heroBreadcrumbs) ? $heroBreadcrumbs : [
             <span>WhatsApp Specialist</span>
           </a>
 
-          <a href="tel:<?php echo htmlspecialchars($appConfig['phone_raw'] ?? '+61410148126'); ?>" class="corp-phone-badge" title="Call Melbourne Technical Dispatch">
+          <a href="tel:<?php echo htmlspecialchars($appConfig['phone_raw'] ?? '+61410148126'); ?>" class="corp-phone-badge" title="Call Perth Technical Dispatch">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <div>
               <small>Direct Technical Line</small>
@@ -106,7 +106,7 @@ $heroBreadcrumbs = !empty($heroBreadcrumbs) ? $heroBreadcrumbs : [
         <div class="corp-compliance-strip">
           <div class="corp-compliance-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            <span>Same-Day Melbourne Dispatch</span>
+            <span>Same-Day Perth Dispatch</span>
           </div>
           <div class="corp-compliance-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
@@ -127,13 +127,13 @@ $heroBreadcrumbs = !empty($heroBreadcrumbs) ? $heroBreadcrumbs : [
       <div class="corporate-hero-visual">
         <div class="corp-visual-card">
           <div class="corp-visual-media">
-            <img src="<?php echo htmlspecialchars($heroImage); ?>" alt="<?php echo htmlspecialchars($heroTitle); ?> Melbourne Commercial Service" class="corp-visual-img" loading="eager" />
+            <img src="<?php echo htmlspecialchars($heroImage); ?>" alt="<?php echo htmlspecialchars($heroTitle); ?> Perth Commercial Service" class="corp-visual-img" loading="eager" />
           </div>
           <div class="corp-visual-caption">
             <div class="corp-caption-main">
               <span class="corp-caption-tag"><?php echo htmlspecialchars($heroBadge); ?></span>
               <h4 class="corp-caption-title">Commercial Service Division</h4>
-              <p class="corp-caption-sub">Serving CBD, Docklands, Tullamarine, Dandenong & Regional Victoria</p>
+              <p class="corp-caption-sub">Serving CBD, Welshpool, Canning Vale, Osborne Park, Fremantle & WA</p>
             </div>
             <div class="corp-caption-stat">
               <span class="corp-stat-number"><?php echo htmlspecialchars($heroStatVal); ?></span>

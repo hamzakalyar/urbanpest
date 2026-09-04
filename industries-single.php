@@ -22,8 +22,8 @@ include __DIR__ . '/partials/header.php';
 <?php
 $heroTitle       = $sector['name'];
 $heroDesc        = $sector['short_desc'];
-$heroTag         = 'Melbourne Sector Biosecurity — ' . (isset($sector['accent_tag']) ? $sector['accent_tag'] : 'HACCP & AEPMA Aligned');
-$heroBadge       = isset($sector['badge_text']) ? $sector['badge_text'] : 'HACCP Australia Endorsed';
+$heroTag         = 'Perth Sector Biosecurity — ' . (isset($sector['accent_tag']) ? $sector['accent_tag'] : 'Commercial Defense Standard');
+$heroBadge       = isset($sector['badge_text']) ? $sector['badge_text'] : 'Commercial Defense Standard';
 $heroImage       = isset($sector['image']) ? $sector['image'] : '/assets/images/food-inspection.jpg';
 $heroStatVal     = isset($sector['stat_val']) ? $sector['stat_val'] : '99.8%';
 $heroStatLabel   = isset($sector['stat_label']) ? $sector['stat_label'] : 'Audit Compliance Rate';
@@ -32,7 +32,7 @@ $heroCtaLink     = '/contact.php?sector=' . urlencode($sector['slug']);
 $heroWaLink      = getWhatsAppLink($sector['name'] . ' Facility Audit');
 $heroBreadcrumbs = [
     ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'Melbourne Sectors', 'url' => '/industries.php'],
+    ['label' => 'Perth Sectors', 'url' => '/industries.php'],
     ['label' => $sector['name']]
 ];
 include __DIR__ . '/partials/page-hero.php';

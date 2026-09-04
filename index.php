@@ -20,8 +20,8 @@ include __DIR__ . '/partials/header.php';
      ============================================ -->
 <?php
 $heroLabel    = 'AEPMA & HACCP Australia Accredited Commercial Operator';
-$heroTitle    = 'Melbourne Commercial Pest Control & <span class="highlight">Biosecurity</span>';
-$heroSubtitle = 'Science-led commercial pest management, AS 3660 termite protection, and connected 24/7 IoT telemetry operating exclusively across Greater Melbourne commercial facilities.';
+$heroTitle    = 'Perth Commercial Pest Control & <span class="highlight">Biosecurity</span>';
+$heroSubtitle = 'Science-led commercial pest management, AS 3660 termite protection, and connected 24/7 IoT telemetry operating exclusively across Greater Perth commercial facilities.';
 $heroCta      = 'Request Commercial Survey';
 $heroCtaLink  = '/contact.php';
 $heroCta2     = 'View Services Directory';
@@ -133,7 +133,7 @@ include __DIR__ . '/partials/hero.php';
             <div class="carousel-slide-content">
               <span class="section-label">Eco Responsibility</span>
               <h3>Sustainable & Targeted Pest Solutions</h3>
-              <p>Our Melbourne service team prioritises environmentally conscious integrated pest management — combining low-toxicity formulations, route optimisation, and non-chemical exclusion to protect both your business and the local community.</p>
+              <p>Our Perth service team prioritises environmentally conscious integrated pest management — combining low-toxicity formulations, route optimisation, and non-chemical exclusion to protect both your business and the local community.</p>
               <a href="/about-sustainability.php" class="btn btn-primary">Our Sustainability Approach</a>
             </div>
             <div class="carousel-slide-image" style="background: url('/assets/images/green-fleet.jpg') center/cover no-repeat;">
@@ -246,13 +246,13 @@ function toggleSectors() {
 
 
 <!-- ============================================
-     6. WHY MELBOURNE CHOOSES US
+     6. WHY PERTH CHOOSES US
      ============================================ -->
 <section class="section-sm" id="trust">
   <div class="container">
     <div class="section-header text-center">
       <span class="section-label">Our Service Commitments</span>
-      <h2 class="section-title" style="font-size: 1.75rem;">Why Melbourne Businesses Rely On Us</h2>
+      <h2 class="section-title" style="font-size: 1.75rem;">Why Perth Businesses Rely On Us</h2>
     </div>
     <div class="trust-strip">
       <div class="trust-logo">
@@ -290,8 +290,8 @@ function toggleSectors() {
 <section class="section section-dark" id="credibility" style="background: linear-gradient(135deg, rgba(11, 31, 58, 0.94) 0%, rgba(7, 20, 40, 0.96) 100%), url('/assets/images/food-inspection.jpg') center/cover no-repeat; position: relative;">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">Melbourne Dedicated</span>
-      <h2 class="section-title" style="color:#fff;">Proven Results Across Greater Melbourne</h2>
+      <span class="section-label">Perth Dedicated</span>
+      <h2 class="section-title" style="color:#fff;">Proven Results Across Greater Perth</h2>
     </div>
 
     <div class="stats-grid">
@@ -299,7 +299,7 @@ function toggleSectors() {
         <div class="stat-number">
           <span data-counter="100" data-suffix="%">0</span>
         </div>
-        <div class="stat-label">Melbourne Owned & Operated</div>
+        <div class="stat-label">Perth Owned & Operated</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">
@@ -332,7 +332,7 @@ function toggleSectors() {
     <div class="sustainability-callout">
       <div class="sustainability-image" style="background: url('/assets/images/green-fleet.jpg') center/cover no-repeat; position: relative; border-radius: var(--radius-xl); overflow: hidden; min-height: 380px; box-shadow: var(--shadow-lg);">
         <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(11, 31, 58, 0.88); backdrop-filter: blur(8px); padding: 12px 18px; border-radius: var(--radius-md); color: #fff; font-size: var(--text-xs); border-left: 3px solid var(--color-emerald); display: flex; align-items: center; justify-content: space-between;">
-          <span><strong>Rapid Melbourne Dispatch</strong> • Commercial Eco Fleet</span>
+          <span><strong>Rapid Perth Dispatch</strong> • Commercial Eco Fleet</span>
           <span class="badge badge-emerald" style="font-size: 10px;">Low-Toxicity</span>
         </div>
       </div>

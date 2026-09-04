@@ -1,9 +1,9 @@
 <?php
 /**
- * UrbanPest Melbourne — Commercial Services Directory
+ * UrbanPest Perth — Commercial Services Directory
  * Aligned with Rentokil Australia standard services and Australian regulatory compliance:
- * AEPMA, HACCP Australia, Australian Standards (AS 3660.1/2), and Victorian Department of Health.
- * Operating strictly within Greater Melbourne & Regional Victorian Commercial Hubs.
+ * AEPMA, HACCP Australia, Australian Standards (AS 3660.1/2), and WA Department of Health.
+ * Operating strictly within Greater Perth & Western Australia Commercial Corridors.
  */
 
 $serviceCategories = [
@@ -11,8 +11,8 @@ $serviceCategories = [
         'slug'        => 'pest-control',
         'name'        => 'Commercial Pest Control',
         'icon'        => 'shield-bug',
-        'short_desc'  => 'Comprehensive commercial pest management solutions backed by entomological science and delivered by certified Melbourne technicians.',
-        'description' => 'Our integrated pest management (IPM) programs combine advanced detection technology, targeted treatments, and continuous monitoring to protect Melbourne facilities, your staff, and your brand reputation. Every solution is delivered with commercial professionalism and licensed expertise.',
+        'short_desc'  => 'Comprehensive commercial pest management solutions backed by entomological science and delivered by certified Perth technicians.',
+        'description' => 'Our integrated pest management (IPM) programs combine advanced detection technology, targeted treatments, and continuous monitoring to protect Perth facilities, your staff, and your brand reputation. Every solution is delivered with commercial professionalism and licensed expertise.',
         'subservices' => [
             [
                 'slug'        => 'rodent-control',
@@ -20,28 +20,28 @@ $serviceCategories = [
                 'icon'        => 'rodent',
                 'image'       => '/assets/images/connected-monitoring.jpg',
                 'watermark'   => 'RODENT DEFENSE',
-                'accent_tag'  => 'Melbourne Commercial IPM — 24/7 Rapid Response',
+                'accent_tag'  => 'Perth Commercial IPM — 24/7 Rapid Response',
                 'badge_text'  => 'Targeted Commercial IPM',
                 'stat_val'    => '99.4%',
                 'stat_label'  => 'Customer Satisfaction Rate',
-                'short_desc'  => 'Proactive rodent management for Melbourne commercial facilities using tamper-proof bait stations and digital sensors.',
-                'description' => 'Rodents pose severe biosecurity risks to Melbourne food processing facilities, distribution centres, and hospitality venues. Our commercial rodent management combines AS-compliant exclusion, tamper-resistant perimeter stations, and real-time sensor alerts to stop ingress before internal contamination occurs.',
+                'short_desc'  => 'Proactive rodent management for Perth commercial facilities using tamper-proof bait stations and digital sensors.',
+                'description' => 'Rodents pose severe biosecurity risks to Perth food processing facilities, distribution centres, and hospitality venues. Our commercial rodent management combines AS-compliant exclusion, tamper-resistant perimeter stations, and real-time sensor alerts to stop ingress before internal contamination occurs.',
                 'includes'    => [
-                    'Comprehensive Victorian site audit & ingress risk mapping',
+                    'Comprehensive WA commercial site audit & ingress risk mapping',
                     'Tamper-resistant external and internal bait & monitoring stations',
                     'Physical exclusion proofing of loading docks and service penetrations',
                     'Digital floor plan trap mapping and activity reporting',
-                    'Emergency same-day callout service across Greater Melbourne'
+                    'Emergency same-day callout service across Greater Perth'
                 ],
                 'steps'       => [
                     ['title' => 'Commercial Site Audit', 'desc' => 'Certified technicians inspect your premises, mapping roof voids, drainage entries, and external perimeter pressure points.'],
                     ['title' => 'Customised Treatment Strategy', 'desc' => 'We design an IPM plan combining non-toxic monitoring, physical proofing, and targeted baits complying with health regulations.'],
                     ['title' => 'Discreet System Installation', 'desc' => 'Tamper-proof stations and connected units installed outside production hours to avoid operational interruption.'],
-                    ['title' => 'Audit-Ready Reporting', 'desc' => 'Every visit logs barcode-scanned trap counts into digital compliance reports ready for Victorian health audits.']
+                    ['title' => 'Audit-Ready Reporting', 'desc' => 'Every visit logs barcode-scanned trap counts into digital compliance reports ready for WA health audits.']
                 ],
                 'key_challenges' => [
-                    ['name' => 'Packaging & Cable Gnawing Destruction', 'desc' => 'Rats gnaw electrical conduit and data cables in Melbourne warehouses, causing severe fire hazards and system downtime.'],
-                    ['name' => 'Pathogen Contamination & Disease Spread', 'desc' => 'Rodents vector Salmonella and Leptospirosis, triggering immediate audit failure and Victorian Department of Health citations.'],
+                    ['name' => 'Packaging & Cable Gnawing Destruction', 'desc' => 'Rats gnaw electrical conduit and data cables in Perth warehouses, causing severe fire hazards and system downtime.'],
+                    ['name' => 'Pathogen Contamination & Disease Spread', 'desc' => 'Rodents vector Salmonella and Leptospirosis, triggering immediate audit failure and WA Department of Health citations.'],
                     ['name' => 'Rapid Colony Expansion', 'desc' => 'A single breeding pair can produce over 200 offspring annually in climate-controlled distribution centres if unmanaged.'],
                     ['name' => 'Regulatory Non-Compliance & Penalties', 'desc' => 'Evidence of rodent presence in commercial storage can lead to council fines, failed inspections, and immediate business closures.']
                 ],
@@ -57,14 +57,14 @@ $serviceCategories = [
                 'badge_text'  => 'Food Grade Safe Gel Baiting',
                 'stat_val'    => '100%',
                 'stat_label'  => 'Colony Knockdown Rate',
-                'short_desc'  => 'Targeted German & American cockroach eradication for Melbourne commercial kitchens, cafes, and food processing plants.',
+                'short_desc'  => 'Targeted German & American cockroach eradication for Perth commercial kitchens, cafes, and food processing plants.',
                 'description' => 'Cockroaches reproduce rapidly in commercial kitchen motors, warm compressors, and drain networks. Our cockroach management program uses micro-encapsulated baits, insect growth regulators (IGRs), and precision void treatments that eliminate colonies without requiring kitchen shutdown or chemical tainting.',
                 'includes'    => [
                     'Entomological species identification (German, American, Oriental)',
                     'Targeted food-grade gel baiting inside motor housings and crevices',
                     'Insect Growth Regulators (IGR) to halt reproductive nymph cycles',
                     'Drain biofilm treatments and harbourage sealing',
-                    'Post-treatment compliance certification for Melbourne councils'
+                    'Post-treatment compliance certification for Perth councils & WA Health'
                 ],
                 'steps'       => [
                     ['title' => 'Harbourage Inspection', 'desc' => 'Using endoscopic inspection tools, we locate breeding nests behind stainless panels, refrigeration motors, and conduits.'],
@@ -90,8 +90,8 @@ $serviceCategories = [
                 'badge_text'  => 'Termatrac Radar & Thermal Imaging',
                 'stat_val'    => '$0',
                 'stat_label'  => 'Structural Damage Under Warranty',
-                'short_desc'  => 'Comprehensive commercial termite inspections, radar detection, chemical soil barriers, and continuous monitoring systems across Victoria.',
-                'description' => 'Subterranean termites (Coptotermes and Schedorhinotermes) inflict catastrophic structural damage on Melbourne commercial buildings. UrbanPest delivers commercial inspections strictly compliant with Australian Standard AS 3660, utilizing Termatrac T3i radar, thermal imaging, chemical perimeter protection, and baiting systems.',
+                'short_desc'  => 'Comprehensive commercial termite inspections, radar detection, chemical soil barriers, and continuous monitoring systems across Western Australia.',
+                'description' => 'Subterranean termites (Coptotermes and Schedorhinotermes) inflict catastrophic structural damage on Perth commercial buildings. UrbanPest delivers commercial inspections strictly compliant with Australian Standard AS 3660, utilizing Termatrac T3i radar, thermal imaging, chemical perimeter protection, and baiting systems.',
                 'includes'    => [
                     'Comprehensive AS 3660 commercial timber pest inspection',
                     'Termatrac T3i microwave radar motion detection through walls',
@@ -108,7 +108,7 @@ $serviceCategories = [
                 ],
                 'key_challenges' => [
                     ['name' => 'Undetected Concealed Timber Destruction', 'desc' => 'Subterranean termites hollow out structural timber frames behind plasterboard without visible exterior clues.'],
-                    ['name' => 'Expansive Melbourne Subfloor Voids', 'desc' => 'Heritage Victorian commercial buildings and warehouse timber floors present vulnerable subfloor access.'],
+                    ['name' => 'Expansive Commercial Subfloor Voids', 'desc' => 'Older Western Australian commercial buildings and warehouse timber floors present vulnerable subfloor access.'],
                     ['name' => 'Insurance Exclusions for Termite Damage', 'desc' => 'Commercial building insurance policies universally exclude termite damage, risking hundreds of thousands in loss.'],
                     ['name' => 'Strict Building Code of Australia Mandates', 'desc' => 'Commercial property sales, leases, and renovations require certified AS 3660 compliance documentation.']
                 ],
@@ -120,12 +120,12 @@ $serviceCategories = [
                 'icon'        => 'bird',
                 'image'       => '/assets/images/bird-proofing.jpg',
                 'watermark'   => 'AVIAN DETERRENCE',
-                'accent_tag'  => 'Humane Bird Deterrents — Melbourne Working at Heights Certified',
+                'accent_tag'  => 'Humane Bird Deterrents — Perth Working at Heights Certified',
                 'badge_text'  => 'Rooftop & Canopy Exclusion Specialist',
                 'stat_val'    => '100%',
                 'stat_label'  => 'Humane Wildlife Code Compliant',
-                'short_desc'  => 'Humane bird netting, stainless spikes, shock tracks, and optical gel systems for Melbourne commercial rooftops and canopies.',
-                'description' => 'Pigeons, seagulls, and mynas cause severe structural corrosion, solar panel damage, and health hazards across Melbourne commercial properties. Our height-certified specialists engineer humane exclusion systems including heavy-duty UV-stabilised netting, solar skirting, and discreet optical deterrents.',
+                'short_desc'  => 'Humane bird netting, stainless spikes, shock tracks, and optical gel systems for Perth commercial rooftops and canopies.',
+                'description' => 'Pigeons, seagulls, and mynas cause severe structural corrosion, solar panel damage, and health hazards across Perth commercial properties. Our height-certified specialists engineer humane exclusion systems including heavy-duty UV-stabilised netting, solar skirting, and discreet optical deterrents.',
                 'includes'    => [
                     'Bird activity assessment and roosting pattern analysis',
                     'Heavy-duty commercial UV-stabilised poly netting installation',
@@ -144,7 +144,7 @@ $serviceCategories = [
                     ['name' => 'Corrosive Guano Structural Damage', 'desc' => 'Uric acid in pigeon droppings permanently etches building facades, aluminium cladding, and rooftop air handling units.'],
                     ['name' => 'Air Intake Bio-Contamination', 'desc' => 'Avian nesting and feathers near building fresh-air intakes draw airborne mites, fungi, and allergens into HVAC systems.'],
                     ['name' => 'Drainage & Solar Array Blockage', 'desc' => 'Debris and guano block commercial roof gutters, causing ceiling water leaks and diminishing commercial solar roof yield.'],
-                    ['name' => 'Pedestrian Slip & Public Liability', 'desc' => 'Fouling on Melbourne CBD entryways, loading docks, and fire escapes creates serious public slip liabilities.']
+                    ['name' => 'Pedestrian Slip & Public Liability', 'desc' => 'Fouling on Perth CBD entryways, loading docks, and fire escapes creates serious public slip liabilities.']
                 ],
                 'related_industries' => ['logistics-warehousing', 'food-retail', 'facilities-management', 'offices']
             ],
@@ -159,7 +159,7 @@ $serviceCategories = [
                 'stat_val'    => '68%',
                 'stat_label'  => 'Energy Reduction vs UV Tubes',
                 'short_desc'  => 'Advanced fly management systems combining Lumnia LED light traps, encapsulation technology, and food safety sanitation audits.',
-                'description' => 'Flies are carriers of over 60 pathogenic microorganisms and represent an acute food-safety threat. Our Melbourne commercial fly control solutions combine scientifically positioned low-energy LED glue-board units, biological drain treatments, and comprehensive hygiene inspection documentation.',
+                'description' => 'Flies are carriers of over 60 pathogenic microorganisms and represent an acute food-safety threat. Our Perth commercial fly control solutions combine scientifically positioned low-energy LED glue-board units, biological drain treatments, and comprehensive hygiene inspection documentation.',
                 'includes'    => [
                     'Scientific lux-meter placement of Lumnia LED fly traps',
                     'Zero-shatter encapsulation glue-boards (no insect fragment blowout)',
@@ -177,7 +177,7 @@ $serviceCategories = [
                     ['name' => 'High Pathogen Vector Potential', 'desc' => 'Flies transfer Salmonella, Campylobacter, and Listeria onto exposed food contact surfaces within seconds.'],
                     ['name' => 'Zero Public Visibility Tolerance', 'desc' => 'A single flying insect in dining rooms or retail display cases causes immediate consumer complaints and bad reviews.'],
                     ['name' => 'Rapid Breeding in Drain & Waste Zones', 'desc' => 'Phorid and drain flies reproduce in floor drain grime, completing generation cycles every 8 to 10 days.'],
-                    ['name' => 'Audit Catch Data Mandates', 'desc' => 'Victorian food compliance audits require verified catch trend documentation and replacement logs.']
+                    ['name' => 'Audit Catch Data Mandates', 'desc' => 'WA food compliance audits require verified catch trend documentation and replacement logs.']
                 ],
                 'related_industries' => ['food-processing', 'hospitality', 'food-retail', 'healthcare']
             ],
@@ -191,7 +191,7 @@ $serviceCategories = [
                 'badge_text'  => 'Discreet Commercial Hospitality Protocol',
                 'stat_val'    => '24 Hrs',
                 'stat_label'  => 'Room Return-To-Service Time',
-                'short_desc'  => 'Discreet, same-day bed bug eradication for Melbourne hotels, serviced apartments, and student accommodations.',
+                'short_desc'  => 'Discreet, same-day bed bug eradication for Perth hotels, serviced apartments, and student accommodations.',
                 'description' => 'Bed bug incidents can devastate a hotel or hospitality brand’s reputation in hours. UrbanPest provides discreet commercial thermal heat treatments and residual treatments that penetrate deep into mattress seams, baseboards, and wall voids, eliminating all life stages — including eggs — in a single service visit.',
                 'includes'    => [
                     'Discreet unmarked vehicle arrival and technician protocol',
@@ -224,7 +224,7 @@ $serviceCategories = [
                 'badge_text'  => 'Pheromone Surveillance Standard',
                 'stat_val'    => 'Zero',
                 'stat_label'  => 'Tolerated Commodity Cross-Contamination',
-                'short_desc'  => 'Specialist beetle, weevil, and moth control for Melbourne food manufacturers, grain silos, and bulk distribution warehouses.',
+                'short_desc'  => 'Specialist beetle, weevil, and moth control for Perth food manufacturers, grain silos, and bulk distribution warehouses.',
                 'description' => 'Stored Product Insects (SPIs) such as flour beetles, grain weevils, and Indian meal moths cause immense financial loss in raw ingredients and finished packaged goods. Our programs combine species-specific pheromone surveillance, temperature manipulation, and precision ULV treatments.',
                 'includes'    => [
                     'Pheromone lure trapping networks for early moth & beetle detection',
@@ -257,13 +257,13 @@ $serviceCategories = [
                 'badge_text'  => '99.9999% Microbial Log-Reduction',
                 'stat_val'    => 'Log-6',
                 'stat_label'  => 'Microbial Reduction Verified by ATP',
-                'short_desc'  => 'Hospital-grade surface sanitisation and ULV misting for Melbourne commercial offices, healthcare, and manufacturing facilities.',
+                'short_desc'  => 'Hospital-grade surface sanitisation and ULV misting for Perth commercial offices, healthcare, and manufacturing facilities.',
                 'description' => 'Our commercial disinfection services utilize Therapeutic Goods Administration (TGA) approved hospital-grade chemistries and Ultra-Low Volume (ULV) cold fogging. We rapidly eliminate viruses, bacteria, and fungal spores across high-touch surfaces, verified by quantitative pre- and post-treatment ATP swab testing.',
                 'includes'    => [
                     'TGA-listed hospital-grade broad spectrum virucidal chemistry',
                     'Whole-facility Ultra-Low-Volume (ULV) cold misting dispersion',
                     'High-touch point microfiber contact sanitisation (doors, lifts, desks)',
-                    'Rapid emergency outbreak response protocol across Melbourne',
+                    'Rapid emergency outbreak response protocol across Perth',
                     'Pre- and post-treatment ATP bioluminescence surface swab testing',
                     'Formal certificate of hygiene and decontaminating clearance'
                 ],
@@ -287,11 +287,11 @@ $serviceCategories = [
                 'icon'        => 'insect',
                 'image'       => '/assets/images/food-inspection.jpg',
                 'watermark'   => 'INSECT CONTROL',
-                'accent_tag'  => 'Melbourne Commercial IPM — Species Specific',
-                'badge_text'  => 'Licensed Melbourne Operators',
+                'accent_tag'  => 'Perth Commercial IPM — Species Specific',
+                'badge_text'  => 'Licensed WA Operators',
                 'stat_val'    => '100%',
                 'stat_label'  => 'Targeted Coverage Guarantee',
-                'short_desc'  => 'Comprehensive protection against ants, spiders, silverfish, and seasonal crawling insects across Melbourne properties.',
+                'short_desc'  => 'Comprehensive protection against ants, spiders, silverfish, and seasonal crawling insects across Perth properties.',
                 'description' => 'From invasive Argentine ant trails in office kitchens to venomous redback spiders in logistics racking, our integrated insect control programs utilize targeted micro-encapsulated treatments and non-toxic perimeter barriers that deliver enduring results without harming indoor air quality.',
                 'includes'    => [
                     'Species-level identification and nest source location',
@@ -304,13 +304,13 @@ $serviceCategories = [
                     ['title' => 'Diagnostic Inspection', 'desc' => 'Identify entry weep holes, garden bed junctions, and structural cracks facilitating insect ingress.'],
                     ['title' => 'Targeted Application', 'desc' => 'Deploy micro-encapsulated perimeter barriers and non-repellent transfer baits.'],
                     ['title' => 'Harbourage Modification', 'desc' => 'Recommend landscaping and structural adjustments to eliminate moisture and food sources.'],
-                    ['title' => 'Seasonal Perimeter Maintenance', 'desc' => 'Scheduled preventative boundary treatments ahead of Melbourne spring and summer pest swells.']
+                    ['title' => 'Seasonal Perimeter Maintenance', 'desc' => 'Scheduled preventative boundary treatments ahead of Perth spring and summer pest swells.']
                 ],
                 'key_challenges' => [
                     ['name' => 'Persistent Subterranean Ant Trails', 'desc' => 'Super-colonies establish vast subterranean networks beneath concrete warehouse slabs.'],
                     ['name' => 'Venomous Spider Workplace Liabilities', 'desc' => 'Redback spiders nesting in pallet racking and loading docks present acute staff safety hazards.'],
                     ['name' => 'Paper Archive Destruction by Silverfish', 'desc' => 'Silverfish destroy valuable legal files, books, and archival paper stock in storage vaults.'],
-                    ['name' => 'Seasonal Outdoor Invasions', 'desc' => 'Melbourne weather fluctuations trigger sudden mass pest migrations into commercial premises.']
+                    ['name' => 'Seasonal Outdoor Invasions', 'desc' => 'Perth weather fluctuations trigger sudden mass pest migrations into commercial premises.']
                 ],
                 'related_industries' => ['logistics-warehousing', 'offices', 'hospitality', 'food-retail']
             ]
@@ -321,7 +321,7 @@ $serviceCategories = [
         'name'        => 'Digital Connected Pest Monitoring',
         'icon'        => 'radar',
         'short_desc'  => 'Connected 24/7 pest management technology delivering real-time telemetry, automated audit logs, and predictive insights.',
-        'description' => 'UrbanPest Connect is our enterprise digital pest monitoring platform operating across Greater Melbourne. Using cellular IoT sensors, connected bait stations, and automated trap alarms, it delivers continuous 24/7 visibility into pest activity across your entire facility portfolio, slashing response time to minutes.',
+        'description' => 'UrbanPest Connect is our enterprise digital pest monitoring platform operating across Greater Perth. Using cellular IoT sensors, connected bait stations, and automated trap alarms, it delivers continuous 24/7 visibility into pest activity across your entire facility portfolio, slashing response time to minutes.',
         'subservices' => [
             [
                 'slug'        => 'smart-traps',
@@ -334,7 +334,7 @@ $serviceCategories = [
                 'stat_val'    => '< 1s',
                 'stat_label'  => 'Cloud Telemetry Alert Latency',
                 'short_desc'  => 'IoT-enabled non-toxic sensor traps with instantaneous cloud trigger alerts and automated technician dispatch.',
-                'description' => 'Our smart connected traps utilize infrared optical sensors and cellular telemetry to monitor critical facility corridors 24 hours a day. When an activation occurs, an alert is transmitted immediately to our Melbourne response team and your facility dashboard, eliminating the delay of monthly manual inspections.',
+                'description' => 'Our smart connected traps utilize infrared optical sensors and cellular telemetry to monitor critical facility corridors 24 hours a day. When an activation occurs, an alert is transmitted immediately to our Perth response team and your facility dashboard, eliminating the delay of monthly manual inspections.',
                 'includes'    => [
                     '24/7 continuous autonomous infrared monitoring',
                     'Zero-chemical non-toxic mechanical trigger mechanism',
@@ -345,8 +345,8 @@ $serviceCategories = [
                 'steps'       => [
                     ['title' => 'Critical Zone Placement', 'desc' => 'Traps positioned in high-risk cleanrooms, food production lines, and perimeter dock doors.'],
                     ['title' => 'Cellular IoT Connection', 'desc' => 'Sensors connect autonomously via dedicated cellular bandwidth with zero impact on corporate Wi-Fi.'],
-                    ['title' => 'Real-Time Monitoring', 'desc' => '24/7 telemetry streams continuously to the UrbanPest Connect Melbourne cloud engine.'],
-                    ['title' => 'Immediate Incident Dispatch', 'desc' => 'Activations automatically schedule a certified Melbourne technician for same-day service.']
+                    ['title' => 'Real-Time Monitoring', 'desc' => '24/7 telemetry streams continuously to the UrbanPest Connect Perth cloud engine.'],
+                    ['title' => 'Immediate Incident Dispatch', 'desc' => 'Activations automatically schedule a certified Perth technician for same-day service.']
                 ],
                 'key_challenges' => [
                     ['name' => 'Undetected Trap Depletions', 'desc' => 'Conventional manual traps remain triggered or occupied for weeks between monthly technician rounds.'],
@@ -362,12 +362,12 @@ $serviceCategories = [
                 'icon'        => 'connected-rodent',
                 'image'       => '/assets/images/connected-monitoring.jpg',
                 'watermark'   => 'RADAR TELEMETRY',
-                'accent_tag'  => 'Enterprise Multi-Site Dashboard — Melbourne Hub',
+                'accent_tag'  => 'Enterprise Multi-Site Dashboard — Perth Hub',
                 'badge_text'  => 'Always-On Cloud Biosecurity',
                 'stat_val'    => '24/7',
                 'stat_label'  => 'Live Automated Telemetry Uptime',
-                'short_desc'  => 'Autonomous connected rodent surveillance network delivering live heat-maps and automated compliance reporting for Melbourne logistics hubs.',
-                'description' => 'Transform passive perimeter bait stations into an active digital radar network. Our connected rodent surveillance platform continuously monitors multi-hectare distribution centres and manufacturing plants across Melbourne, detecting rodent runway activity in real time and providing certified compliance audit trails.',
+                'short_desc'  => 'Autonomous connected rodent surveillance network delivering live heat-maps and automated compliance reporting for Perth logistics hubs.',
+                'description' => 'Transform passive perimeter bait stations into an active digital radar network. Our connected rodent surveillance platform continuously monitors multi-hectare distribution centres and manufacturing plants across Perth, detecting rodent runway activity in real time and providing certified compliance audit trails.',
                 'includes'    => [
                     'Motion and vibration telemetry embedded in tamper-proof stations',
                     'Centralized multi-site dashboard with live activity heat mapping',
@@ -382,10 +382,10 @@ $serviceCategories = [
                     ['title' => 'Predictive Data Refinement', 'desc' => 'Monthly AI trend analysis guides preventative physical proofing before infestations begin.']
                 ],
                 'key_challenges' => [
-                    ['name' => 'Vast Logistics Perimeter Blind Spots', 'desc' => 'Large distribution facilities in Laverton and Dandenong have extensive fence lines where ingress goes unnoticed.'],
+                    ['name' => 'Vast Logistics Perimeter Blind Spots', 'desc' => 'Large distribution facilities in Welshpool and Kewdale have extensive fence lines where ingress goes unnoticed.'],
                     ['name' => 'Late Response to Dock Ingress', 'desc' => 'Rats entering open cross-dock bays can establish nests inside high racking before manual checks occur.'],
                     ['name' => 'Stricter Rodenticide Regulations', 'desc' => 'Australian biosecurity regulations restrict permanent toxic baiting, requiring smart non-toxic sensor traps.'],
-                    ['name' => 'Lack of Unified Multi-Site Oversight', 'desc' => 'Logistics managers overseeing multiple Melbourne sites struggle with fragmented paper inspection reports.']
+                    ['name' => 'Lack of Unified Multi-Site Oversight', 'desc' => 'Logistics managers overseeing multiple Perth sites struggle with fragmented paper inspection reports.']
                 ],
                 'related_industries' => ['logistics-warehousing', 'food-processing', 'food-retail', 'pharmaceutical']
             ]
