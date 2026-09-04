@@ -216,7 +216,7 @@ function getPestSymbol($riskName) {
         ];
     }
 
-    // 10. Regulatory Audit / Compliance / Standards / GFSI / BRCGS / Mandates
+    // 10. Regulatory Audit / Compliance / Standards / Commercial Mandates
     if (strpos($name, 'audit') !== false || strpos($name, 'regulatory') !== false || strpos($name, 'compliance') !== false || 
         strpos($name, 'mandate') !== false || strpos($name, 'gmp') !== false || strpos($name, 'log') !== false) {
         return [
@@ -226,7 +226,7 @@ function getPestSymbol($riskName) {
             'tag'      => 'REGULATORY AUDIT RISK',
             'tag_bg'   => 'rgba(124, 58, 237, 0.1)',
             'tag_color'=> '#6D28D9',
-            'severity' => 'GFSI Audit Mandate',
+            'severity' => 'Commercial Compliance',
             'pic'      => '/assets/images/digital-dashboard.jpg',
             'svg'      => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>

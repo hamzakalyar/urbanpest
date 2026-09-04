@@ -12,7 +12,7 @@ $serviceCategories = [
         'name'        => 'Commercial Pest Control',
         'icon'        => 'shield-bug',
         'short_desc'  => 'Comprehensive commercial pest management solutions backed by entomological science and delivered by certified Melbourne technicians.',
-        'description' => 'Our Australian integrated pest management (IPM) programs combine advanced detection technology, targeted treatments, and continuous monitoring to protect Melbourne facilities, your staff, and your brand reputation. Every solution is strictly aligned with AEPMA codes of practice and HACCP Australia standards.',
+        'description' => 'Our integrated pest management (IPM) programs combine advanced detection technology, targeted treatments, and continuous monitoring to protect Melbourne facilities, your staff, and your brand reputation. Every solution is delivered with commercial professionalism and licensed expertise.',
         'subservices' => [
             [
                 'slug'        => 'rodent-control',
@@ -21,9 +21,9 @@ $serviceCategories = [
                 'image'       => '/assets/images/connected-monitoring.jpg',
                 'watermark'   => 'RODENT DEFENSE',
                 'accent_tag'  => 'Melbourne Commercial IPM — 24/7 Rapid Response',
-                'badge_text'  => 'HACCP Australia & AEPMA Certified',
+                'badge_text'  => 'Targeted Commercial IPM',
                 'stat_val'    => '99.4%',
-                'stat_label'  => 'Audit Compliance Pass Rate',
+                'stat_label'  => 'Customer Satisfaction Rate',
                 'short_desc'  => 'Proactive rodent management for Melbourne commercial facilities using tamper-proof bait stations and digital sensors.',
                 'description' => 'Rodents pose severe biosecurity risks to Melbourne food processing facilities, distribution centres, and hospitality venues. Our commercial rodent management combines AS-compliant exclusion, tamper-resistant perimeter stations, and real-time sensor alerts to stop ingress before internal contamination occurs.',
                 'includes'    => [
@@ -35,7 +35,7 @@ $serviceCategories = [
                 ],
                 'steps'       => [
                     ['title' => 'Commercial Site Audit', 'desc' => 'Certified technicians inspect your premises, mapping roof voids, drainage entries, and external perimeter pressure points.'],
-                    ['title' => 'Customised Treatment Strategy', 'desc' => 'We design an IPM plan combining non-toxic monitoring, physical proofing, and targeted baits complying with HACCP and FSANZ.'],
+                    ['title' => 'Customised Treatment Strategy', 'desc' => 'We design an IPM plan combining non-toxic monitoring, physical proofing, and targeted baits complying with health regulations.'],
                     ['title' => 'Discreet System Installation', 'desc' => 'Tamper-proof stations and connected units installed outside production hours to avoid operational interruption.'],
                     ['title' => 'Audit-Ready Reporting', 'desc' => 'Every visit logs barcode-scanned trap counts into digital compliance reports ready for Victorian health audits.']
                 ],
@@ -43,7 +43,7 @@ $serviceCategories = [
                     ['name' => 'Packaging & Cable Gnawing Destruction', 'desc' => 'Rats gnaw electrical conduit and data cables in Melbourne warehouses, causing severe fire hazards and system downtime.'],
                     ['name' => 'Pathogen Contamination & Disease Spread', 'desc' => 'Rodents vector Salmonella and Leptospirosis, triggering immediate audit failure and Victorian Department of Health citations.'],
                     ['name' => 'Rapid Colony Expansion', 'desc' => 'A single breeding pair can produce over 200 offspring annually in climate-controlled distribution centres if unmanaged.'],
-                    ['name' => 'Regulatory Audit Non-Compliance', 'desc' => 'Evidence of rodent presence in food storage immediately invalidates BRCGS, SQF, and HACCP certifications.']
+                    ['name' => 'Regulatory Non-Compliance & Penalties', 'desc' => 'Evidence of rodent presence in commercial storage can lead to council fines, failed inspections, and immediate business closures.']
                 ],
                 'related_industries' => ['food-processing', 'logistics-warehousing', 'hospitality', 'food-retail', 'pharmaceutical']
             ],
@@ -54,7 +54,7 @@ $serviceCategories = [
                 'image'       => '/assets/images/cockroach-control.jpg',
                 'watermark'   => 'COCKROACH ERADICATION',
                 'accent_tag'  => 'Food Grade Safe — Non-Disruptive Gel Baiting',
-                'badge_text'  => 'HACCP & FSANZ Food Safety Compliant',
+                'badge_text'  => 'Food Grade Safe Gel Baiting',
                 'stat_val'    => '100%',
                 'stat_label'  => 'Colony Knockdown Rate',
                 'short_desc'  => 'Targeted German & American cockroach eradication for Melbourne commercial kitchens, cafes, and food processing plants.',
@@ -155,11 +155,11 @@ $serviceCategories = [
                 'image'       => '/assets/images/smart-iot-trap.jpg',
                 'watermark'   => 'FLY DEFENSE',
                 'accent_tag'  => 'Low-Energy LED Insect Light Traps (ILT)',
-                'badge_text'  => 'HACCP Approved Food Safety ILT',
+                'badge_text'  => 'Energy-Efficient LED Traps',
                 'stat_val'    => '68%',
                 'stat_label'  => 'Energy Reduction vs UV Tubes',
                 'short_desc'  => 'Advanced fly management systems combining Lumnia LED light traps, encapsulation technology, and food safety sanitation audits.',
-                'description' => 'Flies are carriers of over 60 pathogenic microorganisms and represent an acute food-safety threat. Our Melbourne commercial fly control solutions combine scientifically positioned low-energy LED glue-board units, biological drain treatments, and comprehensive HACCP compliance documentation.',
+                'description' => 'Flies are carriers of over 60 pathogenic microorganisms and represent an acute food-safety threat. Our Melbourne commercial fly control solutions combine scientifically positioned low-energy LED glue-board units, biological drain treatments, and comprehensive hygiene inspection documentation.',
                 'includes'    => [
                     'Scientific lux-meter placement of Lumnia LED fly traps',
                     'Zero-shatter encapsulation glue-boards (no insect fragment blowout)',
@@ -221,7 +221,7 @@ $serviceCategories = [
                 'image'       => '/assets/images/food-inspection.jpg',
                 'watermark'   => 'COMMODITY DEFENSE',
                 'accent_tag'  => 'Pheromone Surveillance & Grain Biosecurity',
-                'badge_text'  => 'Export & Australian Quarantine Aligned',
+                'badge_text'  => 'Pheromone Surveillance Standard',
                 'stat_val'    => 'Zero',
                 'stat_label'  => 'Tolerated Commodity Cross-Contamination',
                 'short_desc'  => 'Specialist beetle, weevil, and moth control for Melbourne food manufacturers, grain silos, and bulk distribution warehouses.',
@@ -288,9 +288,9 @@ $serviceCategories = [
                 'image'       => '/assets/images/food-inspection.jpg',
                 'watermark'   => 'INSECT CONTROL',
                 'accent_tag'  => 'Melbourne Commercial IPM — Species Specific',
-                'badge_text'  => 'Victorian Health Dept Licensed',
+                'badge_text'  => 'Licensed Melbourne Operators',
                 'stat_val'    => '100%',
-                'stat_label'  => 'AEPMA Industry Standard',
+                'stat_label'  => 'Targeted Coverage Guarantee',
                 'short_desc'  => 'Comprehensive protection against ants, spiders, silverfish, and seasonal crawling insects across Melbourne properties.',
                 'description' => 'From invasive Argentine ant trails in office kitchens to venomous redback spiders in logistics racking, our integrated insect control programs utilize targeted micro-encapsulated treatments and non-toxic perimeter barriers that deliver enduring results without harming indoor air quality.',
                 'includes'    => [
@@ -352,7 +352,7 @@ $serviceCategories = [
                     ['name' => 'Undetected Trap Depletions', 'desc' => 'Conventional manual traps remain triggered or occupied for weeks between monthly technician rounds.'],
                     ['name' => 'Unnecessary Facility Disruption', 'desc' => 'Technicians manually inspecting hundreds of empty traps wastes operational time in high-security zones.'],
                     ['name' => 'Delayed Incident Response Times', 'desc' => 'Conventional pest services discover perimeter breaches weeks after product contamination has occurred.'],
-                    ['name' => 'Incomplete Compliance Logging', 'desc' => 'Manual paper logbooks lack exact second-by-second timestamps demanded by BRCGS and ISO biosecurity audits.']
+                    ['name' => 'Incomplete Service Records', 'desc' => 'Manual paper logs lack exact timestamps and detailed audit trails needed for commercial inspections.']
                 ],
                 'related_industries' => ['food-processing', 'pharmaceutical', 'logistics-warehousing', 'food-retail']
             ],

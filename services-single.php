@@ -25,7 +25,7 @@ include __DIR__ . '/partials/header.php';
 $heroTitle       = $service['name'];
 $heroDesc        = $service['short_desc'];
 $heroTag         = isset($service['accent_tag']) ? $service['accent_tag'] : 'SPECIALISED SERVICE DIVISION';
-$heroBadge       = isset($service['badge_text']) ? $service['badge_text'] : 'BPCA & CEPA Certified';
+$heroBadge       = isset($service['badge_text']) ? $service['badge_text'] : 'Licensed Melbourne Specialists';
 $heroImage       = isset($service['image']) ? $service['image'] : '/assets/images/hero-technician.jpg';
 $heroWatermark   = isset($service['watermark']) ? $service['watermark'] : strtoupper($service['name']);
 $heroStatVal     = isset($service['stat_val']) ? $service['stat_val'] : '99.5%';

@@ -94,17 +94,17 @@ $blogPosts = [
         'read_time' => '4 min read'
     ],
     [
-        'slug'     => 'urbanpest-achieves-carbon-neutral-operations',
-        'title'    => 'UrbanPest Achieves Carbon Neutral Operations Across European Division',
+        'slug'     => 'urbanpest-expands-eco-fleet-and-ipm-across-melbourne',
+        'title'    => 'UrbanPest Expands Low-Emission Fleet & Sustainable IPM Across Melbourne',
         'category' => 'Company News',
-        'excerpt'  => 'Our European operations have achieved certified carbon neutrality, marking a major milestone in our sustainability roadmap.',
-        'body'     => '<p>UrbanPest is proud to announce that our European division has achieved certified carbon neutral operations — a milestone that reflects years of investment in fleet electrification, operational efficiency, and verified carbon offset programs.</p>
-        <h3>The Journey to Carbon Neutrality</h3>
-        <p>This achievement was built on three pillars. First, we transitioned 68% of our European service vehicle fleet to electric and hybrid vehicles, with a commitment to reach 100% by 2027. Second, we optimised service routing using our digital platform data, reducing total kilometres driven by 22% without any reduction in service quality. Third, we invested in verified carbon offset projects — including reforestation in Portugal and renewable energy in Eastern Europe — to compensate for remaining emissions.</p>
-        <h3>What This Means for Our Clients</h3>
-        <p>For our clients, this means that choosing UrbanPest directly supports their own Scope 3 emissions reduction targets. We provide detailed carbon impact reporting as part of our standard service documentation, helping facilities managers demonstrate progress against corporate sustainability KPIs.</p>
-        <p>"Sustainability isn\'t just about what we do — it\'s about how we do it," said Anna Lindström, UrbanPest\'s European Managing Director. "Carbon neutral operations are a foundation, not a destination. We\'re already working toward net-positive impact across our entire value chain."</p>',
-        'author'   => 'UrbanPest Communications',
+        'excerpt'  => 'Our Melbourne operations expand hybrid fleet coverage and targeted low-toxicity integrated pest management across Greater Melbourne.',
+        'body'     => '<p>UrbanPest is pleased to announce the expansion of our low-emission commercial fleet and targeted low-toxicity IPM treatments across Greater Melbourne — providing local businesses with powerful, environmentally responsible pest defense.</p>
+        <h3>Environmentally Conscious Pest Defense</h3>
+        <p>This initiative focuses on three key pillars. First, our Melbourne service vehicles integrate hybrid and low-emission vehicles equipped for rapid metropolitan dispatch. Second, intelligent route scheduling groups technician visits along major Melbourne industrial and commercial corridors (Tullamarine, Dandenong, Campbellfield, and CBD), reducing travel time and emissions. Third, we emphasise targeted gel baiting, pheromone surveillance, and physical barrier proofing over blanket chemical sprays.</p>
+        <h3>Benefits for Melbourne Commercial Facilities</h3>
+        <p>Commercial clients enjoy rapid same-day response with minimal operational disruption and reduced chemical exposure in work environments. Our digital service summaries provide facility managers with transparent documentation for health audits and environmental goals.</p>
+        <p>"Our commitment is to protect Melbourne businesses effectively while respecting our local urban environment," said the UrbanPest Operations Team.</p>',
+        'author'   => 'UrbanPest Melbourne Operations',
         'date'     => '2024-08-18',
         'image'    => '/assets/images/green-fleet.jpg',
         'read_time' => '3 min read'

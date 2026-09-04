@@ -34,10 +34,10 @@ $testimonials = [
         'sector'  => 'Pharmaceutical'
     ],
     [
-        'quote'   => 'UrbanPest has been our pest management partner for three years across our entire European retail estate. Their consistency, data quality, and responsiveness set them apart. The Connect platform has become an essential tool for our compliance team.',
-        'name'    => 'Karen Johansson',
-        'role'    => 'Compliance Director',
-        'company' => 'FreshMart Europe',
+        'quote'   => 'UrbanPest has been our pest management partner for three years across our Victorian retail locations. Their consistency, reliability, and prompt responsiveness set them apart. Their reporting has become an essential tool for our store compliance teams.',
+        'name'    => 'Karen Mitchell',
+        'role'    => 'Facilities Compliance Manager',
+        'company' => 'Melbourne Fresh Retail Group',
         'sector'  => 'Food Retail'
     ]
 ];

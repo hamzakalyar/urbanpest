@@ -151,7 +151,7 @@ require_once __DIR__ . '/../data/config.php';
               <div class="mega-menu-grid cols-3">
                 <a href="/industries-single.php?slug=food-processing" class="mega-menu-link" role="menuitem">
                   <div class="mega-menu-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20"></path><path d="M5 20V4h14v16"></path><path d="M9 4V2"></path><path d="M15 4V2"></path></svg></div>
-                  <div class="mega-menu-content"><h4>Food Processing</h4><p>HACCP, SQF & BRCGS compliance</p></div>
+                  <div class="mega-menu-content"><h4>Food Processing</h4><p>Food safety & hygiene defense</p></div>
                 </a>
                 <a href="/industries-single.php?slug=logistics-warehousing" class="mega-menu-link" role="menuitem">
                   <div class="mega-menu-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></div>

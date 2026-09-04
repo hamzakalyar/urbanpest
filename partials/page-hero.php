@@ -23,12 +23,12 @@ global $appConfig;
 require_once __DIR__ . '/../data/config.php';
 
 $heroTitle       = !empty($heroTitle) ? $heroTitle : 'Melbourne Commercial Pest Management';
-$heroDesc        = !empty($heroDesc) ? $heroDesc : 'HACCP & AEPMA certified biosecurity, proactive prevention, and rapid 24/7 technical dispatch across Greater Melbourne commercial facilities.';
-$heroTag         = !empty($heroTag) ? $heroTag : 'Melbourne Commercial Division — AS 3660 & HACCP Certified';
-$heroBadge       = !empty($heroBadge) ? $heroBadge : 'AEPMA & HACCP Australia Certified';
+$heroDesc        = !empty($heroDesc) ? $heroDesc : 'Professional, proactive pest management and rapid technical dispatch across Greater Melbourne commercial facilities.';
+$heroTag         = !empty($heroTag) ? $heroTag : 'Melbourne Commercial Division — Fast Local Service';
+$heroBadge       = !empty($heroBadge) ? $heroBadge : 'Licensed Melbourne Pest Specialists';
 $heroImage       = !empty($heroImage) ? $heroImage : '/assets/images/hero-technician.jpg';
-$heroStatVal     = !empty($heroStatVal) ? $heroStatVal : '99.4%';
-$heroStatLabel   = !empty($heroStatLabel) ? $heroStatLabel : 'Audit Pass Rate';
+$heroStatVal     = !empty($heroStatVal) ? $heroStatVal : 'Same-Day';
+$heroStatLabel   = !empty($heroStatLabel) ? $heroStatLabel : 'Service Dispatch';
 $heroCtaText     = !empty($heroCtaText) ? $heroCtaText : 'Request Facility Survey';
 $heroCtaLink     = !empty($heroCtaLink) ? $heroCtaLink : '/contact.php';
 $heroWaLink      = !empty($heroWaLink) ? $heroWaLink : getWhatsAppLink($heroTitle);
@@ -102,23 +102,23 @@ $heroBreadcrumbs = !empty($heroBreadcrumbs) ? $heroBreadcrumbs : [
           </a>
         </div>
 
-        <!-- Australian Enterprise Compliance Trust Bar -->
+        <!-- Service Trust & Reliability Guarantees -->
         <div class="corp-compliance-strip">
-          <div class="corp-compliance-item" title="Australian Environmental Pest Managers Association">
+          <div class="corp-compliance-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Same-Day Melbourne Dispatch</span>
+          </div>
+          <div class="corp-compliance-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-            <span>AEPMA Accredited</span>
+            <span>Licensed & Insured Technicians</span>
           </div>
-          <div class="corp-compliance-item" title="HACCP Australia Food Safety Endorsed">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
-            <span>HACCP Australia Endorsed</span>
+          <div class="corp-compliance-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path></svg>
+            <span>Safe & Targeted Formulations</span>
           </div>
-          <div class="corp-compliance-item" title="Australian Standards AS 3660 & AS 4349">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            <span>AS 3660 Termite Standard</span>
-          </div>
-          <div class="corp-compliance-item" title="Victorian Department of Health Commercial Pest Control Operator License">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <span>Vic Health Lic. L008412</span>
+          <div class="corp-compliance-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FA968" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span>100% Satisfaction Guarantee</span>
           </div>
         </div>
       </div>

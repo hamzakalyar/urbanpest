@@ -131,13 +131,13 @@ include __DIR__ . '/partials/hero.php';
         <div class="carousel-slide" aria-hidden="true">
           <div class="carousel-slide-inner">
             <div class="carousel-slide-content">
-              <span class="section-label">Milestone</span>
-              <h3>Carbon Neutral Operations Achieved</h3>
-              <p>Our European division has achieved certified carbon neutral operations — through fleet electrification, optimised routing, and verified offset programs. Your pest management partner for a sustainable future.</p>
-              <a href="/about-sustainability.php" class="btn btn-primary">Our Sustainability Story</a>
+              <span class="section-label">Eco Responsibility</span>
+              <h3>Sustainable & Targeted Pest Solutions</h3>
+              <p>Our Melbourne service team prioritises environmentally conscious integrated pest management — combining low-toxicity formulations, route optimisation, and non-chemical exclusion to protect both your business and the local community.</p>
+              <a href="/about-sustainability.php" class="btn btn-primary">Our Sustainability Approach</a>
             </div>
             <div class="carousel-slide-image" style="background: url('/assets/images/green-fleet.jpg') center/cover no-repeat;">
-              <div class="slide-badge">100% Electric Fleet</div>
+              <div class="slide-badge">Eco-Conscious Fleet</div>
             </div>
           </div>
         </div>
@@ -246,37 +246,38 @@ function toggleSectors() {
 
 
 <!-- ============================================
-     6. TRUST STRIP
+     6. WHY MELBOURNE CHOOSES US
      ============================================ -->
 <section class="section-sm" id="trust">
   <div class="container">
-    <div class="section-header">
-      <span class="section-label">Accreditations & Partnerships</span>
+    <div class="section-header text-center">
+      <span class="section-label">Our Service Commitments</span>
+      <h2 class="section-title" style="font-size: 1.75rem;">Why Melbourne Businesses Rely On Us</h2>
     </div>
     <div class="trust-strip">
       <div class="trust-logo">
-        <div class="trust-logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <div class="trust-logo-icon" style="color: #0FA968;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
         </div>
-        <span>Global Pest Standards Council</span>
+        <span>Same-Day Rapid Dispatch</span>
       </div>
       <div class="trust-logo">
-        <div class="trust-logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4"></path></svg>
+        <div class="trust-logo-icon" style="color: #0FA968;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
         </div>
-        <span>ISO 22000</span>
+        <span>Licensed & Insured Operators</span>
       </div>
       <div class="trust-logo">
-        <div class="trust-logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+        <div class="trust-logo-icon" style="color: #0FA968;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path></svg>
         </div>
-        <span>BRCGS Approved</span>
+        <span>Safe & Pet-Friendly Formulations</span>
       </div>
       <div class="trust-logo">
-        <div class="trust-logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <div class="trust-logo-icon" style="color: #0FA968;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
         </div>
-        <span>Carbon Neutral Certified</span>
+        <span>100% Satisfaction Guarantee</span>
       </div>
     </div>
   </div>
@@ -284,33 +285,33 @@ function toggleSectors() {
 
 
 <!-- ============================================
-     7. CREDIBILITY / STATS + TESTIMONIAL
+     7. CREDIBILITY / LOCAL STATS + TESTIMONIAL
      ============================================ -->
 <section class="section section-dark" id="credibility" style="background: linear-gradient(135deg, rgba(11, 31, 58, 0.94) 0%, rgba(7, 20, 40, 0.96) 100%), url('/assets/images/food-inspection.jpg') center/cover no-repeat; position: relative;">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">UrbanPest in Numbers</span>
-      <h2 class="section-title" style="color:#fff;">Delivering Results at Global Scale</h2>
+      <span class="section-label">Melbourne Dedicated</span>
+      <h2 class="section-title" style="color:#fff;">Proven Results Across Greater Melbourne</h2>
     </div>
 
     <div class="stats-grid">
       <div class="stat-item">
         <div class="stat-number">
-          <span data-counter="90" data-suffix="+">0</span>
+          <span data-counter="100" data-suffix="%">0</span>
         </div>
-        <div class="stat-label">Countries</div>
+        <div class="stat-label">Melbourne Owned & Operated</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">
-          <span data-counter="15000" data-suffix="+">0</span>
+          <span data-counter="2500" data-suffix="+">0</span>
         </div>
-        <div class="stat-label">Trained Technicians</div>
+        <div class="stat-label">Commercial Sites Protected</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">
-          <span data-counter="500000" data-suffix="+">0</span>
+          <span data-counter="2" data-prefix="< " data-suffix=" Hrs">0</span>
         </div>
-        <div class="stat-label">Customers Worldwide</div>
+        <div class="stat-label">Rapid Emergency Dispatch</div>
       </div>
     </div>
 
@@ -331,30 +332,30 @@ function toggleSectors() {
     <div class="sustainability-callout">
       <div class="sustainability-image" style="background: url('/assets/images/green-fleet.jpg') center/cover no-repeat; position: relative; border-radius: var(--radius-xl); overflow: hidden; min-height: 380px; box-shadow: var(--shadow-lg);">
         <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(11, 31, 58, 0.88); backdrop-filter: blur(8px); padding: 12px 18px; border-radius: var(--radius-md); color: #fff; font-size: var(--text-xs); border-left: 3px solid var(--color-emerald); display: flex; align-items: center; justify-content: space-between;">
-          <span><strong>100% Electric Service Fleet</strong> • Certified Low Carbon</span>
-          <span class="badge badge-emerald" style="font-size: 10px;">ISO 14001</span>
+          <span><strong>Rapid Melbourne Dispatch</strong> • Commercial Eco Fleet</span>
+          <span class="badge badge-emerald" style="font-size: 10px;">Low-Toxicity</span>
         </div>
       </div>
       <div class="sustainability-content">
         <span class="section-label">Responsibility & Sustainability</span>
         <h2>Protecting More Than Your Business</h2>
-        <p>We're committed to delivering effective pest management while minimising our environmental impact. From carbon-neutral operations to reduced-chemical treatment programs, sustainability is woven into everything we do.</p>
+        <p>We're committed to delivering effective pest management while minimising environmental impact. From eco-friendly treatment methods to reduced-chemical programs, responsible stewardship is woven into everything we do.</p>
         <div class="sustainability-pillars">
           <div class="sustainability-pillar">
             <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            Carbon Neutral Operations
+            Low-Toxicity Formulations
           </div>
           <div class="sustainability-pillar">
             <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            Reduced Chemical Programs
+            Targeted IPM Programs
           </div>
           <div class="sustainability-pillar">
             <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            Fleet Electrification
+            Route Optimisation
           </div>
           <div class="sustainability-pillar">
             <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            Community Investment
+            Humane Wildlife Deterrents
           </div>
         </div>
         <a href="/about-sustainability.php" class="btn btn-outline-emerald">Our Sustainability Commitments</a>

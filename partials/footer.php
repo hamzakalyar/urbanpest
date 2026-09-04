@@ -101,31 +101,31 @@ require_once __DIR__ . '/../data/config.php';
           </div>
         </div>
 
-        <!-- Australian Compliance & Regulatory Badges -->
+        <!-- Melbourne Customer Guarantees & Trust Factors -->
         <div class="footer-certs">
+          <div class="footer-cert">
+            <div class="footer-cert-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <span>Same-Day Melbourne Dispatch</span>
+          </div>
           <div class="footer-cert">
             <div class="footer-cert-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
-            <span>AEPMA Member #VIC-4182</span>
+            <span>Licensed & Insured Technicians</span>
           </div>
           <div class="footer-cert">
             <div class="footer-cert-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4"></path></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M7 12l3-7 4 14 3-7"></path></svg>
             </div>
-            <span>HACCP Australia Endorsed</span>
+            <span>Safe & Targeted Treatments</span>
           </div>
           <div class="footer-cert">
             <div class="footer-cert-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="9 12 11 14 15 10"></polyline></svg>
             </div>
-            <span>AS 3660 Termite Management</span>
-          </div>
-          <div class="footer-cert">
-            <div class="footer-cert-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/></svg>
-            </div>
-            <span>Vic Health Lic. L008412</span>
+            <span>100% Satisfaction Guarantee</span>
           </div>
         </div>
 

@@ -82,43 +82,43 @@ include __DIR__ . '/partials/page-hero.php';
   </div>
 </section>
 
-<!-- Australian Regulatory Compliance -->
+<!-- Melbourne Customer Guarantees -->
 <section class="section section-alt">
   <div class="container">
     <div class="section-header text-left">
-      <span class="section-label">Accreditations & Compliance</span>
-      <h2 class="section-title">Strict Alignment with Australian Standards</h2>
-      <p class="section-subtitle">We hold the highest tier of Australian environmental pest management accreditations, ensuring total compliance for your next commercial audit.</p>
+      <span class="section-label">Why Melbourne Businesses Rely On Us</span>
+      <h2 class="section-title">Our Service Commitments</h2>
+      <p class="section-subtitle">Practical, reliable, and prompt pest defense designed specifically for Melbourne commercial properties, warehouses, and hospitality venues.</p>
     </div>
 
     <div class="grid grid-3 grid-gap-lg">
       <div class="card" style="border: 1px solid #E2E8F0; border-radius: 12px; background:#fff; padding:24px;">
         <div style="width:44px; height:44px; border-radius:8px; background:#E8F8F0; display:flex; align-items:center; justify-content:center; color:#0FA968; margin-bottom:14px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 style="font-size:1.1rem; color:#0B1F3A; margin:0 0 8px;">Rapid Melbourne Dispatch</h3>
+        <p style="font-size:0.875rem; color:#64748B; margin:0; line-height:1.6;">
+          Same-day priority response across Greater Melbourne including CBD, Dandenong, Tullamarine, Campbellfield, Laverton, and surrounding commercial corridors.
+        </p>
+      </div>
+
+      <div class="card" style="border: 1px solid #E2E8F0; border-radius: 12px; background:#fff; padding:24px;">
+        <div style="width:44px; height:44px; border-radius:8px; background:#E8F8F0; display:flex; align-items:center; justify-content:center; color:#0FA968; margin-bottom:14px;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3 style="font-size:1.1rem; color:#0B1F3A; margin:0 0 8px;">AEPMA Member #VIC-4182</h3>
+        <h3 style="font-size:1.1rem; color:#0B1F3A; margin:0 0 8px;">Licensed & Insured Operators</h3>
         <p style="font-size:0.875rem; color:#64748B; margin:0; line-height:1.6;">
-          Full corporate member of the Australian Environmental Pest Managers Association, adhering to the Code of Practice for Commercial & Industrial Pest Management.
+          Fully certified commercial pest technicians equipped with high-grade inspection technology, thermal sensors, and proven Integrated Pest Management strategies.
         </p>
       </div>
 
       <div class="card" style="border: 1px solid #E2E8F0; border-radius: 12px; background:#fff; padding:24px;">
         <div style="width:44px; height:44px; border-radius:8px; background:#E8F8F0; display:flex; align-items:center; justify-content:center; color:#0FA968; margin-bottom:14px;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M7 12l3-7 4 14 3-7"/></svg>
         </div>
-        <h3 style="font-size:1.1rem; color:#0B1F3A; margin:0 0 8px;">HACCP Australia Certified</h3>
+        <h3 style="font-size:1.1rem; color:#0B1F3A; margin:0 0 8px;">Targeted & Safe Treatments</h3>
         <p style="font-size:0.875rem; color:#64748B; margin:0; line-height:1.6;">
-          Officially endorsed by HACCP Australia as a certified pest management provider for food manufacturing, packaging, and cold-chain logistics.
-        </p>
-      </div>
-
-      <div class="card" style="border: 1px solid #E2E8F0; border-radius: 12px; background:#fff; padding:24px;">
-        <div style="width:44px; height:44px; border-radius:8px; background:#E8F8F0; display:flex; align-items:center; justify-content:center; color:#0FA968; margin-bottom:14px;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        </div>
-        <h3 style="font-size:1.1rem; color:#0B1F3A; margin:0 0 8px;">AS 3660 & AS 4349 Certified</h3>
-        <p style="font-size:0.875rem; color:#64748B; margin:0; line-height:1.6;">
-          Full compliance with Australian Standards for Termite Management in New and Existing Buildings, utilising Termatrac radar and thermal imaging.
+          Low-hazard, targeted solutions that resolve infestations at the root cause while maintaining safe conditions for staff, customers, and pets.
         </p>
       </div>
     </div>
