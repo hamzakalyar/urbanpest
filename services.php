@@ -13,19 +13,19 @@ include __DIR__ . '/partials/header.php';
 
 <!-- Page Hero -->
 <?php
-$heroTitle       = 'Commercial Pest Services';
-$heroDesc        = 'Comprehensive pest management solutions backed by entomological science, delivered by certified technicians, and powered by connected IoT surveillance networks.';
-$heroTag         = 'CERTIFIED SOLUTIONS // SCIENTIFIC IPM';
-$heroBadge       = 'Global Standards & CEPA Certified';
+$heroTitle       = 'Melbourne Commercial Pest Solutions';
+$heroDesc        = 'Complete commercial pest management backed by entomological science, delivered by certified Victorian technicians across Greater Melbourne and regional commercial corridors.';
+$heroTag         = 'Melbourne Commercial Division — AS 3660 & HACCP Certified';
+$heroBadge       = 'AEPMA & HACCP Australia Endorsed';
 $heroImage       = '/assets/images/hero-technician.jpg';
-$heroWatermark   = 'SERVICES';
-$heroStatVal     = '90+ Countries';
-$heroStatLabel   = 'Global Operational Reach';
+$heroStatVal     = '100%';
+$heroStatLabel   = 'Melbourne Operational Coverage';
 $heroCtaText     = 'Request Commercial Assessment';
 $heroCtaLink     = '/contact.php';
+$heroWaLink      = getWhatsAppLink('Commercial Pest Solutions');
 $heroBreadcrumbs = [
     ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'Services']
+    ['label' => 'Commercial Services']
 ];
 include __DIR__ . '/partials/page-hero.php';
 ?>

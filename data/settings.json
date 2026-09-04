@@ -1,11 +1,13 @@
 {
-    "company_name": "UrbanPest Commercial Pest Control",
-    "phone_display": "+44 (0) 800 246 8000",
-    "phone_raw": "+448002468000",
-    "email_contact": "commercial@urbanpest.com",
-    "whatsapp_number": "+447946099100",
-    "whatsapp_msg": "Hello UrbanPest, I would like to request an assessment for commercial pest control at my facility.",
-    "emergency_phone": "+44 (0) 800 246 9999",
+    "company_name": "UrbanPest Melbourne Commercial Pest Control",
+    "phone_display": "+61 410 148 126",
+    "phone_raw": "+61410148126",
+    "email_contact": "commercial@urbanpest.com.au",
+    "whatsapp_number": "+61410148126",
+    "whatsapp_msg": "Hello UrbanPest Melbourne, I would like to request a commercial pest inspection for our facility.",
+    "emergency_phone": "+61 410 148 126",
+    "headquarters": "Level 14, 380 Docklands Drive, Melbourne VIC 3008",
+    "service_area": "Greater Melbourne & Regional Victoria Commercial Hubs",
     "admin_username": "admin",
-    "admin_password_hash": "$2y$10$bqY02AJhvJ3OY\/ntd8wpqeiYxRoce.fVYxeiTl0glP4VD26ddZo1i"
+    "admin_password_hash": "$2y$10$f3N9YQh6jK5u9B8O3KkJQ.E2D9v6rS/YhKqX6aZ/0q2O9l5j8s1uG"
 }

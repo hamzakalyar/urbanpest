@@ -436,7 +436,8 @@
   opacity: 1;
 }
 
-.mobile-nav-drawer {
+.mobile-nav-drawer,
+.mobile-drawer {
   display: none;
   position: fixed;
   top: 0;

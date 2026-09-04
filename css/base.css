@@ -50,9 +50,9 @@
   --color-warning:        #F5A623;
   --color-info:           #3498DB;
 
-  /* Typography */
-  --font-heading:         'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body:            'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Typography — Authoritative Corporate Grotesque */
+  --font-heading:         'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-body:            'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
   /* Font Sizes - Fluid Scale */
   --text-xs:              0.75rem;    /* 12px */

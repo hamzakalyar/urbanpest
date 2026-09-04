@@ -19,12 +19,12 @@ include __DIR__ . '/partials/header.php';
      1. HERO SECTION
      ============================================ -->
 <?php
-$heroLabel    = 'Trusted by 500,000+ businesses worldwide';
-$heroTitle    = 'Precision Pest Protection for <span class="highlight">Modern Business</span>';
-$heroSubtitle = 'Science-led pest management and connected monitoring solutions that protect your facilities, your people, and your brand — across 90+ countries.';
-$heroCta      = 'Find Your Local Specialist';
-$heroCtaLink  = '/about-locations.php';
-$heroCta2     = 'Explore Our Services';
+$heroLabel    = 'AEPMA & HACCP Australia Accredited Commercial Operator';
+$heroTitle    = 'Melbourne Commercial Pest Control & <span class="highlight">Biosecurity</span>';
+$heroSubtitle = 'Science-led commercial pest management, AS 3660 termite protection, and connected 24/7 IoT telemetry operating exclusively across Greater Melbourne commercial facilities.';
+$heroCta      = 'Request Commercial Survey';
+$heroCtaLink  = '/contact.php';
+$heroCta2     = 'View Services Directory';
 $heroCtaLink2 = '/services.php';
 include __DIR__ . '/partials/hero.php';
 ?>

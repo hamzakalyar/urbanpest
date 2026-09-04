@@ -118,6 +118,24 @@ function getPestSymbol($riskName) {
         ];
     }
 
+    // 5b. Termites / Subterranean / Timber / Structural Wood / AS 3660
+    if (strpos($name, 'termite') !== false || strpos($name, 'timber') !== false || strpos($name, 'wood') !== false || strpos($name, 'subterranean') !== false) {
+        return [
+            'color'    => '#C2410C',
+            'bg'       => 'rgba(194, 65, 12, 0.12)',
+            'border'   => 'rgba(194, 65, 12, 0.28)',
+            'tag'      => 'TERMITE & TIMBER THREAT',
+            'tag_bg'   => 'rgba(194, 65, 12, 0.1)',
+            'tag_color'=> '#9A3412',
+            'severity' => 'Structural AS 3660 Hazard',
+            'pic'      => '/assets/images/termite-inspection.jpg',
+            'svg'      => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M7 7l5 5 5-5M7 17l5-5 5 5"/>
+                            <rect x="4" y="3" width="16" height="18" rx="2" stroke-dasharray="2 2"/>
+                          </svg>'
+        ];
+    }
+
     // 6. Cockroaches / Crevices
     if (strpos($name, 'cockroach') !== false) {
         return [
@@ -128,7 +146,7 @@ function getPestSymbol($riskName) {
             'tag_bg'   => 'rgba(180, 83, 9, 0.1)',
             'tag_color'=> '#92400E',
             'severity' => 'Contamination Threat',
-            'pic'      => '/assets/images/food-inspection.jpg',
+            'pic'      => '/assets/images/cockroach-control.jpg',
             'svg'      => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <ellipse cx="12" cy="13" rx="4" ry="7"/>
                             <path d="M12 6V3M8 4l2 2M16 4l-2 2"/>
@@ -280,6 +298,30 @@ function getPestSymbol($riskName) {
  */
 function getServiceVisual($serviceSlug) {
     switch ($serviceSlug) {
+        case 'termite-control':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M7 7l5 5 5-5M7 17l5-5 5 5"/><rect x="4" y="3" width="16" height="18" rx="2" stroke-dasharray="2 2"/></svg>',
+                'pic'   => '/assets/images/termite-inspection.jpg',
+                'color' => '#C2410C'
+            ];
+        case 'cockroach-control':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="13" rx="4" ry="7"/><path d="M12 6V3M8 4l2 2M16 4l-2 2"/><path d="M8 10l-5-2M8 13H2M8 16l-5 2"/><path d="M16 10l5-2M16 13h6M16 16l5 2"/></svg>',
+                'pic'   => '/assets/images/cockroach-control.jpg',
+                'color' => '#B45309'
+            ];
+        case 'bed-bug-control':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><path d="M6 14a6 6 0 0 0 12 0c0-3-2-5-6-5s-6 2-6 5z"/><path d="M9 14h6M9 17h6M12 9v11"/></svg>',
+                'pic'   => '/assets/images/hotel-hospitality.jpg',
+                'color' => '#DB2777'
+            ];
+        case 'stored-product-pests':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4 12h4M16 12h4"/><path d="M12 6a6 6 0 0 0-6 6v2a6 6 0 0 0 12 0v-2a6 6 0 0 0-6-6z"/></svg>',
+                'pic'   => '/assets/images/food-inspection.jpg',
+                'color' => '#D97706'
+            ];
         case 'rodent-control':
             return [
                 'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 2 5 5 5 9c0 3 1.5 5.5 3 7.5L7 21h10l-1-4.5c1.5-2 3-4.5 3-7.5 0-4-3-7-7-7z"/><circle cx="10" cy="9" r="1"/><circle cx="14" cy="9" r="1"/><path d="M8 12l-4 1M16 12l4 1"/></svg>',

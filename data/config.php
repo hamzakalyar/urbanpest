@@ -1,27 +1,25 @@
 <?php
 /**
- * UrbanPest — Central Application Configuration
- * Contains global settings for contact channels, WhatsApp integration, and security parameters.
+ * UrbanPest Melbourne — Central Application Configuration
+ * Operating exclusively across Greater Melbourne, Victoria, Australia.
  */
 
-// Default settings file path
 $settingsFile = __DIR__ . '/settings.json';
 
-// Default configuration parameters
 $defaultConfig = [
-    'company_name'    => 'UrbanPest Commercial Pest Control',
-    'phone_display'   => '+44 (0) 800 246 8000',
-    'phone_raw'       => '+448002468000',
-    'email_contact'   => 'commercial@urbanpest.com',
-    'whatsapp_number' => '+447946099100', // Configurable via Admin Panel
-    'whatsapp_msg'    => 'Hello UrbanPest, I would like to request an assessment for commercial pest control at my facility.',
-    'emergency_phone' => '+44 (0) 800 246 9999',
+    'company_name'    => 'UrbanPest Melbourne Commercial Pest Control',
+    'phone_display'   => '+61 410 148 126',
+    'phone_raw'       => '+61410148126',
+    'email_contact'   => 'commercial@urbanpest.com.au',
+    'whatsapp_number' => '+61410148126',
+    'whatsapp_msg'    => 'Hello UrbanPest Melbourne, I would like to request a commercial pest inspection for our facility.',
+    'emergency_phone' => '+61 410 148 126',
+    'headquarters'    => 'Level 14, 380 Docklands Drive, Melbourne VIC 3008',
+    'service_area'    => 'Greater Melbourne & Regional Victoria Commercial Hubs',
     'admin_username'  => 'admin',
-    // Default hash for 'UrbanPest2026!'
-    'admin_password_hash' => '$2y$10$f3N9YQh6jK5u9B8O3KkJQ.E2D9v6rS/YhKqX6aZ/0q2O9l5j8s1uG' 
+    'admin_password_hash' => '$2y$10$f3N9YQh6jK5u9B8O3KkJQ.E2D9v6rS/YhKqX6aZ/0q2O9l5j8s1uG'
 ];
 
-// Load overrides if settings.json exists
 if (file_exists($settingsFile)) {
     $savedSettings = @json_decode(file_get_contents($settingsFile), true);
     if (is_array($savedSettings)) {
@@ -30,14 +28,19 @@ if (file_exists($settingsFile)) {
         $appConfig = $defaultConfig;
     }
 } else {
-    // Generate initial valid bcrypt hash for 'UrbanPest2026!'
     $defaultConfig['admin_password_hash'] = password_hash('UrbanPest2026!', PASSWORD_DEFAULT);
-    @file_put_contents($settingsFile, json_encode($defaultConfig, JSON_PRETTY_PRINT));
+    @file_put_contents($settingsFile, json_encode($defaultConfig, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
     $appConfig = $defaultConfig;
 }
 
+// Ensure phone and WhatsApp are set to Melbourne numbers
+$appConfig['phone_display']   = '+61 410 148 126';
+$appConfig['phone_raw']       = '+61410148126';
+$appConfig['whatsapp_number'] = '+61410148126';
+$appConfig['headquarters']    = 'Level 14, 380 Docklands Drive, Melbourne VIC 3008';
+
 /**
- * Helper to build custom WhatsApp link with prefilled text
+ * Helper to build custom WhatsApp link with prefilled text for Melbourne clients
  */
 function getWhatsAppLink($serviceName = '', $customMsg = '') {
     global $appConfig;
@@ -46,7 +49,7 @@ function getWhatsAppLink($serviceName = '', $customMsg = '') {
     if (!empty($customMsg)) {
         $text = $customMsg;
     } elseif (!empty($serviceName)) {
-        $text = "Hello UrbanPest, I would like to request a commercial survey & quote for {$serviceName}.";
+        $text = "Hello UrbanPest Melbourne, I would like to request a commercial survey & quote for {$serviceName} at our Melbourne premises.";
     } else {
         $text = $appConfig['whatsapp_msg'];
     }
