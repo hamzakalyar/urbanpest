@@ -34,8 +34,8 @@ $heroStatLabel   = 'Estimated Read Time';
 $heroCtaText     = 'Read Full Article';
 $heroCtaLink     = '#article-body';
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'Insights', 'url' => '/insights.php'],
+    ['label' => 'Home', 'url' => '/'],
+    ['label' => 'Insights', 'url' => '/insights'],
     ['label' => $post['category']]
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -89,7 +89,7 @@ include __DIR__ . '/partials/page-hero.php';
               <div class="blog-card-meta">
                 <span><?php echo date('M j, Y', strtotime($related['date'])); ?></span>
               </div>
-              <h3><a href="/insights-single.php?slug=<?php echo urlencode($related['slug']); ?>"><?php echo htmlspecialchars($related['title']); ?></a></h3>
+              <h3><a href="/insights/<?php echo urlencode($related['slug']); ?>"><?php echo htmlspecialchars($related['title']); ?></a></h3>
             </div>
           </article>
         <?php endforeach; ?>

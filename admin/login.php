@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
 
       <div style="margin-top: 20px; text-align: center;">
-        <a href="/index.php" style="font-size: 0.825rem; color: var(--admin-text-muted); text-decoration: none;">← Return to UrbanPest Main Website</a>
+        <a href="/" style="font-size: 0.825rem; color: var(--admin-text-muted); text-decoration: none;">← Return to UrbanPest Main Website</a>
       </div>
     </div>
   </div>

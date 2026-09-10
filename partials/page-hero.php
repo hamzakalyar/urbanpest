@@ -29,12 +29,12 @@ $heroImage       = !empty($heroImage) ? $heroImage : '/assets/images/hero-techni
 $heroStatVal           = !empty($heroStatVal) ? $heroStatVal : 'Same-Day';
 $heroStatLabel         = !empty($heroStatLabel) ? $heroStatLabel : 'Service Dispatch';
 $heroCtaText           = !empty($heroCtaText) ? $heroCtaText : 'Request Residential Survey';
-$heroCtaLink           = !empty($heroCtaLink) ? $heroCtaLink : '/book.php?type=residential';
+$heroCtaLink           = !empty($heroCtaLink) ? $heroCtaLink : '/book?type=residential';
 $heroCtaCommercialText = !empty($heroCtaCommercialText) ? $heroCtaCommercialText : 'Request Commercial Survey';
-$heroCtaCommercialLink = !empty($heroCtaCommercialLink) ? $heroCtaCommercialLink : '/book.php?type=commercial';
+$heroCtaCommercialLink = !empty($heroCtaCommercialLink) ? $heroCtaCommercialLink : '/book?type=commercial';
 $heroWaLink            = !empty($heroWaLink) ? $heroWaLink : getWhatsAppLink($heroTitle);
 $heroBreadcrumbs       = !empty($heroBreadcrumbs) ? $heroBreadcrumbs : [
-    ['label' => 'Home', 'url' => '/index.php'],
+    ['label' => 'Home', 'url' => '/'],
     ['label' => $heroTitle]
 ];
 ?>

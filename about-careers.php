@@ -18,8 +18,8 @@ $heroStatLabel   = 'WA Licensed Technicians';
 $heroCtaText     = 'View Open Positions';
 $heroCtaLink     = '#openings';
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'About', 'url' => '/about.php'],
+    ['label' => 'Home', 'url' => '/'],
+    ['label' => 'About', 'url' => '/about'],
     ['label' => 'Careers']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -79,7 +79,7 @@ include __DIR__ . '/partials/page-hero.php';
     $ctaTitle  = 'Don\'t See the Right Role?';
     $ctaText   = 'We\'re always looking for talented people. Send us your CV and we\'ll keep you in mind for future opportunities.';
     $ctaLabel  = 'Submit Your CV';
-    $ctaLink   = '/contact.php';
+    $ctaLink   = '/contact';
     $ctaLabel2 = ''; $ctaLink2 = '';
     include __DIR__ . '/partials/cta-banner.php';
     ?>

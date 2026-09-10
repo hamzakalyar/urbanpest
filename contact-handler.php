@@ -14,27 +14,27 @@ emitSecurityHeaders();
 
 // 1. Only accept POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: /contact.php');
+    header('Location: /contact');
     exit;
 }
 
 // 2. Honeypot check (anti-bot trap)
 if (isHoneypotTriggered()) {
     // Silently redirect bots to success to prevent probing
-    header('Location: /contact.php?success=1');
+    header('Location: /contact?success=1');
     exit;
 }
 
 // 3. Rate limiting (max 5 submissions per 60 seconds per session/IP)
 if (isRateLimited('contact', 5, 60)) {
-    header('Location: /contact.php?error=ratelimit');
+    header('Location: /contact?error=ratelimit');
     exit;
 }
 
 // 4. CSRF token validation
 $csrfToken = $_POST['csrf_token'] ?? '';
 if (!verifyCSRFToken($csrfToken)) {
-    header('Location: /contact.php?error=csrf');
+    header('Location: /contact?error=csrf');
     exit;
 }
 
@@ -84,7 +84,7 @@ if (!empty($errors)) {
         'service' => $service,
         'message' => $message
     ];
-    header('Location: /contact.php?error=validation');
+    header('Location: /contact?error=validation');
     exit;
 }
 
@@ -152,5 +152,5 @@ $logEntry = date('Y-m-d H:i:s') . " | {$newLead['id']} | {$name} | {$company} | 
 // 10. Success redirect
 unset($_SESSION['form_errors']);
 unset($_SESSION['form_old']);
-header('Location: /contact.php?success=1');
+header('Location: /contact?success=1');
 exit;

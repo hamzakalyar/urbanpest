@@ -34,11 +34,11 @@ $heroImage       = isset($sector['image']) ? $sector['image'] : '/assets/images/
 $heroStatVal     = isset($sector['stat_val']) ? $sector['stat_val'] : '99.8%';
 $heroStatLabel   = isset($sector['stat_label']) ? $sector['stat_label'] : 'Audit Compliance Rate';
 $heroCtaText     = 'Request ' . $sector['name'] . ' Survey';
-$heroCtaLink     = '/contact.php?sector=' . urlencode($sector['slug']);
+$heroCtaLink     = '/contact?sector=' . urlencode($sector['slug']);
 $heroWaLink      = getWhatsAppLink($sector['name'] . ' Pest Service');
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'Industries', 'url' => '/industries.php'],
+    ['label' => 'Home', 'url' => '/'],
+    ['label' => 'Industries', 'url' => '/industries'],
     ['label' => $sector['name']]
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -131,7 +131,7 @@ include __DIR__ . '/partials/page-hero.php';
     $ctaTitle  = 'Protect Your ' . $sector['name'] . ' Operations';
     $ctaText   = 'Our sector specialists will design a pest management program tailored to your specific risks, regulatory standards, and operational needs.';
     $ctaLabel  = 'Get a Tailored Proposal';
-    $ctaLink   = '/contact.php';
+    $ctaLink   = '/contact';
     $ctaLabel2 = '';
     $ctaLink2  = '';
     include __DIR__ . '/partials/cta-banner.php';

@@ -25,7 +25,7 @@ require_once __DIR__ . '/../data/config.php';
         <div class="footer-grid">
           <!-- Brand Column -->
           <div class="footer-brand">
-            <a href="/index.php" class="logo" aria-label="UrbanX Pest Control" style="display: inline-block; background: #FFFFFF; padding: 10px 18px; border-radius: 10px; margin-bottom: 8px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);">
+            <a href="/" class="logo" aria-label="UrbanX Pest Control" style="display: inline-block; background: #FFFFFF; padding: 10px 18px; border-radius: 10px; margin-bottom: 8px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);">
               <img src="/assets/images/logo-horizontal.png" alt="UrbanX Pest Control" class="footer-logo-img" style="height: 42px; width: auto; display: block; object-fit: contain;">
             </a>
             <p style="margin-top: 12px; color: #94A3B8; font-size: 0.875rem; line-height: 1.6;">
@@ -90,13 +90,13 @@ require_once __DIR__ . '/../data/config.php';
           <div class="footer-col">
             <h5>Why Choose UrbanX</h5>
             <ul>
-              <li><a href="/about.php">Licensed Professional</a></li>
-              <li><a href="/about-sustainability.php">Safe & Responsible Practices</a></li>
-              <li><a href="/services.php">Residential & Commercial</a></li>
-              <li><a href="/book.php">Tailored Treatment Plans</a></li>
-              <li><a href="/contact.php">Clear Upfront Pricing</a></li>
-              <li><a href="/about-locations.php">Perth Service Areas</a></li>
-              <li><a href="/insights.php">Pest Identification Guides</a></li>
+              <li><a href="/about">Licensed Professional</a></li>
+              <li><a href="/about/sustainability">Safe & Responsible Practices</a></li>
+              <li><a href="/services">Residential & Commercial</a></li>
+              <li><a href="/book">Tailored Treatment Plans</a></li>
+              <li><a href="/contact">Clear Upfront Pricing</a></li>
+              <li><a href="/about/locations">Perth Service Areas</a></li>
+              <li><a href="/insights">Pest Identification Guides</a></li>
             </ul>
           </div>
 
@@ -108,7 +108,7 @@ require_once __DIR__ . '/../data/config.php';
               <strong style="color: #fff; font-size: 0.925rem; display: block; margin-bottom: 4px;">Fast Local Dispatch</strong>
               <p style="font-size: 0.775rem; color: #94A3B8; margin: 0;">Perth CBD, Inner Suburbs, North, South East, Eastern & Western Suburbs.</p>
             </div>
-            <a href="/book.php" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;">Book Pest Assessment</a>
+            <a href="/book" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;">Book Pest Assessment</a>
           </div>
         </div>
 

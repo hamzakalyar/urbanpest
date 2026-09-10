@@ -4,6 +4,15 @@
 RewriteEngine On
 RewriteBase /
 
+# Canonical 301: Redirect /index.php to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php[?\s] [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Canonical 301: Redirect /page.php to /page (excluding admin and handlers)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^/?]+)\.php[?\s] [NC]
+RewriteCond %{REQUEST_URI} !^/(admin|booking-handler|contact-handler|auth-handler) [NC]
+RewriteRule ^([^/?]+)\.php$ /$1 [R=301,L,QSA]
+
 # Services clean URLs
 RewriteRule ^services/?$ /services.php [L]
 RewriteRule ^services/([a-z0-9-]+)/?$ /services-single.php?slug=$1 [L,QSA]
@@ -12,21 +21,26 @@ RewriteRule ^services/([a-z0-9-]+)/?$ /services-single.php?slug=$1 [L,QSA]
 RewriteRule ^industries/?$ /industries.php [L]
 RewriteRule ^industries/([a-z0-9-]+)/?$ /industries-single.php?slug=$1 [L,QSA]
 
-# About clean URLs
+# About clean URLs (supports both /about/locations and /about-locations)
 RewriteRule ^about/?$ /about.php [L]
 RewriteRule ^about/sustainability/?$ /about-sustainability.php [L]
+RewriteRule ^about-sustainability/?$ /about-sustainability.php [L]
 RewriteRule ^about/innovation/?$ /about-innovation.php [L]
+RewriteRule ^about-innovation/?$ /about-innovation.php [L]
 RewriteRule ^about/locations/?$ /about-locations.php [L]
+RewriteRule ^about-locations/?$ /about-locations.php [L]
 RewriteRule ^about/careers/?$ /about-careers.php [L]
+RewriteRule ^about-careers/?$ /about-careers.php [L]
 
 # Insights clean URLs
 RewriteRule ^insights/?$ /insights.php [L,QSA]
 RewriteRule ^insights/([a-z0-9-]+)/?$ /insights-single.php?slug=$1 [L,QSA]
 
 # Contact
-RewriteRule ^contact/?$ /contact.php [L]
+RewriteRule ^contact/?$ /contact.php [L,QSA]
 
 # Book Service
+RewriteRule ^book/([a-z0-9-]+)/?$ /book.php?service=$1 [L,QSA]
 RewriteRule ^book/?$ /book.php [L,QSA]
 
 # Admin

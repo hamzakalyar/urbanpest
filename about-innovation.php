@@ -18,8 +18,8 @@ $heroStatLabel   = 'Licensed WA Standards';
 $heroCtaText     = 'Explore Our Approach';
 $heroCtaLink     = '#connect-platform';
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'About', 'url' => '/about.php'],
+    ['label' => 'Home', 'url' => '/'],
+    ['label' => 'About', 'url' => '/about'],
     ['label' => 'Innovation & Technology']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -96,7 +96,7 @@ include __DIR__ . '/partials/page-hero.php';
     $ctaTitle  = 'See UrbanX in Action';
     $ctaText   = 'Schedule an on-site inspection with our licensed Perth pest technicians and discover how safe, responsible management protects your property.';
     $ctaLabel  = 'Book an Inspection';
-    $ctaLink   = '/book.php';
+    $ctaLink   = '/book';
     $ctaLabel2 = ''; $ctaLink2 = '';
     include __DIR__ . '/partials/cta-banner.php';
     ?>

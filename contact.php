@@ -24,7 +24,7 @@ $selectedService = $_GET['service'] ?? '';
 
 // Direct routing: If requesting for a specific particular service, route directly to the dedicated service booking form!
 if (!empty($selectedService) && empty($_GET['success']) && empty($_GET['error'])) {
-    header('Location: /book.php?service=' . urlencode($selectedService));
+    header('Location: /book?service=' . urlencode($selectedService));
     exit;
 }
 
@@ -42,10 +42,10 @@ $heroImage       = '/assets/images/customer-dispatch.jpg';
 $heroStatVal     = '+61 410 148 126';
 $heroStatLabel   = 'Perth Direct Line';
 $heroCtaText     = 'Book Inspection';
-$heroCtaLink     = '/book.php';
+$heroCtaLink     = '/book';
 $heroWaLink      = getWhatsAppLink('General Pest Enquiry');
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
+    ['label' => 'Home', 'url' => '/'],
     ['label' => 'Contact & Quotes']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -58,7 +58,7 @@ include __DIR__ . '/partials/page-hero.php';
       <p style="margin: 0; font-size: 0.88rem; color: #334155; line-height: 1.5;">
         <strong>Western Australian Regulatory Compliance:</strong> Pest management services are provided in accordance with the requirements of the relevant Western Australian pest management licence and applicable legislation.
       </p>
-      <a href="/book.php" class="btn btn-sm btn-primary">Book Online</a>
+      <a href="/book" class="btn btn-sm btn-primary">Book Online</a>
     </div>
   </div>
 </section>

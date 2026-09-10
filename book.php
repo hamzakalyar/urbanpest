@@ -101,7 +101,7 @@ include __DIR__ . '/partials/header.php';
               <a href="<?php echo htmlspecialchars(getWhatsAppLink($serviceName)); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
                 Chat on WhatsApp Now
               </a>
-              <a href="/services.php" class="btn btn-outline">
+              <a href="/services" class="btn btn-outline">
                 Browse All Services
               </a>
             </div>

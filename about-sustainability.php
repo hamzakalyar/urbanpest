@@ -16,10 +16,10 @@ $heroWatermark   = 'RESPONSIBLE';
 $heroStatVal     = '100%';
 $heroStatLabel   = 'Western Australian Regulatory Compliance';
 $heroCtaText     = 'Contact Our Team';
-$heroCtaLink     = '/contact.php';
+$heroCtaLink     = '/contact';
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'About', 'url' => '/about.php'],
+    ['label' => 'Home', 'url' => '/'],
+    ['label' => 'About', 'url' => '/about'],
     ['label' => 'Safe Practices']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -77,7 +77,7 @@ include __DIR__ . '/partials/page-hero.php';
     $ctaTitle  = 'Partner with a Sustainable Provider';
     $ctaText   = 'Choosing UrbanPest supports your own ESG targets. We provide carbon impact reporting as part of our standard service.';
     $ctaLabel  = 'Learn More';
-    $ctaLink   = '/contact.php';
+    $ctaLink   = '/contact';
     $ctaLabel2 = ''; $ctaLink2 = '';
     include __DIR__ . '/partials/cta-banner.php';
     ?>

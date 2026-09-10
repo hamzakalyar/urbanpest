@@ -13,7 +13,7 @@
 
 $ctaTitle  = $ctaTitle ?? 'Ready to Protect Your Business?';
 $ctaText   = $ctaText ?? 'Get in touch with our team to discuss a tailored pest management program for your facilities.';
-$ctaLink   = $ctaLink ?? '/contact.php';
+$ctaLink   = $ctaLink ?? '/contact';
 $ctaLabel  = $ctaLabel ?? 'Get a Free Consultation';
 $ctaLink2  = $ctaLink2 ?? '';
 $ctaLabel2 = $ctaLabel2 ?? '';

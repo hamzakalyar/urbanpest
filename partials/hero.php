@@ -15,9 +15,9 @@
 $heroTitle             = $heroTitle ?? 'Protecting What Matters Most';
 $heroSubtitle          = $heroSubtitle ?? '';
 $heroCta               = $heroCta ?? 'Request Residential Survey';
-$heroCtaLink           = $heroCtaLink ?? '/book.php?type=residential';
+$heroCtaLink           = $heroCtaLink ?? '/book?type=residential';
 $heroCtaCommercial     = $heroCtaCommercial ?? 'Request Commercial Survey';
-$heroCtaCommercialLink = $heroCtaCommercialLink ?? '/book.php?type=commercial';
+$heroCtaCommercialLink = $heroCtaCommercialLink ?? '/book?type=commercial';
 $heroCta2              = $heroCta2 ?? '';
 $heroCtaLink2          = $heroCtaLink2 ?? '#';
 $heroLabel             = $heroLabel ?? '';

@@ -24,10 +24,10 @@ $heroImage       = '/assets/images/hero-technician.jpg';
 $heroStatVal     = '100%';
 $heroStatLabel   = 'Western Australian Licensing Compliance';
 $heroCtaText     = 'Explore All Services';
-$heroCtaLink     = '/services.php';
+$heroCtaLink     = '/services';
 $heroWaLink      = getWhatsAppLink('UrbanX Company Enquiry');
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
+    ['label' => 'Home', 'url' => '/'],
     ['label' => 'About UrbanX']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -40,7 +40,7 @@ include __DIR__ . '/partials/page-hero.php';
       <p style="margin: 0; font-size: 0.88rem; color: #334155; line-height: 1.5;">
         <strong>Western Australian Regulatory Compliance:</strong> Pest management services are provided in accordance with the requirements of the relevant Western Australian pest management licence and applicable legislation.
       </p>
-      <a href="/book.php" class="btn btn-sm btn-primary">Book Online</a>
+      <a href="/book" class="btn btn-sm btn-primary">Book Online</a>
     </div>
   </div>
 </section>

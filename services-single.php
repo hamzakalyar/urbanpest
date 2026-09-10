@@ -36,8 +36,8 @@ $heroCtaLink     = '#apply-service';
 $heroBookingSlug = $service['slug'];
 $heroWaLink      = $serviceWhatsAppLink;
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'Pest Services', 'url' => '/services.php'],
+    ['label' => 'Home', 'url' => '/'],
+    ['label' => 'Pest Services', 'url' => '/services'],
     ['label' => $service['name']]
 ];
 include __DIR__ . '/partials/page-hero.php';

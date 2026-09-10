@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         echo json_encode(['success' => false, 'message' => 'Method not allowed.']);
         exit;
     }
-    header('Location: /index.php');
+    header('Location: /');
     exit;
 }
 
@@ -35,7 +35,7 @@ if (isHoneypotTriggered()) {
         echo json_encode(['success' => true, 'ticket_no' => 'US-' . strtoupper(substr(uniqid(), -6)), 'message' => 'Booking received.']);
         exit;
     }
-    header('Location: /book.php?booking_success=1');
+    header('Location: /book?booking_success=1');
     exit;
 }
 
@@ -47,7 +47,7 @@ if (isRateLimited('booking', 6, 60)) {
         echo json_encode(['success' => false, 'message' => 'Too many requests. Please wait a minute and try again.']);
         exit;
     }
-    header('Location: /book.php?error=ratelimit');
+    header('Location: /book?error=ratelimit');
     exit;
 }
 
@@ -92,7 +92,7 @@ if (!empty($errors)) {
     }
     $_SESSION['booking_errors'] = $errors;
     $_SESSION['booking_old'] = $_POST;
-    header('Location: /book.php?service=' . urlencode($serviceSlug) . '&error=validation');
+    header('Location: /book?service=' . urlencode($serviceSlug) . '&error=validation');
     exit;
 }
 
@@ -219,5 +219,5 @@ if ($isAjax) {
 
 unset($_SESSION['booking_errors']);
 unset($_SESSION['booking_old']);
-header('Location: /book.php?booking_success=1&ticket=' . urlencode($ticketNo) . '&service=' . urlencode($serviceSlug));
+header('Location: /book?booking_success=1&ticket=' . urlencode($ticketNo) . '&service=' . urlencode($serviceSlug));
 exit;

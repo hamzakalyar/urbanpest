@@ -23,12 +23,12 @@ $heroImage       = '/assets/images/hero-technician.jpg';
 $heroStatVal           = '100%';
 $heroStatLabel         = 'Western Australian Licensing Compliance';
 $heroCtaText           = 'Request Residential Survey';
-$heroCtaLink           = '/book.php?type=residential';
+$heroCtaLink           = '/book?type=residential';
 $heroCtaCommercialText = 'Request Commercial Survey';
-$heroCtaCommercialLink = '/book.php?type=commercial';
+$heroCtaCommercialLink = '/book?type=commercial';
 $heroWaLink            = getWhatsAppLink('Perth Pest Management Services');
 $heroBreadcrumbs       = [
-    ['label' => 'Home', 'url' => '/index.php'],
+    ['label' => 'Home', 'url' => '/'],
     ['label' => 'Pest Management Services']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -48,8 +48,8 @@ include __DIR__ . '/partials/page-hero.php';
         </div>
       </div>
       <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-        <a href="/book.php?type=residential" class="btn btn-sm btn-primary">Residential Survey</a>
-        <a href="/book.php?type=commercial" class="btn btn-sm btn-outline" style="border-color: #CBD5E1; color: #0B1F3A;">Commercial Survey</a>
+        <a href="/book?type=residential" class="btn btn-sm btn-primary">Residential Survey</a>
+        <a href="/book?type=commercial" class="btn btn-sm btn-outline" style="border-color: #CBD5E1; color: #0B1F3A;">Commercial Survey</a>
       </div>
     </div>
   </div>
@@ -119,9 +119,9 @@ include __DIR__ . '/partials/page-hero.php';
     $ctaTitle  = 'Need a Tailored Pest Solution?';
     $ctaText   = 'Every property is unique. Our licensed Perth specialists will design a pest management program matched to your property, pest species, and requirements.';
     $ctaLabel  = 'Request Residential Survey';
-    $ctaLink   = '/book.php?type=residential';
+    $ctaLink   = '/book?type=residential';
     $ctaLabel2 = 'Request Commercial Survey';
-    $ctaLink2  = '/book.php?type=commercial';
+    $ctaLink2  = '/book?type=commercial';
     include __DIR__ . '/partials/cta-banner.php';
     ?>
   </div>

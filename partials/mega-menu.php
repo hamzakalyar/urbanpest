@@ -26,7 +26,7 @@ require_once __DIR__ . '/../data/config.php';
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span><?php echo htmlspecialchars($appConfig['phone_display'] ?? '+61 410 148 126'); ?></span>
         </a>
-        <a href="/about-locations.php" class="util-link hide-mobile" title="Perth Coverage">
+        <a href="/about/locations" class="util-link hide-mobile" title="Perth Coverage">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           <span>Perth Service Areas</span>
         </a>
@@ -34,7 +34,7 @@ require_once __DIR__ . '/../data/config.php';
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           <span>Search</span>
         </button>
-        <a href="/contact.php" class="util-link hide-mobile" title="Contact Us">
+        <a href="/contact" class="util-link hide-mobile" title="Contact Us">
           <span>Contact</span>
         </a>
       </div>
@@ -45,7 +45,7 @@ require_once __DIR__ . '/../data/config.php';
   <header class="main-header" role="banner">
     <div class="container header-container">
       <!-- Logo: Official UrbanX Pest Control -->
-      <a href="/index.php" class="logo header-logo" aria-label="UrbanX Pest Control" style="display: flex; align-items: center; text-decoration: none;">
+      <a href="/" class="logo header-logo" aria-label="UrbanX Pest Control" style="display: flex; align-items: center; text-decoration: none;">
         <img src="/assets/images/logo-horizontal.png" alt="UrbanX Pest Control" class="logo-brand-img" height="48" style="height: 48px; width: auto; display: block; object-fit: contain;">
       </a>
 
@@ -80,7 +80,7 @@ require_once __DIR__ . '/../data/config.php';
                 </div>
               </div>
               <div class="dropdown-footer">
-                <a href="/services.php">View All Pest Management Services &rarr;</a>
+                <a href="/services">View All Pest Management Services &rarr;</a>
               </div>
             </div>
           </li>
@@ -109,7 +109,7 @@ require_once __DIR__ . '/../data/config.php';
                 </div>
               </div>
               <div class="dropdown-footer">
-                <a href="/industries.php">Explore All Business Sectors &rarr;</a>
+                <a href="/industries">Explore All Business Sectors &rarr;</a>
               </div>
             </div>
           </li>
@@ -122,25 +122,25 @@ require_once __DIR__ . '/../data/config.php';
             </button>
             <div class="mega-menu dropdown-panel" role="menu" aria-label="About UrbanX Pest Control">
               <div class="dropdown-simple">
-                <a href="/about.php" class="dropdown-link" role="menuitem">Our Company & Operations</a>
-                <a href="/about-sustainability.php" class="dropdown-link" role="menuitem">Sustainability & Responsible Practices</a>
-                <a href="/about-locations.php" class="dropdown-link" role="menuitem">Perth Service Areas</a>
-                <a href="/about-innovation.php" class="dropdown-link" role="menuitem">UrbanX Service Platform</a>
-                <a href="/about-careers.php" class="dropdown-link" role="menuitem">Careers</a>
+                <a href="/about" class="dropdown-link" role="menuitem">Our Company & Operations</a>
+                <a href="/about/sustainability" class="dropdown-link" role="menuitem">Sustainability & Responsible Practices</a>
+                <a href="/about/locations" class="dropdown-link" role="menuitem">Perth Service Areas</a>
+                <a href="/about/innovation" class="dropdown-link" role="menuitem">UrbanX Service Platform</a>
+                <a href="/about/careers" class="dropdown-link" role="menuitem">Careers</a>
               </div>
             </div>
           </li>
 
           <!-- Blog Link -->
           <li class="nav-item <?php echo ($currentPage ?? '') === 'insights' ? 'current' : ''; ?>">
-            <a href="/insights.php" class="nav-link">Pest Insights</a>
+            <a href="/insights" class="nav-link">Pest Insights</a>
           </li>
         </ul>
       </nav>
 
       <!-- Right Header Actions -->
       <div class="header-actions">
-        <a href="/book.php" class="btn btn-primary btn-sm hide-mobile">Request Survey</a>
+        <a href="/book" class="btn btn-primary btn-sm hide-mobile">Request Survey</a>
 
         <!-- Mobile Hamburger Toggle -->
         <button class="mobile-toggle" aria-label="Open mobile menu" id="mobileToggle" type="button">
@@ -159,7 +159,7 @@ require_once __DIR__ . '/../data/config.php';
 <div class="mobile-nav-overlay" id="mobileOverlay"></div>
 <nav class="mobile-nav-drawer" id="mobileDrawer" role="navigation" aria-label="Mobile navigation">
   <div class="mobile-drawer__header">
-    <a href="/index.php" class="logo" aria-label="UrbanX Pest Control" style="display: block; margin: 0 auto;">
+    <a href="/" class="logo" aria-label="UrbanX Pest Control" style="display: block; margin: 0 auto;">
       <img src="/assets/images/logo-horizontal.png" alt="UrbanX Pest Control" style="height: 38px; width: auto; display: block; object-fit: contain;">
     </a>
     <button class="mobile-drawer__close" id="mobileClose" aria-label="Close menu" type="button">
@@ -185,7 +185,7 @@ require_once __DIR__ . '/../data/config.php';
         <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
       </button>
       <div class="mobile-submenu">
-        <a href="/services.php">All Services Overview</a>
+        <a href="/services">All Services Overview</a>
         <a href="/services/rodent-control">Rodent Control & Exclusion</a>
         <a href="/services/cockroach-control">Cockroach Control</a>
         <a href="/services/termite-control">Termite Management (AS 3660)</a>
@@ -204,24 +204,24 @@ require_once __DIR__ . '/../data/config.php';
         <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
       </button>
       <div class="mobile-submenu">
-        <a href="/about.php">Why Choose UrbanX</a>
-        <a href="/about-locations.php">Perth Service Areas</a>
-        <a href="/about-sustainability.php">Safe Practices & Environment</a>
-        <a href="/about-careers.php">Careers</a>
+        <a href="/about">Why Choose UrbanX</a>
+        <a href="/about/locations">Perth Service Areas</a>
+        <a href="/about/sustainability">Safe Practices & Environment</a>
+        <a href="/about/careers">Careers</a>
       </div>
     </li>
     <li class="mobile-nav-item">
-      <a href="/insights.php" class="mobile-nav-link">Pest Insights</a>
+      <a href="/insights" class="mobile-nav-link">Pest Insights</a>
     </li>
     <li class="mobile-nav-item">
-      <a href="/contact.php" class="mobile-nav-link">Contact & Quotes</a>
+      <a href="/contact" class="mobile-nav-link">Contact & Quotes</a>
     </li>
   </ul>
   <div style="padding: 16px; display: flex; flex-direction: column; gap: 8px;">
-    <a href="/book.php?type=residential" class="btn btn-primary open-booking-modal" data-property-type="residential" style="width:100%; justify-content:center;">
+    <a href="/book?type=residential" class="btn btn-primary open-booking-modal" data-property-type="residential" style="width:100%; justify-content:center;">
       Request Residential Survey
     </a>
-    <a href="/book.php?type=commercial" class="btn btn-outline open-booking-modal" data-property-type="commercial" style="width:100%; justify-content:center; border-color: #CBD5E1; color: #0B1F3A; font-weight:600;">
+    <a href="/book?type=commercial" class="btn btn-outline open-booking-modal" data-property-type="commercial" style="width:100%; justify-content:center; border-color: #CBD5E1; color: #0B1F3A; font-weight:600;">
       Request Commercial Survey
     </a>
   </div>

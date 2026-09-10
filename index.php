@@ -25,9 +25,9 @@ include __DIR__ . '/partials/header.php';
 $heroTitle             = 'Professional Pest Control Services across <span class="highlight">Perth</span>';
 $heroSubtitle          = 'At UrbanX Pest Control, we provide professional pest management services for residential and commercial properties across Perth. Science-led IPM, AS 3660 termite protection, and commercial perimeter biosecurity.';
 $heroCta               = 'Request Residential Survey';
-$heroCtaLink           = '/book.php?type=residential';
+$heroCtaLink           = '/book?type=residential';
 $heroCtaCommercial     = 'Request Commercial Survey';
-$heroCtaCommercialLink = '/book.php?type=commercial';
+$heroCtaCommercialLink = '/book?type=commercial';
 include __DIR__ . '/partials/hero.php';
 ?>
 
@@ -48,8 +48,8 @@ include __DIR__ . '/partials/hero.php';
         </div>
       </div>
       <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-        <a href="/book.php?type=residential" class="btn btn-sm btn-primary">Residential Survey</a>
-        <a href="/book.php?type=commercial" class="btn btn-sm btn-outline" style="border-color: #CBD5E1; color: #0B1F3A;">Commercial Survey</a>
+        <a href="/book?type=residential" class="btn btn-sm btn-primary">Residential Survey</a>
+        <a href="/book?type=commercial" class="btn btn-sm btn-outline" style="border-color: #CBD5E1; color: #0B1F3A;">Commercial Survey</a>
       </div>
     </div>
 
@@ -62,7 +62,7 @@ include __DIR__ . '/partials/hero.php';
         <div>
           <h3>Professional Pest Control Services</h3>
           <p>Comprehensive, integrated pest management programs for residential and commercial properties across Perth — from general household pests and insects to bird deterrent systems and specialized treatments.</p>
-          <a href="/services.php" class="link-arrow">
+          <a href="/services" class="link-arrow">
             Explore All 12 Pest Services
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
@@ -77,7 +77,7 @@ include __DIR__ . '/partials/hero.php';
         <div>
           <h3>Pest Monitoring & Management</h3>
           <p>Commercial bait stations, scheduled inspections, and structured service documentation deliver proactive site protection, trend insights, and certified compliance reporting across Perth facilities.</p>
-          <a href="/services-single.php?slug=smart-traps" class="link-arrow">
+          <a href="/services/smart-traps" class="link-arrow">
             Learn more
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
@@ -106,7 +106,7 @@ include __DIR__ . '/partials/hero.php';
               <span class="section-label">Targeted Technology</span>
               <h3>Precision Insect Trapping & Species Identification</h3>
               <p>Our specialized commercial monitors and targeted inspection protocols detect and accurately classify insect activity, giving you clear species-level data and actionable treatment recommendations without delay.</p>
-              <a href="/services-single.php?slug=smart-traps" class="btn btn-primary">Discover Insect Control</a>
+              <a href="/services/smart-traps" class="btn btn-primary">Discover Insect Control</a>
             </div>
             <div class="carousel-slide-image" style="background: url('/assets/images/smart-iot-trap.jpg') center/cover no-repeat;">
               <div class="slide-badge">Precision Monitoring Network</div>
@@ -121,7 +121,7 @@ include __DIR__ . '/partials/hero.php';
               <span class="section-label">Connected Monitoring</span>
               <h3>24/7 Connected Rodent Monitoring</h3>
               <p>Turn passive bait stations into active surveillance with motion and vibration sensors. Receive instant alerts, view activity heat-maps, and automate service scheduling based on real-time data.</p>
-              <a href="/services-single.php?slug=connected-rodent-monitoring" class="btn btn-primary">Explore Monitoring</a>
+              <a href="/services/connected-rodent-monitoring" class="btn btn-primary">Explore Monitoring</a>
             </div>
             <div class="carousel-slide-image" style="background: url('/assets/images/connected-monitoring.jpg') center/cover no-repeat;">
               <div class="slide-badge">Warehouse Protection</div>
@@ -136,7 +136,7 @@ include __DIR__ . '/partials/hero.php';
               <span class="section-label">Platform Update</span>
               <h3>UrbanPest Connect v3: Predictive Analytics</h3>
               <p>Our latest platform update introduces machine-learning-driven pest predictions. Anticipate seasonal trends, allocate resources proactively, and reduce emergency callouts by up to 40%.</p>
-              <a href="/about-innovation.php" class="btn btn-primary">Learn About Connect</a>
+              <a href="/about/innovation" class="btn btn-primary">Learn About Connect</a>
             </div>
             <div class="carousel-slide-image" style="background: url('/assets/images/digital-dashboard.jpg') center/cover no-repeat;">
               <div class="slide-badge">Connect™ Platform</div>
@@ -151,7 +151,7 @@ include __DIR__ . '/partials/hero.php';
               <span class="section-label">Eco Responsibility</span>
               <h3>Sustainable & Targeted Pest Solutions</h3>
               <p>Our Perth service team prioritises environmentally conscious integrated pest management — combining low-toxicity formulations, route optimisation, and non-chemical exclusion to protect both your business and the local community.</p>
-              <a href="/about-sustainability.php" class="btn btn-primary">Our Sustainability Approach</a>
+              <a href="/about/sustainability" class="btn btn-primary">Our Sustainability Approach</a>
             </div>
             <div class="carousel-slide-image" style="background: url('/assets/images/green-fleet.jpg') center/cover no-repeat;">
               <div class="slide-badge">Eco-Conscious Fleet</div>
@@ -230,9 +230,9 @@ include __DIR__ . '/partials/hero.php';
       $ctaTitle  = 'Partner with UrbanX Pest Control Today';
       $ctaText   = 'Discover how our science-led approach and licensed technicians can protect your home and business across Perth.';
       $ctaLabel  = 'Request Residential Survey';
-      $ctaLink   = '/book.php?type=residential';
+      $ctaLink   = '/book?type=residential';
       $ctaLabel2 = 'Request Commercial Survey';
-      $ctaLink2  = '/book.php?type=commercial';
+      $ctaLink2  = '/book?type=commercial';
       include __DIR__ . '/partials/cta-banner.php';
       ?>
     </div>
@@ -375,7 +375,7 @@ include __DIR__ . '/partials/hero.php';
             Humane Wildlife Deterrents
           </div>
         </div>
-        <a href="/about-sustainability.php" class="btn btn-outline-emerald">Our Sustainability Commitments</a>
+        <a href="/about/sustainability" class="btn btn-outline-emerald">Our Sustainability Commitments</a>
       </div>
     </div>
   </div>
@@ -392,23 +392,23 @@ include __DIR__ . '/partials/hero.php';
       <p class="section-subtitle centered">Providing fast, compliant pest management across Greater Perth and Western Australia commercial corridors.</p>
 
       <div class="region-grid">
-        <a href="/about-locations.php" class="region-item">
+        <a href="/about/locations" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           Perth CBD & Docklands
         </a>
-        <a href="/about-locations.php" class="region-item">
+        <a href="/about/locations" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           Inner Eastern Suburbs
         </a>
-        <a href="/about-locations.php" class="region-item">
+        <a href="/about/locations" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           Northern Commercial Corridor
         </a>
-        <a href="/about-locations.php" class="region-item">
+        <a href="/about/locations" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           Western Industrial Precincts
         </a>
-        <a href="/about-locations.php" class="region-item">
+        <a href="/about/locations" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           South East & Mornington
         </a>

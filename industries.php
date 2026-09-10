@@ -22,9 +22,9 @@ $heroWatermark   = 'INDUSTRIES';
 $heroStatVal     = '8 Sectors';
 $heroStatLabel   = 'Dedicated Industry Protocols';
 $heroCtaText     = 'Speak With A Sector Specialist';
-$heroCtaLink     = '/contact.php';
+$heroCtaLink     = '/contact';
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
+    ['label' => 'Home', 'url' => '/'],
     ['label' => 'Industries We Serve']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -35,7 +35,7 @@ include __DIR__ . '/partials/page-hero.php';
   <div class="container">
     <div class="grid grid-2 grid-gap-xl">
       <?php foreach ($sectors as $sector): ?>
-        <a href="/industries-single.php?slug=<?php echo urlencode($sector['slug']); ?>" class="service-card">
+        <a href="/industries/<?php echo urlencode($sector['slug']); ?>" class="service-card">
           <div class="service-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <?php
@@ -74,7 +74,7 @@ include __DIR__ . '/partials/page-hero.php';
     $ctaTitle  = 'Don\'t See Your Industry?';
     $ctaText   = 'We serve a wide range of commercial sectors. Whatever your environment, our specialists can design a program that fits.';
     $ctaLabel  = 'Talk to Our Team';
-    $ctaLink   = '/contact.php';
+    $ctaLink   = '/contact';
     $ctaLabel2 = '';
     $ctaLink2  = '';
     include __DIR__ . '/partials/cta-banner.php';

@@ -22,11 +22,11 @@ $heroImage       = '/assets/images/green-fleet.jpg';
 $heroStatVal     = '100%';
 $heroStatLabel   = 'Perth Scope';
 $heroCtaText     = 'Book Service in Your Suburb';
-$heroCtaLink     = '/book.php';
+$heroCtaLink     = '/book';
 $heroWaLink      = getWhatsAppLink('Perth Service Area Inquiry');
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'About', 'url' => '/about.php'],
+    ['label' => 'Home', 'url' => '/'],
+    ['label' => 'About', 'url' => '/about'],
     ['label' => 'Perth Areas']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -39,7 +39,7 @@ include __DIR__ . '/partials/page-hero.php';
       <p style="margin: 0; font-size: 0.88rem; color: #334155; line-height: 1.5;">
         <strong>Western Australian Regulatory Compliance:</strong> Pest management services are provided in accordance with the requirements of the relevant Western Australian pest management licence and applicable legislation.
       </p>
-      <a href="/book.php" class="btn btn-sm btn-primary">Book Online</a>
+      <a href="/book" class="btn btn-sm btn-primary">Book Online</a>
     </div>
   </div>
 </section>
@@ -120,7 +120,7 @@ include __DIR__ . '/partials/page-hero.php';
           </div>
 
           <div style="padding-top:14px; border-top:1px solid #F1F5F9; display:flex; align-items:center; justify-content:space-between; gap:10px;">
-            <a href="/book.php" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">
+            <a href="/book" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">
               Book Service
             </a>
             <a href="<?php echo htmlspecialchars(getWhatsAppLink($p['name'])); ?>" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding:6px 10px; border-radius:6px;" title="WhatsApp us about <?php echo htmlspecialchars($p['name']); ?>">
@@ -144,7 +144,7 @@ include __DIR__ . '/partials/page-hero.php';
       <a href="tel:<?php echo htmlspecialchars($appConfig['phone_raw'] ?? '+61410148126'); ?>" class="btn btn-primary">
         Call <?php echo htmlspecialchars($appConfig['phone_display'] ?? '+61 410 148 126'); ?>
       </a>
-      <a href="/contact.php" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);">
+      <a href="/contact" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);">
         Request Quote Online
       </a>
     </div>

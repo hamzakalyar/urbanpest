@@ -27,7 +27,7 @@ $heroStatLabel   = 'Peer-Reviewed Industry Guides';
 $heroCtaText     = 'Browse Knowledge Articles';
 $heroCtaLink     = '#articles';
 $heroBreadcrumbs = [
-    ['label' => 'Home', 'url' => '/index.php'],
+    ['label' => 'Home', 'url' => '/'],
     ['label' => 'Insights']
 ];
 include __DIR__ . '/partials/page-hero.php';
@@ -37,9 +37,9 @@ include __DIR__ . '/partials/page-hero.php';
   <div class="container">
     <!-- Category Filters -->
     <div class="blog-filters" id="blogFilters">
-      <a href="/insights.php" class="blog-filter-btn <?php echo $activeCategory === 'All' ? 'active' : ''; ?>">All</a>
+      <a href="/insights" class="blog-filter-btn <?php echo $activeCategory === 'All' ? 'active' : ''; ?>">All</a>
       <?php foreach ($blogCategories as $cat): ?>
-        <a href="/insights.php?cat=<?php echo urlencode($cat); ?>" class="blog-filter-btn <?php echo $activeCategory === $cat ? 'active' : ''; ?>">
+        <a href="/insights?cat=<?php echo urlencode($cat); ?>" class="blog-filter-btn <?php echo $activeCategory === $cat ? 'active' : ''; ?>">
           <?php echo htmlspecialchars($cat); ?>
         </a>
       <?php endforeach; ?>
@@ -61,7 +61,7 @@ include __DIR__ . '/partials/page-hero.php';
               <span><?php echo date('M j, Y', strtotime($post['date'])); ?></span>
               <span><?php echo $post['read_time']; ?></span>
             </div>
-            <h3><a href="/insights-single.php?slug=<?php echo urlencode($post['slug']); ?>"><?php echo htmlspecialchars($post['title']); ?></a></h3>
+            <h3><a href="/insights/<?php echo urlencode($post['slug']); ?>"><?php echo htmlspecialchars($post['title']); ?></a></h3>
             <p><?php echo htmlspecialchars($post['excerpt']); ?></p>
           </div>
         </article>
