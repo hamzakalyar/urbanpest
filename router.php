@@ -10,17 +10,46 @@ $uri = parse_url($rawUri, PHP_URL_PATH);
 $query = parse_url($rawUri, PHP_URL_QUERY);
 $queryString = $query ? '?' . $query : '';
 
-// Allow Admin Dashboard & Auth to run unhindered
+// ============================================
+// 0. ADMIN ROUTING & CANONICAL 301 REDIRECTS
+// ============================================
 if (strpos($uri, '/admin') === 0) {
-    $adminFilePath = __DIR__ . $uri;
-    if ($uri !== '/admin' && $uri !== '/admin/' && file_exists($adminFilePath) && !is_dir($adminFilePath)) {
-        return false;
+    // 301 Redirect /admin/index.php -> /admin
+    if (strcasecmp($uri, '/admin/index.php') === 0) {
+        header('Location: /admin' . $queryString, true, 301);
+        exit;
     }
+
+    // 301 Redirect /admin/{page}.php -> /admin/{page}
+    if (preg_match('#^/admin/([a-z0-9_-]+)\.php$#i', $uri, $m)) {
+        header('Location: /admin/' . strtolower($m[1]) . $queryString, true, 301);
+        exit;
+    }
+
+    // Root /admin or /admin/
     if ($uri === '/admin' || $uri === '/admin/') {
         require __DIR__ . '/admin/index.php';
         exit;
     }
-    return false;
+
+    // Clean admin pages: /admin/{page} -> admin/{page}.php
+    if (preg_match('#^/admin/([a-z0-9_-]+)/?$#i', $uri, $m)) {
+        $adminPhpFile = __DIR__ . '/admin/' . strtolower($m[1]) . '.php';
+        if (file_exists($adminPhpFile)) {
+            require $adminPhpFile;
+            exit;
+        }
+    }
+
+    // Static assets inside /admin if any
+    $adminFilePath = __DIR__ . $uri;
+    if (file_exists($adminFilePath) && !is_dir($adminFilePath)) {
+        return false;
+    }
+
+    http_response_code(404);
+    echo "Admin page not found.";
+    exit;
 }
 
 // Allow API/Form POST handlers

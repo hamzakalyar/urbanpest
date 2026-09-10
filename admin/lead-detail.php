@@ -28,7 +28,7 @@ foreach ($leads as $idx => $item) {
 }
 
 if ($targetIndex === -1) {
-    echo '<div class="admin-alert admin-alert-error">Lead not found. <a href="/admin/leads.php">Return to directory</a></div>';
+    echo '<div class="admin-alert admin-alert-error">Lead not found. <a href="/admin/leads">Return to directory</a></div>';
     require_once __DIR__ . '/footer.php';
     exit;
 }
@@ -79,7 +79,7 @@ $waLink = 'https://wa.me/' . preg_replace('/[^\d]/', '', $lead['phone']) . '?tex
 <?php echo $actionNotice; ?>
 
 <div style="margin-bottom: 20px;">
-  <a href="/admin/leads.php" style="color:var(--admin-text-muted); text-decoration:none; font-size:0.875rem; font-weight:500;">
+  <a href="/admin/leads" style="color:var(--admin-text-muted); text-decoration:none; font-size:0.875rem; font-weight:500;">
     ← Back to All Enquiries
   </a>
 </div>
@@ -149,7 +149,7 @@ $waLink = 'https://wa.me/' . preg_replace('/[^\d]/', '', $lead['phone']) . '?tex
         </div>
 
         <!-- Add Note Form -->
-        <form method="POST" action="/admin/lead-detail.php?id=<?php echo urlencode($lead['id']); ?>" style="display:flex; gap:10px;">
+        <form method="POST" action="/admin/lead-detail?id=<?php echo urlencode($lead['id']); ?>" style="display:flex; gap:10px;">
           <?php echo renderCSRFField(); ?>
           <input type="hidden" name="action" value="add_note">
           <input type="text" name="note_text" class="search-input" style="flex:1; width:auto;" placeholder="Add internal technician note or dispatch update..." required>
@@ -167,7 +167,7 @@ $waLink = 'https://wa.me/' . preg_replace('/[^\d]/', '', $lead['phone']) . '?tex
         <h3 class="admin-card-title" style="font-size:1rem;">Lifecycle Status</h3>
       </div>
       <div style="padding: 20px;">
-        <form method="POST" action="/admin/lead-detail.php?id=<?php echo urlencode($lead['id']); ?>">
+        <form method="POST" action="/admin/lead-detail?id=<?php echo urlencode($lead['id']); ?>">
           <?php echo renderCSRFField(); ?>
           <input type="hidden" name="action" value="update_status">
           <select name="status" class="filter-select" style="width:100%; margin-bottom:14px;">

@@ -87,7 +87,7 @@ $recentLeads = array_slice($allLeads, 0, 5);
         <h2 class="admin-card-title">Recent Commercial Enquiries</h2>
         <p style="font-size:0.8125rem; color:var(--admin-text-muted); margin-top:2px;">Live stream of requests arriving from website quote forms</p>
       </div>
-      <a href="/admin/leads.php" class="btn-admin btn-admin-outline" style="font-size:0.8rem;">View All (<?php echo $totalCount; ?>)</a>
+      <a href="/admin/leads" class="btn-admin btn-admin-outline" style="font-size:0.8rem;">View All (<?php echo $totalCount; ?>)</a>
     </div>
 
     <div class="table-responsive">
@@ -132,7 +132,7 @@ $recentLeads = array_slice($allLeads, 0, 5);
                 </td>
                 <td>
                   <div style="display:flex; align-items:center; gap:8px;">
-                    <a href="/admin/lead-detail.php?id=<?php echo urlencode($lead['id']); ?>" class="btn-admin btn-admin-outline" style="padding:4px 10px; font-size:0.75rem;">
+                    <a href="/admin/lead-detail?id=<?php echo urlencode($lead['id']); ?>" class="btn-admin btn-admin-outline" style="padding:4px 10px; font-size:0.75rem;">
                       Details
                     </a>
                     <?php if (!empty($lead['phone'])): ?>
@@ -184,7 +184,7 @@ $recentLeads = array_slice($allLeads, 0, 5);
         <p style="font-size:0.775rem; color:var(--admin-text-muted); line-height:1.5; margin-bottom:12px;">
           Active Number: <strong style="color:var(--admin-accent, #D91C24);"><?php echo htmlspecialchars($appConfig['whatsapp_number']); ?></strong>
         </p>
-        <a href="/admin/settings.php" class="btn-admin btn-admin-outline" style="width:100%; justify-content:center; font-size:0.775rem;">
+        <a href="/admin/settings" class="btn-admin btn-admin-outline" style="width:100%; justify-content:center; font-size:0.775rem;">
           Configure WhatsApp & Notifications →
         </a>
       </div>

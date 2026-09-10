@@ -15,8 +15,8 @@ emitSecurityHeaders();
  */
 function requireAdminAuth() {
     if (empty($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
-        $returnUrl = urlencode($_SERVER['REQUEST_URI'] ?? '/admin/index.php');
-        header('Location: /admin/login.php?return=' . $returnUrl);
+        $returnUrl = urlencode($_SERVER['REQUEST_URI'] ?? '/admin');
+        header('Location: /admin/login?return=' . $returnUrl);
         exit;
     }
 }
@@ -68,6 +68,6 @@ function adminLogout() {
         );
     }
     @session_destroy();
-    header('Location: /admin/login.php?logged_out=1');
+    header('Location: /admin/login?logged_out=1');
     exit;
 }

@@ -40,7 +40,7 @@ if (!$booking) {
 }
 
 if (!$booking) {
-    echo '<div class="admin-alert admin-alert-error">Booking not found. <a href="/admin/bookings.php">Return to bookings</a></div>';
+    echo '<div class="admin-alert admin-alert-error">Booking not found. <a href="/admin/bookings">Return to bookings</a></div>';
     require_once __DIR__ . '/footer.php';
     exit;
 }
@@ -133,7 +133,7 @@ $waLink = 'https://wa.me/' . preg_replace('/[^\d]/', '', $booking['phone'] ?? ''
 <?php echo $actionNotice; ?>
 
 <div style="margin-bottom: 16px;">
-  <a href="/admin/bookings.php" style="color: var(--admin-accent, #D91C24); text-decoration: none; font-size: 0.84rem; font-weight: 500;">
+  <a href="/admin/bookings" style="color: var(--admin-accent, #D91C24); text-decoration: none; font-size: 0.84rem; font-weight: 500;">
     ← Back to All Bookings
   </a>
 </div>

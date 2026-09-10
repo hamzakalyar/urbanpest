@@ -43,7 +43,7 @@ $currentPage = $adminCurrentPage ?? 'dashboard';
   <div class="admin-layout">
     <!-- Sidebar -->
     <aside class="admin-sidebar">
-      <a href="/admin/index.php" class="admin-brand">
+      <a href="/admin" class="admin-brand">
         <img src="/assets/images/logo-shield.png" alt="UrbanX Pest Control" style="height: 30px; width: auto; object-fit: contain; margin-right: 8px;">
         <div class="admin-brand-text">
           UrbanX <span>Admin</span>
@@ -51,12 +51,12 @@ $currentPage = $adminCurrentPage ?? 'dashboard';
       </a>
 
       <nav class="admin-nav">
-        <a href="/admin/index.php" class="admin-nav-item <?php echo ($currentPage === 'dashboard') ? 'active' : ''; ?>">
+        <a href="/admin" class="admin-nav-item <?php echo ($currentPage === 'dashboard') ? 'active' : ''; ?>">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
           Dashboard
         </a>
 
-        <a href="/admin/leads.php" class="admin-nav-item <?php echo ($currentPage === 'leads') ? 'active' : ''; ?>">
+        <a href="/admin/leads" class="admin-nav-item <?php echo ($currentPage === 'leads') ? 'active' : ''; ?>">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
           Enquiries & Leads
           <?php if ($newLeadsCount > 0): ?>
@@ -64,7 +64,7 @@ $currentPage = $adminCurrentPage ?? 'dashboard';
           <?php endif; ?>
         </a>
 
-        <a href="/admin/bookings.php" class="admin-nav-item <?php echo ($currentPage === 'bookings') ? 'active' : ''; ?>">
+        <a href="/admin/bookings" class="admin-nav-item <?php echo ($currentPage === 'bookings') ? 'active' : ''; ?>">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
           Bookings & Requests
           <?php if ($newLeadsCount > 0): ?>
@@ -72,17 +72,17 @@ $currentPage = $adminCurrentPage ?? 'dashboard';
           <?php endif; ?>
         </a>
 
-        <a href="/admin/services.php" class="admin-nav-item <?php echo ($currentPage === 'services') ? 'active' : ''; ?>">
+        <a href="/admin/services" class="admin-nav-item <?php echo ($currentPage === 'services') ? 'active' : ''; ?>">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
           Services
         </a>
 
-        <a href="/admin/export.php" class="admin-nav-item">
+        <a href="/admin/export" class="admin-nav-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
           Export Leads (CSV)
         </a>
 
-        <a href="/admin/settings.php" class="admin-nav-item <?php echo ($currentPage === 'settings') ? 'active' : ''; ?>">
+        <a href="/admin/settings" class="admin-nav-item <?php echo ($currentPage === 'settings') ? 'active' : ''; ?>">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
           Settings & WhatsApp
         </a>
@@ -106,7 +106,7 @@ $currentPage = $adminCurrentPage ?? 'dashboard';
             <div class="admin-user-role">Super Administrator</div>
           </div>
         </div>
-        <a href="/admin/logout.php" title="Sign Out" style="color:#94A3B8; display:flex; align-items:center;">
+        <a href="/admin/logout" title="Sign Out" style="color:#94A3B8; display:flex; align-items:center;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
         </a>
       </div>
@@ -117,11 +117,11 @@ $currentPage = $adminCurrentPage ?? 'dashboard';
       <header class="admin-topbar">
         <h1 class="admin-page-title"><?php echo htmlspecialchars($adminTitle ?? 'Dashboard'); ?></h1>
         <div class="admin-actions">
-          <a href="/admin/leads.php" class="btn-admin btn-admin-outline">
+          <a href="/admin/leads" class="btn-admin btn-admin-outline">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             View Leads
           </a>
-          <a href="/admin/export.php" class="btn-admin btn-admin-primary">
+          <a href="/admin/export" class="btn-admin btn-admin-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Export CSV
           </a>

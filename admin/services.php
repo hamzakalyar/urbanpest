@@ -232,7 +232,7 @@ $iconSvgs = [
   </div>
 
   <div style="padding: 24px;">
-    <form method="POST" action="/admin/services.php">
+    <form method="POST" action="/admin/services">
       <?php echo renderCSRFField(); ?>
       <input type="hidden" name="action" value="add_service">
 

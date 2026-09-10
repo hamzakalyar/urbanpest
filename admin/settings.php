@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <div style="padding: 24px;">
-      <form method="POST" action="/admin/settings.php">
+      <form method="POST" action="/admin/settings">
         <?php echo renderCSRFField(); ?>
         <input type="hidden" name="form_type" value="whatsapp_settings">
 
@@ -132,7 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <div style="padding: 24px;">
-      <form method="POST" action="/admin/settings.php">
+      <form method="POST" action="/admin/settings">
         <?php echo renderCSRFField(); ?>
         <input type="hidden" name="form_type" value="password_settings">
 

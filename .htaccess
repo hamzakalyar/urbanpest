@@ -43,8 +43,16 @@ RewriteRule ^contact/?$ /contact.php [L,QSA]
 RewriteRule ^book/([a-z0-9-]+)/?$ /book.php?service=$1 [L,QSA]
 RewriteRule ^book/?$ /book.php [L,QSA]
 
-# Admin
+# Admin Clean URLs & 301 Canonical Redirects
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/admin/index\.php[?\s] [NC]
+RewriteRule ^admin/index\.php$ /admin [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/admin/([a-z0-9_-]+)\.php[?\s] [NC]
+RewriteRule ^admin/([a-z0-9_-]+)\.php$ /admin/$1 [R=301,L,QSA]
+
 RewriteRule ^admin/?$ /admin/index.php [L]
+RewriteCond %{DOCUMENT_ROOT}/admin/$1.php -f
+RewriteRule ^admin/([a-z0-9_-]+)/?$ /admin/$1.php [L,QSA]
 
 # Prevent directory browsing
 Options -Indexes

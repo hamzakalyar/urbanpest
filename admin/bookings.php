@@ -377,7 +377,7 @@ foreach ($allRequests as $r) {
               </td>
               <td>
                 <div style="display: flex; align-items: center; gap: 6px; flex-wrap: nowrap;">
-                  <a href="/admin/booking-detail.php?id=<?php echo urlencode($req['id']); ?>" class="btn-admin btn-admin-outline" style="padding: 4px 10px; font-size: 0.72rem;">
+                  <a href="/admin/booking-detail?id=<?php echo urlencode($req['id']); ?>" class="btn-admin btn-admin-outline" style="padding: 4px 10px; font-size: 0.72rem;">
                     Details
                   </a>
                   <?php if (!empty($req['phone'])): ?>

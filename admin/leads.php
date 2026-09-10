@@ -95,7 +95,7 @@ $filteredLeads = array_filter($leads, function($lead) use ($filterStatus, $searc
     </div>
 
     <!-- Search and Filter Form -->
-    <form method="GET" action="/admin/leads.php" class="filter-bar">
+    <form method="GET" action="/admin/leads" class="filter-bar">
       <input type="text" name="q" class="search-input" placeholder="Search by name, company, email..." value="<?php echo htmlspecialchars($_GET['q'] ?? ''); ?>">
       
       <select name="status" class="filter-select" onchange="this.form.submit()">
@@ -110,7 +110,7 @@ $filteredLeads = array_filter($leads, function($lead) use ($filterStatus, $searc
 
       <button type="submit" class="btn-admin btn-admin-outline" style="padding:8px 12px;">Filter</button>
       <?php if (!empty($searchQuery) || $filterStatus !== 'all'): ?>
-        <a href="/admin/leads.php" class="btn-admin btn-admin-outline" style="padding:8px 12px; color:#DC2626;">Clear</a>
+        <a href="/admin/leads" class="btn-admin btn-admin-outline" style="padding:8px 12px; color:#DC2626;">Clear</a>
       <?php endif; ?>
     </form>
   </div>
@@ -165,7 +165,7 @@ $filteredLeads = array_filter($leads, function($lead) use ($filterStatus, $searc
               </td>
               <td>
                 <!-- Inline Status Changer -->
-                <form method="POST" action="/admin/leads.php" style="display:inline-block;">
+                <form method="POST" action="/admin/leads" style="display:inline-block;">
                   <?php echo renderCSRFField(); ?>
                   <input type="hidden" name="action" value="update_status">
                   <input type="hidden" name="lead_id" value="<?php echo htmlspecialchars($lead['id']); ?>">
@@ -181,7 +181,7 @@ $filteredLeads = array_filter($leads, function($lead) use ($filterStatus, $searc
               </td>
               <td>
                 <div style="display:flex; align-items:center; gap:8px;">
-                  <a href="/admin/lead-detail.php?id=<?php echo urlencode($lead['id']); ?>" class="btn-admin btn-admin-outline" style="padding:4px 10px; font-size:0.75rem;">
+                  <a href="/admin/lead-detail?id=<?php echo urlencode($lead['id']); ?>" class="btn-admin btn-admin-outline" style="padding:4px 10px; font-size:0.75rem;">
                     View & Notes
                   </a>
                   <?php if (!empty($lead['phone'])): ?>
@@ -191,7 +191,7 @@ $filteredLeads = array_filter($leads, function($lead) use ($filterStatus, $searc
                     </a>
                   <?php endif; ?>
                   <!-- Delete Action -->
-                  <form method="POST" action="/admin/leads.php" onsubmit="return confirm('Permanently delete this enquiry record?');" style="display:inline;">
+                  <form method="POST" action="/admin/leads" onsubmit="return confirm('Permanently delete this enquiry record?');" style="display:inline;">
                     <?php echo renderCSRFField(); ?>
                     <input type="hidden" name="action" value="delete_lead">
                     <input type="hidden" name="lead_id" value="<?php echo htmlspecialchars($lead['id']); ?>">

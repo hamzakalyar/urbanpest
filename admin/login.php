@@ -7,12 +7,12 @@ require_once __DIR__ . '/auth.php';
 
 // If already logged in, redirect to dashboard
 if (!empty($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
-    header('Location: /admin/index.php');
+    header('Location: /admin');
     exit;
 }
 
 $errorMsg = '';
-$returnUrl = $_GET['return'] ?? '/admin/index.php';
+$returnUrl = $_GET['return'] ?? '/admin';
 
 // Process login submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $result = attemptAdminLogin($username, $password);
         if ($result['success']) {
-            $dest = !empty($_POST['return']) ? $_POST['return'] : '/admin/index.php';
+            $dest = !empty($_POST['return']) ? $_POST['return'] : '/admin';
             header('Location: ' . $dest);
             exit;
         } else {
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
       <?php endif; ?>
 
-      <form method="POST" action="/admin/login.php">
+      <form method="POST" action="/admin/login">
         <?php echo renderCSRFField(); ?>
         <input type="hidden" name="return" value="<?php echo htmlspecialchars($returnUrl); ?>">
 
@@ -93,15 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </button>
       </form>
 
-      <div style="margin-top: 24px; padding: 12px 14px; background: #F8FAFC; border-radius: var(--radius-md); border: 1px dashed var(--admin-border); font-size: 0.775rem; color: var(--admin-text-muted); line-height: 1.5;">
-        <strong style="color:var(--admin-navy);">Default Access:</strong><br>
-        Username: <code style="background:#E2E8F0; padding:1px 4px; border-radius:4px; color:#0F172A;">admin</code><br>
-        Password: <code style="background:#E2E8F0; padding:1px 4px; border-radius:4px; color:#0F172A;">UrbanPest2026!</code>
-        <div style="margin-top:4px; font-size:0.725rem;">(Can be changed anytime under Settings)</div>
-      </div>
-
-      <div style="margin-top: 20px; text-align: center;">
-        <a href="/" style="font-size: 0.825rem; color: var(--admin-text-muted); text-decoration: none;">← Return to UrbanPest Main Website</a>
+      <div style="margin-top: 24px; text-align: center;">
+        <a href="/" style="font-size: 0.825rem; color: var(--admin-text-muted); text-decoration: none;">← Return to UrbanX Main Website</a>
       </div>
     </div>
   </div>
