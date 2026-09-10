@@ -9,7 +9,7 @@
         "service": "cockroach-control",
         "service_name": "Commercial Cockroach Control",
         "message": "Booking Request [UP-4A500C] | Urgency: Within 24-48 Hours | Facility: Residential / Strata | Preferred: 2026-09-08 Morning (07:00 \u2013 11:00) | Notes: j",
-        "status": "new",
+        "status": "contacted",
         "technician": "Unassigned",
         "ip": "::1",
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
@@ -18,6 +18,11 @@
                 "date": "2026-09-07 15:20:20",
                 "author": "System",
                 "text": "Direct service booking request for Commercial Cockroach Control (Within 24-48 Hours) received."
+            },
+            {
+                "date": "2026-09-10 15:16:32",
+                "author": "admin",
+                "text": "Status updated to contacted"
             }
         ]
     },
