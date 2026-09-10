@@ -1,43 +1,43 @@
 <?php
-$pageTitle = 'Sustainability — UrbanPest';
-$pageDescription = 'UrbanPest\'s sustainability commitments: carbon neutral operations, reduced chemical programs, fleet electrification, and community investment.';
+$pageTitle = 'Safe & Responsible Practices — UrbanX Pest Control';
+$pageDescription = 'UrbanX Pest Control is committed to safe and responsible pest management practices for residential and commercial properties across Perth.';
 $currentPage = 'about';
 include __DIR__ . '/partials/header.php';
 ?>
 
 <!-- Page Hero -->
 <?php
-$heroTitle       = 'Environmental Sustainability';
-$heroDesc        = 'Committed to protecting people, Perth businesses, and ecological diversity through low-impact IPM, low-toxicity treatments, and humane deterrents.';
-$heroTag         = 'ECO COMMITMENT // PERTH DIVISION';
-$heroBadge       = 'Low-Impact Pest Solutions';
+$heroTitle       = 'Safe & Responsible Practices';
+$heroDesc        = 'Committed to protecting families, pets, and businesses across Perth through low-toxicity formulations, targeted treatments, and humane exclusion.';
+$heroTag         = 'SAFE & RESPONSIBLE PEST PRACTICES // PERTH & WA';
+$heroBadge       = 'Western Australian Licensed Operators';
 $heroImage       = '/assets/images/green-fleet.jpg';
-$heroWatermark   = 'SUSTAINABLE';
-$heroStatVal     = '65%';
-$heroStatLabel   = 'Chemical Use Reduction Achieved';
+$heroWatermark   = 'RESPONSIBLE';
+$heroStatVal     = '100%';
+$heroStatLabel   = 'Western Australian Regulatory Compliance';
 $heroCtaText     = 'Contact Our Team';
 $heroCtaLink     = '/contact.php';
 $heroBreadcrumbs = [
     ['label' => 'Home', 'url' => '/index.php'],
     ['label' => 'About', 'url' => '/about.php'],
-    ['label' => 'Sustainability']
+    ['label' => 'Safe Practices']
 ];
 include __DIR__ . '/partials/page-hero.php';
 ?>
 
 <section class="section">
   <div class="container container-narrow">
-    <span class="section-label">Our Commitment</span>
-    <h2 class="section-title">Responsible Pest Management</h2>
+    <span class="section-label">Our Standards</span>
+    <h2 class="section-title">Responsible Pest Management for Perth</h2>
     <p style="font-size: var(--text-md); color: var(--color-text-muted); line-height: var(--leading-relaxed);">
-      Sustainability isn't an add-on at UrbanPest — it's fundamental to how we operate. We deliver targeted pest management designed to minimise environmental impact while maximising efficacy, utilizing low-hazard formulations and smart monitoring across Greater Perth.
+      At UrbanX Pest Control, safe and responsible pest management isn't just an afterthought—it's how we protect homes and businesses. We deliver targeted treatments designed to eliminate pests while safeguarding children, pets, employees, and indoor air quality across Perth.
     </p>
 
-    <!-- Green Fleet Photo Showcase -->
+    <!-- Photo Showcase -->
     <div style="margin-top: var(--space-2xl); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--color-border); position: relative;">
-      <img src="/assets/images/green-fleet.jpg" alt="UrbanPest Commercial Service Fleet" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;">
+      <img src="/assets/images/green-fleet.jpg" alt="UrbanX Service Fleet" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;">
       <div style="position: absolute; bottom: 20px; left: 20px; background: rgba(11,31,58,0.88); backdrop-filter: blur(8px); padding: 10px 20px; border-radius: var(--radius-md); color: #fff; border-left: 3px solid var(--color-emerald); font-size: var(--text-xs);">
-        <strong>UrbanPest Perth Fleet</strong> • Low-Emission Hybrid Vehicles & Smart Corridor Routing
+        <strong>UrbanX Pest Control</strong> • Licensed Western Australian Pest Operators
       </div>
     </div>
   </div>
@@ -46,15 +46,15 @@ include __DIR__ . '/partials/page-hero.php';
 <section class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">Four Pillars</span>
-      <h2 class="section-title">Our Sustainability Framework</h2>
+      <span class="section-label">Core Pillars</span>
+      <h2 class="section-title">Our Practice Framework</h2>
     </div>
     <div class="grid grid-2 grid-gap-xl">
       <?php
       $pillars = [
         ['title' => 'Low-Toxicity Formulations', 'icon' => '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>', 'desc' => 'We select targeted, low-hazard active ingredients and biological formulations that achieve rapid control while keeping indoor air quality clean and safeguarding people and pets.'],
-        ['title' => 'Targeted Precision Programs', 'icon' => '<path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M7 12l3-7 4 14 3-7"></path>', 'desc' => 'We prioritise non-chemical barrier exclusion and sensor-guided monitoring. By treating only active ingress points rather than blanket spraying, we reduce unnecessary chemical footprint by up to 60%.'],
-        ['title' => 'Smart Route Optimisation', 'icon' => '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>', 'desc' => 'Our Perth technicians are dispatched via intelligent geographic clustering across Perth CBD, Welshpool, Canning Vale, Osborne Park, and southern corridors, cutting travel time and vehicle emissions.'],
+        ['title' => 'Targeted Precision Programs', 'icon' => '<path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M7 12l3-7 4 14 3-7"></path>', 'desc' => 'We prioritize physical exclusion and targeted micro-treatments over blanket spraying, minimizing unnecessary chemicals while maximizing lasting efficacy.'],
+        ['title' => 'Smart Route Optimisation', 'icon' => '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>', 'desc' => 'Our Perth technicians are dispatched with smart route planning across CBD, Eastern, Northern, Western, and South Eastern suburbs, ensuring fast on-time arrival.'],
         ['title' => 'Humane Wildlife Solutions', 'icon' => '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>', 'desc' => 'Our bird and wildlife management prioritises humane exclusion—such as stainless netting, optical gel deterrents, and physical barrier sealing—strictly adhering to Australian animal welfare standards.'],
       ];
       foreach ($pillars as $pillar):

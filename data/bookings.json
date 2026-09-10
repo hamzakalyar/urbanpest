@@ -1,0 +1,95 @@
+[
+    {
+        "id": "book_6a9ed634a501b",
+        "ticket_no": "UP-4A500C",
+        "created_at": "2026-09-07 15:20:20",
+        "name": "Muhammad Hamza Imtiaz",
+        "company": "ByteCraftSoft",
+        "email": "hamzaimtiaz9970@gmail.com",
+        "phone": "03290204476",
+        "service": "cockroach-control",
+        "service_name": "Commercial Cockroach Control",
+        "property_type": "Residential / Strata",
+        "urgency": "Within 24-48 Hours",
+        "preferred_date": "2026-09-08",
+        "preferred_time": "Morning (07:00 \u2013 11:00)",
+        "message": "j",
+        "status": "closed_lost",
+        "technician": "Unassigned",
+        "scheduled_date": "2026-09-08",
+        "scheduled_time": "Morning (07:00 \u2013 11:00)",
+        "ip": "::1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+        "notes": [
+            {
+                "date": "2026-09-07 15:20:20",
+                "author": "System",
+                "text": "Direct service booking request for Commercial Cockroach Control (Within 24-48 Hours) received."
+            },
+            {
+                "date": "2026-09-07 15:21:59",
+                "author": "admin",
+                "text": "Status updated to closed lost"
+            }
+        ],
+        "updated_at": "2026-09-07 15:21:59"
+    },
+    {
+        "id": "book_6a9ec361ea73e",
+        "ticket_no": "UP-1EA736",
+        "created_at": "2026-09-07 14:00:01",
+        "name": "Sarah Connor",
+        "company": "Skynet Perth Facility",
+        "email": "sarah@skynet.com.au",
+        "phone": "0410 148 126",
+        "service": "rodent-control",
+        "service_name": "Commercial Rodent Control",
+        "property_type": "Warehousing &amp; Logistics",
+        "urgency": "Within 24-48 Hours",
+        "preferred_date": "2026-09-08",
+        "preferred_time": "Morning (07:00 \u2013 11:00)",
+        "message": "",
+        "status": "new",
+        "technician": "Unassigned",
+        "scheduled_date": "2026-09-08",
+        "scheduled_time": "Morning (07:00 \u2013 11:00)",
+        "ip": "::1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+        "notes": [
+            {
+                "date": "2026-09-07 14:00:01",
+                "author": "System",
+                "text": "Direct service booking request for Commercial Rodent Control (Within 24-48 Hours) received."
+            }
+        ]
+    },
+    {
+        "id": "book_6a9ec21135f74",
+        "ticket_no": "UP-135F70",
+        "created_at": "2026-09-07 13:54:25",
+        "name": "Marcus Sterling",
+        "company": "Sterling Logistics WA",
+        "email": "m.sterling@sterlingwa.com.au",
+        "phone": "0410 148 126",
+        "service": "rodent-control",
+        "service_name": "Commercial Rodent Control",
+        "property_type": "Warehousing &amp; Logistics",
+        "urgency": "Emergency Same-Day Dispatch",
+        "preferred_date": "2026-09-08",
+        "preferred_time": "Morning (07:00 \u2013 11:00)",
+        "message": "Urgent rodent assessment required in Bay 4.",
+        "status": "new",
+        "technician": "Unassigned",
+        "scheduled_date": null,
+        "scheduled_time": "Morning (07:00 \u2013 11:00)",
+        "ip": "::1",
+        "user_agent": "Unknown",
+        "notes": [
+            {
+                "date": "2026-09-07 13:54:25",
+                "author": "System",
+                "text": "Direct service booking request for Commercial Rodent Control (Emergency Same-Day Dispatch) received."
+            }
+        ]
+    }
+]

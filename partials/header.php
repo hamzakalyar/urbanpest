@@ -14,8 +14,8 @@ require_once __DIR__ . '/security.php';
 initSecuritySession();
 emitSecurityHeaders();
 
-$pageTitle       = $pageTitle ?? 'UrbanPest — Precision Pest Protection for Modern Business';
-$pageDescription = $pageDescription ?? 'UrbanPest delivers science-led commercial pest control and digital pest monitoring solutions to businesses across 90+ countries. Protect your facilities, your people, and your brand.';
+$pageTitle       = $pageTitle ?? 'UrbanX Pest Control — Professional Pest Management Perth';
+$pageDescription = $pageDescription ?? 'UrbanX Pest Control provides professional pest management services for residential and commercial properties across Greater Perth. Operating in accordance with Western Australian licensing.';
 $currentPage     = $currentPage ?? 'home';
 $bodyClass       = $bodyClass ?? '';
 ?>
@@ -34,7 +34,7 @@ $bodyClass       = $bodyClass ?? '';
   <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="UrbanPest">
+  <meta property="og:site_name" content="UrbanX Pest Control">
   <meta property="og:image" content="/assets/images/og-image.jpg">
   
   <!-- Favicon & Touch Icons -->

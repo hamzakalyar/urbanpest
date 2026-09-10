@@ -1,119 +1,127 @@
-# UrbanPest — Enterprise Pest Control Website
+# UrbanPest — Precision Commercial Pest Control & Facility Biosecurity
 
-A full, production-quality marketing website for **UrbanPest**, a fictional global commercial pest control company.
+A commercial-grade web application and administration portal for **UrbanX Commercial Pest Control** (Perth & Western Australia).
 
-## 🚀 Quick Start
+---
 
+## 🚀 DevOps & Deployment Guide
+
+### System Requirements
+* **PHP Runtime**: PHP 8.0, 8.1, 8.2, or 8.3+
+* **PHP Extensions**: `json`, `session`, `fileinfo` (standard in all default PHP installations)
+* **Web Server**: Apache (with `mod_rewrite` & `mod_headers`), Nginx, Caddy, or IIS
+* **Database**: None required (Zero-SQL JSON datastore in `/data/` directory)
+
+### File & Directory Permissions
+Ensure the web server user (e.g. `www-data`, `nginx`, or `apache`) has read/write permissions on the `data/` directory:
 ```bash
-# Navigate to the project directory
-cd urbanpest
-
-# Start the PHP built-in server
-php -S localhost:8000
-
-# Open in your browser
-# http://localhost:8000
+chmod 775 data
+chmod 664 data/*.json
 ```
 
-**Requirements:** PHP 8.0+ (no Composer dependencies, no build step)
+---
 
-## 📁 Folder Structure
+## 🌐 Web Server Routing Setup
+
+### 1. Apache Deployment (Automatic)
+The included `.htaccess` file in the root directory contains full rewrite rules and defensive security headers:
+* Clean URL routing: `/services/{slug}`, `/industries/{slug}`, `/insights/{slug}`, `/book`
+* Directory index protection (`Options -Indexes`)
+* Access restriction to sensitive files (`.json`, `.ini`, `.env`, `.log`)
+* Security headers (`X-Frame-Options`, `X-Content-Type-Options`, `X-XSS-Protection`, `Referrer-Policy`)
+
+### 2. Nginx Deployment
+If deploying on Nginx, add the following location block to your server configuration:
+
+```nginx
+server {
+    listen 80;
+    server_name yourdomain.com.au;
+    root /var/www/urbanpest;
+    index index.php;
+
+    # Clean URL Rewrites
+    location /services/ {
+        rewrite ^/services/([a-z0-9-]+)/?$ /services-single.php?slug=$1 last;
+        rewrite ^/services/?$ /services.php last;
+    }
+    location /industries/ {
+        rewrite ^/industries/([a-z0-9-]+)/?$ /industries-single.php?slug=$1 last;
+        rewrite ^/industries/?$ /industries.php last;
+    }
+    location /insights/ {
+        rewrite ^/insights/([a-z0-9-]+)/?$ /insights-single.php?slug=$1 last;
+        rewrite ^/insights/?$ /insights.php last;
+    }
+    location = /book {
+        rewrite ^/book/?$ /book.php last;
+    }
+
+    # Block direct access to data directory files
+    location ^~ /data/ {
+        deny all;
+        return 403;
+    }
+
+    # Pass PHP scripts to FastCGI server
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+}
+```
+
+### 3. Local Development (Built-in Server)
+```bash
+php -S localhost:8000 router.php
+```
+
+---
+
+## 🔑 Administrative Portal Access
+
+* **Admin URL**: `http://localhost:8000/admin/` (or `/admin/login.php`)
+* **Default Username**: `admin`
+* **Default Password**: `UrbanPest2026!`
+* *(Can be changed anytime under Admin Settings & WhatsApp panel)*
+
+### Admin Capabilities
+* **Dashboard KPI Telemetry**: Total commercial enquiries, dispatch requests, active pipeline, and won contracts.
+* **Leads & Enquiries Management**: Filter, view, update status (`new`, `contacted`, `survey_scheduled`, `closed_won`), and 1-click WhatsApp follow-up.
+* **Service Booking Dispatch**: Review specific service inspection requests submitted from service pages.
+* **Service Catalog & Custom Service Publishing**: Toggle existing services on/off, or create new custom services live on the site.
+* **Global Settings**: Configure contact details, direct telephone, email (`info@urbanxpestcontrol.com`), headquarters, and WhatsApp message templates.
+* **Export Leads (CSV)**: One-click export of customer records for CRM or reporting.
+
+---
+
+## 📁 Directory Structure
 
 ```
 /urbanpest
-├── /assets
-│   ├── /images          # Placeholder images
-│   └── /icons           # SVG favicon
-├── /css
-│   ├── base.css         # Design tokens, reset, typography, buttons, animations
-│   ├── layout.css       # Container, grid, flex, section spacing, card base
-│   ├── components.css   # All component styles (header, carousel, forms, etc.)
-│   └── responsive.css   # Mobile-first breakpoints (375px → 1920px)
-├── /js
-│   ├── nav.js           # Mega-menu, mobile drawer, sticky header, search overlay
-│   ├── carousel.js      # Auto-rotating carousel with touch/keyboard support
-│   ├── counters.js      # Scroll-triggered stat counter animations
-│   └── form-validation.js # Client-side form validation
-├── /partials
-│   ├── header.php       # HTML head, meta tags, CSS includes
-│   ├── mega-menu.php    # Full navigation (desktop mega-menu + mobile drawer)
-│   ├── footer.php       # Footer, scripts, closing tags
-│   ├── hero.php         # Reusable hero banner
-│   ├── cta-banner.php   # Reusable CTA section
-│   ├── service-card.php # Service card component
-│   ├── sector-card.php  # Industry sector card component
-│   └── testimonial.php  # Testimonial quote block
-├── /data
-│   ├── services.php     # All services & sub-services array
-│   ├── sectors.php      # 8 industry sectors array
-│   ├── blog-posts.php   # 6 sample blog articles
-│   └── testimonials.php # 5 client testimonials
-├── index.php            # Homepage (10 sections)
-├── services.php         # Services overview
-├── services-single.php  # Individual service (uses ?slug=)
-├── industries.php       # Industries overview
-├── industries-single.php # Individual sector (uses ?slug=)
-├── about.php            # Company story
-├── about-sustainability.php
-├── about-innovation.php
-├── about-locations.php
-├── about-careers.php
-├── insights.php         # Blog listing with category filters
-├── insights-single.php  # Blog article template
-├── contact.php          # Contact form + info
-├── contact-handler.php  # Server-side form processing
-├── .htaccess            # Apache clean URL rewrites
-└── README.md
+├── /admin               # Protected Admin Portal (Dashboard, Leads, Bookings, Services, Settings)
+├── /assets              # High-resolution commercial assets, branded logos & favicons
+├── /css                 # Production stylesheets (admin.css, base.css, components.css, layout.css, responsive.css)
+├── /data                # JSON Datastores & configuration (leads, bookings, settings, services)
+├── /js                  # Client scripts (nav, carousel, counters, modals, form validation)
+├── /partials            # Modular PHP templates (header, mega-menu, footer, cards, modals)
+├── .htaccess            # Apache configuration with clean URL rewrites & security headers
+├── .gitignore           # Git ignore list
+├── book.php             # Dedicated direct service booking portal
+├── booking-handler.php  # Booking submission handler with CSRF and rate limiting
+├── contact.php          # Commercial enquiry form & contact details
+├── contact-handler.php  # Contact form handler
+├── index.php            # Homepage
+├── industries.php       # Commercial industries hub
+├── industries-single.php# Specific industry sector template
+├── insights.php         # Technical insights & biosecurity articles
+├── insights-single.php  # Individual article view
+├── router.php           # Local PHP server router (clean URLs emulator)
+├── services.php         # Commercial pest services hub
+├── services-single.php  # Individual service view
+└── README.md            # DevOps and deployment documentation
 ```
-
-## 🎨 Brand Identity
-
-| Element | Value |
-|---------|-------|
-| **Primary** | Deep Navy `#0B1F3A` |
-| **Accent** | Emerald `#0FA968` |
-| **Headings** | Space Grotesk (Google Fonts) |
-| **Body** | Inter (Google Fonts) |
-| **Logo** | Inline SVG shield + radar motif |
-
-## 📄 Pages
-
-| Page | Route | Description |
-|------|-------|-------------|
-| Homepage | `/` | Hero, carousel, features, industries, stats, sustainability |
-| Services | `/services.php` | Service category grid |
-| Service Detail | `/services-single.php?slug=rodent-control` | Individual service |
-| Industries | `/industries.php` | 8 sector cards |
-| Industry Detail | `/industries-single.php?slug=food-processing` | Sector-specific content |
-| About | `/about.php` | Company story, stats, leadership |
-| Sustainability | `/about-sustainability.php` | 4 responsibility pillars |
-| Innovation | `/about-innovation.php` | UrbanPest Connect platform |
-| Locations | `/about-locations.php` | 9 regional offices |
-| Careers | `/about-careers.php` | Job listings |
-| Insights | `/insights.php` | Blog with category filters |
-| Article | `/insights-single.php?slug=...` | Blog article |
-| Contact | `/contact.php` | Form + contact info |
-
-## 🔧 Key Features
-
-- **Mega-menu** with keyboard navigation and ARIA attributes
-- **Mobile accordion drawer** with smooth transitions
-- **Feature carousel** with auto-rotation, touch/swipe, and dot navigation
-- **Scroll-triggered stat counters** using `IntersectionObserver`
-- **Client-side + server-side form validation**
-- **Dynamic SEO** — per-page title/description via PHP variables
-- **Semantic HTML5** — proper heading hierarchy, landmarks, ARIA
-- **Responsive** — Mobile-first, 375px to 1920px
-- **PHP includes** — Reusable partials for header, footer, cards, CTAs
-- **Data-driven** — Content stored in PHP arrays, rendered with `foreach`
-
-## ⚠️ Notes
-
-- The contact form logs submissions to `contact-log.txt` — the `mail()` function is stubbed with a TODO comment
-- The `.htaccess` file provides clean URLs for Apache servers (optional)
-- All content is original and fictional — no text, images, or branding from any real company
-- Images use CSS gradients as placeholders — swap in real images for production
-
-## 📜 License
-
-This is a demonstration project. All content is fictional.

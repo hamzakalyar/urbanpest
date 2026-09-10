@@ -26,6 +26,12 @@ RewriteRule ^insights/([a-z0-9-]+)/?$ /insights-single.php?slug=$1 [L,QSA]
 # Contact
 RewriteRule ^contact/?$ /contact.php [L]
 
+# Book Service
+RewriteRule ^book/?$ /book.php [L,QSA]
+
+# Admin
+RewriteRule ^admin/?$ /admin/index.php [L]
+
 # Prevent directory browsing
 Options -Indexes
 

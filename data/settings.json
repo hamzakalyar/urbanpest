@@ -1,13 +1,14 @@
 {
     "company_name": "UrbanX Pest Control",
+    "brand_name": "UrbanX",
     "phone_display": "+61 410 148 126",
     "phone_raw": "+61410148126",
-    "email_contact": "commercial@urbanpest.com.au",
+    "email_contact": "info@urbanxpestcontrol.com",
     "whatsapp_number": "+61410148126",
-    "whatsapp_msg": "Hello UrbanX Pest Control, I would like to request a commercial pest inspection for our facility in Perth.",
+    "whatsapp_msg": "Hello UrbanX Pest Control, I would like to request a pest management inspection for our property in Perth.",
     "emergency_phone": "+61 410 148 126",
     "headquarters": "Level 28, 140 St Georges Terrace, Perth WA 6000",
-    "service_area": "Greater Perth & Western Australia Commercial Corridors",
+    "service_area": "Greater Perth & Western Australia (Residential & Commercial)",
     "admin_username": "admin",
-    "admin_password_hash": "$2y$10$f3N9YQh6jK5u9B8O3KkJQ.E2D9v6rS/YhKqX6aZ/0q2O9l5j8s1uG"
+    "admin_password_hash": "$2y$10$6W6aIsWukVOLCITVoSx.DO7wWDQdpxHm3o/j4O8BRjG7/KuLjjCXS"
 }

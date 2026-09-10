@@ -2,13 +2,16 @@
    URBANPEST ENTERPRISE ADMIN PORTAL STYLESHEET
    ============================================ */
 :root {
-  --admin-navy: #0B1F3A;
-  --admin-navy-dark: #071527;
-  --admin-navy-card: #132B4F;
-  --admin-emerald: #0FA968;
-  --admin-emerald-hover: #0d9359;
-  --admin-emerald-bg: rgba(15, 169, 104, 0.12);
-  --admin-bg: #F1F5F9;
+  --admin-navy: #0B1320;
+  --admin-navy-dark: #060B12;
+  --admin-navy-card: #152236;
+  --admin-accent: #D91C24;
+  --admin-accent-hover: #B31219;
+  --admin-accent-bg: rgba(217, 28, 36, 0.12);
+  --admin-emerald: #D91C24;
+  --admin-emerald-hover: #B31219;
+  --admin-emerald-bg: rgba(217, 28, 36, 0.12);
+  --admin-bg: #F8FAFC;
   --admin-card: #FFFFFF;
   --admin-border: #E2E8F0;
   --admin-text: #0F172A;
@@ -19,8 +22,8 @@
   --radius-md: 10px;
   --radius-lg: 16px;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 14px rgba(11,31,58,0.07);
-  --shadow-lg: 0 10px 25px rgba(11,31,58,0.1);
+  --shadow-md: 0 4px 14px rgba(11,19,32,0.07);
+  --shadow-lg: 0 10px 25px rgba(11,19,32,0.1);
 }
 
 * {
@@ -72,12 +75,12 @@ body.admin-body {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--admin-emerald), #059669);
+  background: linear-gradient(135deg, var(--admin-emerald), #B31219);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  box-shadow: 0 4px 10px rgba(15,169,104,0.3);
+  box-shadow: 0 4px 10px rgba(217,28,36,0.3);
 }
 
 .admin-brand-text {
@@ -119,8 +122,8 @@ body.admin-body {
 
 .admin-nav-item.active {
   color: #FFFFFF;
-  background: rgba(15, 169, 104, 0.15);
-  border-left: 3px solid var(--admin-emerald);
+  background: rgba(217, 28, 36, 0.18);
+  border-left: 3px solid var(--admin-accent, #D91C24);
 }
 
 .admin-nav-item svg {
@@ -383,7 +386,7 @@ body.admin-body {
   text-transform: capitalize;
 }
 
-.status-pill.new { background: rgba(15, 169, 104, 0.12); color: #0FA968; border: 1px solid rgba(15, 169, 104, 0.25); }
+.status-pill.new { background: rgba(217, 28, 36, 0.12); color: #D91C24; border: 1px solid rgba(217, 28, 36, 0.25); }
 .status-pill.contacted { background: rgba(2, 132, 199, 0.12); color: #0284C7; border: 1px solid rgba(2, 132, 199, 0.25); }
 .status-pill.survey_scheduled { background: rgba(124, 58, 237, 0.12); color: #7C3AED; border: 1px solid rgba(124, 58, 237, 0.25); }
 .status-pill.proposal_sent { background: rgba(245, 158, 11, 0.12); color: #D97706; border: 1px solid rgba(245, 158, 11, 0.25); }
@@ -451,7 +454,7 @@ body.admin-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at top right, #132B4F, #0B1F3A 60%, #071527);
+  background: radial-gradient(circle at top right, #152236, #0B1320 60%, #060B12);
   padding: 24px;
 }
 

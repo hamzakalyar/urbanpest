@@ -1,11 +1,11 @@
 <?php
 /**
- * UrbanPest Perth — Operational Service Corridors
- * Operating strictly within Greater Perth & Western Australia Commercial Hubs.
- * Direct Line: +61 410 148 126
+ * UrbanX Pest Control — Perth Operational Service Areas
+ * Professional pest management services for residential and commercial properties across Perth.
+ * Operating in accordance with Western Australian pest management licensing and applicable legislation.
  */
-$pageTitle = 'Perth Service Locations & Precincts — UrbanPest';
-$pageDescription = 'UrbanPest operates exclusively across Greater Perth and Western Australia commercial corridors. Fast same-day technical dispatch from CBD to Welshpool, Canning Vale, and Henderson.';
+$pageTitle = 'Perth Service Locations & Coverage — UrbanX Pest Control';
+$pageDescription = 'UrbanX Pest Control provides professional pest management for residential and commercial properties across Perth. Safe practices, licensed Western Australian professionals.';
 $currentPage = 'about';
 
 require_once __DIR__ . '/data/config.php';
@@ -14,127 +14,118 @@ include __DIR__ . '/partials/header.php';
 
 <!-- Page Hero -->
 <?php
-$heroTitle       = 'Perth Commercial Service Precincts';
-$heroDesc        = 'Operating exclusively across Greater Perth and Western Australia commercial hubs. Rapid technical dispatch units strategically stationed for same-day commercial facility coverage.';
-$heroTag         = 'Perth Operations Only — Fast Local Technical Dispatch';
-$heroBadge       = 'Same-Day Commercial Dispatch';
+$heroTitle       = 'Perth Pest Service Areas';
+$heroDesc        = 'At UrbanX Pest Control, we provide professional pest management services for residential and commercial properties across Perth.';
+$heroTag         = 'Perth & Greater Western Australia Coverage';
+$heroBadge       = 'Western Australian Licensed Operators';
 $heroImage       = '/assets/images/green-fleet.jpg';
 $heroStatVal     = '100%';
-$heroStatLabel   = 'Greater Perth & WA Scope';
-$heroCtaText     = 'Book Precinct Assessment';
-$heroCtaLink     = '/contact.php';
-$heroWaLink      = getWhatsAppLink('Perth Precinct Inspection');
+$heroStatLabel   = 'Perth Scope';
+$heroCtaText     = 'Book Service in Your Suburb';
+$heroCtaLink     = '/book.php';
+$heroWaLink      = getWhatsAppLink('Perth Service Area Inquiry');
 $heroBreadcrumbs = [
     ['label' => 'Home', 'url' => '/index.php'],
     ['label' => 'About', 'url' => '/about.php'],
-    ['label' => 'Perth Locations']
+    ['label' => 'Perth Areas']
 ];
 include __DIR__ . '/partials/page-hero.php';
 ?>
 
+<!-- Statutory Western Australian Licensing Notice -->
+<section style="background: #F8FAFC; border-bottom: 1px solid #E2E8F0; padding: 16px 0;">
+  <div class="container">
+    <div style="background: #FFFFFF; border-radius: 10px; padding: 16px 20px; border: 1px solid #E2E8F0; border-left: 4px solid var(--color-accent, #D91C24); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+      <p style="margin: 0; font-size: 0.88rem; color: #334155; line-height: 1.5;">
+        <strong>Western Australian Regulatory Compliance:</strong> Pest management services are provided in accordance with the requirements of the relevant Western Australian pest management licence and applicable legislation.
+      </p>
+      <a href="/book.php" class="btn btn-sm btn-primary">Book Online</a>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="precincts">
   <div class="container">
     <div class="section-header text-left">
-      <span class="section-label">Operational Hubs</span>
-      <h2 class="section-title">Serving Perth's Key Commercial & Industrial Zones</h2>
-      <p class="section-subtitle">Our mobile rapid-response units operate exclusively across Greater Perth, providing contracted commercial facilities with certified response times under 2 hours.</p>
+      <span class="section-label">Operational Coverage</span>
+      <h2 class="section-title">Serving All Metropolitan Perth Regions</h2>
+      <p class="section-subtitle">Our licensed mobile pest management units provide prompt residential and commercial service across Perth.</p>
     </div>
 
     <div class="grid grid-3 grid-gap-lg">
       <?php
       $precincts = [
         [
-          'name'     => 'Perth CBD & West Perth',
-          'suburbs'  => 'Perth CBD, West Perth, East Perth, Northbridge, Subiaco',
-          'sector'   => 'Corporate Towers, Luxury Hotels, High-Density Dining & Entertainment',
-          'depot'    => 'Level 28, 140 St Georges Terrace (Central Dispatch)',
-          'badge'    => 'CBD Fast-Response Unit'
+          'name'     => 'Perth CBD & Inner Suburbs',
+          'suburbs'  => 'Perth CBD, Docklands, Southbank, Carlton, Fitzroy, Richmond, South Yarra',
+          'sector'   => 'Residential Apartments, Offices, Cafes, Restaurants, Hotels & Retail',
+          'badge'    => 'Fast Local Dispatch'
         ],
         [
-          'name'     => 'Welshpool & Kewdale Logistics Hub',
-          'suburbs'  => 'Welshpool, Kewdale, Perth Airport, Hazelmere, Forrestfield',
-          'sector'   => 'Intermodal Rail Terminals, Airfreight Forwarding, Cold Storage',
-          'depot'    => 'Kewdale Freight Corridor Service Point',
-          'badge'    => 'Biosecurity & Quarantine Aligned'
+          'name'     => 'Eastern Suburbs',
+          'suburbs'  => 'Box Hill, Ringwood, Doncaster, Camberwell, Hawthorn, Glen Waverley, Wantirna',
+          'sector'   => 'Family Homes, Townhouses, Shopping Precincts, Corporate Parks',
+          'badge'    => 'Residential & Commercial'
         ],
         [
-          'name'     => 'Canning Vale & Jandakot Corridor',
-          'suburbs'  => 'Canning Vale, Jandakot, Willetton, Maddington, Cockburn',
-          'sector'   => 'Food Wholesale, Advanced Manufacturing, Mega Warehousing',
-          'depot'    => 'Bannister Road Industrial Base',
-          'badge'    => 'Food Hygiene Standard'
+          'name'     => 'Northern Suburbs',
+          'suburbs'  => 'Brunswick, Coburg, Preston, Heidelberg, Reservoir, Epping, Tullamarine',
+          'sector'   => 'Suburban Residences, Commercial Showrooms, Food Wholesalers & Distribution',
+          'badge'    => 'Licensed Pest Defense'
         ],
         [
-          'name'     => 'Osborne Park & Balcatta Commercial',
-          'suburbs'  => 'Osborne Park, Balcatta, Innaloo, Herdsman, Stirling',
-          'sector'   => 'Commercial Showrooms, Medical Laboratories, Food Prep, Offices',
-          'depot'    => 'Scarborough Beach Road Dispatch Hub',
-          'badge'    => 'Commercial Rapid Unit'
+          'name'     => 'Western Suburbs',
+          'suburbs'  => 'Footscray, Yarraville, Sunshine, Point Cook, Werribee, Altona, Truganina',
+          'sector'   => 'Residential Estates, Logistics Warehouses, Industrial Complexes',
+          'badge'    => 'Perimeter Shield'
         ],
         [
-          'name'     => 'Malaga & Wangara Northern Hub',
-          'suburbs'  => 'Malaga, Wangara, Landsdale, Gnangara, Bayswater',
-          'sector'   => 'Engineering, Food Processing, Racking Warehouses, Packaging',
-          'depot'    => 'Alexander Drive Operational Hub',
-          'badge'    => 'Industrial Grade IPM'
+          'name'     => 'South Eastern Suburbs',
+          'suburbs'  => 'Clayton, Chadstone, Oakleigh, Springvale, Dandenong, Berwick, Cranbourne',
+          'sector'   => 'Residential Properties, Manufacturing, Multi-Site Facilities',
+          'badge'    => 'Tailored Plans'
         ],
         [
-          'name'     => 'Fremantle & Henderson Marine Complex',
-          'suburbs'  => 'Fremantle Port, Henderson (AMC), O\'Connor, Bibra Lake',
-          'sector'   => 'Port Logistics, Marine Fabrication, Ship Chandlery, Bulk Yards',
-          'depot'    => 'Fremantle Port Service Point',
-          'badge'    => 'Maritime & Port Exclusion'
-        ],
-        [
-          'name'     => 'Kwinana & Rockingham Industrial Strip',
-          'suburbs'  => 'Kwinana Beach, Naval Base, Rockingham, East Rockingham',
-          'sector'   => 'Heavy Chemical Processing, Minerals Refining, Industrial Plants',
-          'depot'    => 'Paterson Road Technical Branch',
-          'badge'    => 'High-Security Industrial'
-        ],
-        [
-          'name'     => 'Joondalup & Northern Coastal Corridor',
-          'suburbs'  => 'Joondalup, Clarkson, Hillarys, Connolly, Currambine',
-          'sector'   => 'Retail Shopping Centers, Healthcare Clinics, Dining Precincts',
-          'depot'    => 'Joondalup City Commercial Desk',
-          'badge'    => 'Commercial Health Team'
-        ],
-        [
-          'name'     => 'Midland & Eastern Trade Gateways',
-          'suburbs'  => 'Midland, Bellevue, Guildford, Bassendean, Middle Swan',
-          'sector'   => 'Regional Freight Depots, Agricultural Storage, Distribution Hubs',
-          'depot'    => 'Great Eastern Highway Regional Dispatch',
-          'badge'    => 'Eastern Gateway Unit'
-        ],
+          'name'     => 'Bayside & Mornington Peninsula',
+          'suburbs'  => 'St Kilda, Brighton, Hampton, Cheltenham, Frankston, Mornington, Mount Eliza',
+          'sector'   => 'Coastal Homes, Hospitality Venues, Retail Strips & Holiday Properties',
+          'badge'    => 'Safe & Responsible'
+        ]
       ];
 
       foreach ($precincts as $p):
       ?>
-        <div class="card" style="border: 1px solid #E2E8F0; border-radius: 12px; background: #FFFFFF; box-shadow: 0 4px 14px rgba(15,23,42,0.04); display: flex; flex-direction: column;">
-          <div class="card-body" style="padding: 24px; display: flex; flex-direction: column; flex: 1;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-              <span style="display: inline-block; font-size: 0.725rem; font-weight: 700; text-transform: uppercase; color: #0FA968; background: #E8F8F0; padding: 4px 10px; border-radius: 6px;">
+        <div class="card" style="border: 1px solid #E2E8F0; border-radius: 12px; background:#fff; padding: 24px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+              <span style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--color-accent, #D91C24); background:var(--color-accent-bg, #FEF2F2); padding:3px 8px; border-radius:4px;">
                 <?php echo htmlspecialchars($p['badge']); ?>
               </span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </div>
-            
-            <h3 style="font-family: var(--font-heading); font-size: 1.125rem; font-weight: 700; color: #0B1F3A; margin: 0 0 8px;">
+
+            <h3 style="font-size:1.15rem; color:#0B1320; margin:0 0 10px; font-family:var(--font-heading);">
               <?php echo htmlspecialchars($p['name']); ?>
             </h3>
-            
-            <p style="font-size: 0.85rem; color: #475569; margin: 0 0 12px; line-height: 1.5; flex: 1;">
-              <strong>Key Suburbs:</strong> <?php echo htmlspecialchars($p['suburbs']); ?><br>
-              <strong>Primary Sectors:</strong> <?php echo htmlspecialchars($p['sector']); ?>
-            </p>
 
-            <div style="padding-top: 12px; border-top: 1px solid #F1F5F9; font-size: 0.8rem; color: #64748B; display: flex; justify-content: space-between; align-items: center;">
-              <span><?php echo htmlspecialchars($p['depot']); ?></span>
-              <a href="/contact.php" class="link-arrow" style="font-weight: 600;">
-                Dispatch 
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
+            <div style="margin-bottom:12px; font-size:0.85rem; color:#475569;">
+              <strong style="color:#0B1320; display:block; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px; color:#64748B;">Key Suburbs Covered:</strong>
+              <?php echo htmlspecialchars($p['suburbs']); ?>
             </div>
+
+            <div style="font-size:0.83rem; color:#64748B; margin-bottom:16px;">
+              <strong style="color:#0B1320; display:block; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px; color:#64748B;">Properties & Facilities:</strong>
+              <?php echo htmlspecialchars($p['sector']); ?>
+            </div>
+          </div>
+
+          <div style="padding-top:14px; border-top:1px solid #F1F5F9; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+            <a href="/book.php" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">
+              Book Service
+            </a>
+            <a href="<?php echo htmlspecialchars(getWhatsAppLink($p['name'])); ?>" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding:6px 10px; border-radius:6px;" title="WhatsApp us about <?php echo htmlspecialchars($p['name']); ?>">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.761.887 2.796.887 3.182 0 5.768-2.587 5.768-5.768.001-3.18-2.584-5.772-5.768-5.772zm3.393 8.163c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.18-.553-1.898-.785-3.125-2.73-3.22-2.856-.095-.127-.768-1.021-.768-1.948 0-.927.489-1.383.663-1.572.174-.189.381-.237.508-.237.126 0 .253.002.364.007.117.006.275-.044.43.329.16.386.545 1.33.593 1.428.048.098.08.213.016.34-.064.127-.096.206-.19.317-.095.11-.2.246-.285.331-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.317.727.649 1.339.851 1.53.946.19.095.302.079.414-.047.111-.127.476-.554.603-.744.127-.19.254-.159.428-.095.174.063 1.109.523 1.3.618.19.095.317.143.365.222.048.079.048.46-.096.865z"/></svg>
+            </a>
           </div>
         </div>
       <?php endforeach; ?>
@@ -142,30 +133,20 @@ include __DIR__ . '/partials/page-hero.php';
   </div>
 </section>
 
-<!-- Dispatch Consultation Banner -->
-<section class="section section-alt">
-  <div class="container">
-    <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 36px 40px; box-shadow: 0 4px 20px rgba(15,23,42,0.06); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
-      <div>
-        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; color: #0FA968; display: block; margin-bottom: 4px;">
-          Perth Commercial Response Center
-        </span>
-        <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #0B1F3A; margin: 0 0 6px;">
-          Operating Exclusively in Greater Perth
-        </h3>
-        <p style="font-size: 0.95rem; color: #475569; margin: 0; max-width: 580px;">
-          Every technician is Western Australia Department of Health licensed and trained in commercial pest management codes of practice.
-        </p>
-      </div>
-
-      <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
-        <a href="tel:<?php echo htmlspecialchars($appConfig['phone_raw'] ?? '+61410148126'); ?>" class="btn btn-secondary btn-lg">
-          Call <?php echo htmlspecialchars($appConfig['phone_display'] ?? '+61 410 148 126'); ?>
-        </a>
-        <a href="<?php echo htmlspecialchars(getWhatsAppLink()); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
-          Chat on WhatsApp
-        </a>
-      </div>
+<!-- Dispatch Strip -->
+<section class="section section-dark">
+  <div class="container text-center">
+    <h2 style="color: #fff; font-size: 1.6rem; margin-bottom: 8px;">Don't See Your Suburb Listed?</h2>
+    <p style="color: #94A3B8; max-width: 540px; margin: 0 auto 20px; font-size: 0.95rem;">
+      We cover all properties across Greater Perth and surrounding Western Australian districts. Call our team to confirm dispatch to your location.
+    </p>
+    <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+      <a href="tel:<?php echo htmlspecialchars($appConfig['phone_raw'] ?? '+61410148126'); ?>" class="btn btn-primary">
+        Call <?php echo htmlspecialchars($appConfig['phone_display'] ?? '+61 410 148 126'); ?>
+      </a>
+      <a href="/contact.php" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);">
+        Request Quote Online
+      </a>
     </div>
   </div>
 </section>

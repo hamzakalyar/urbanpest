@@ -5,6 +5,12 @@
 
 require_once __DIR__ . '/data/blog-posts.php';
 
+// Canonical Clean URL Redirect
+if (strpos($_SERVER['REQUEST_URI'] ?? '', 'insights-single.php') !== false && !empty($_GET['slug'])) {
+    header('Location: /insights/' . urlencode($_GET['slug']), true, 301);
+    exit;
+}
+
 $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 $post = isset($blogPostsLookup[$slug]) ? $blogPostsLookup[$slug] : $blogPosts[0];
 

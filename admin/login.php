@@ -39,10 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Portal Login — UrbanPest Commercial</title>
+  <title>Admin Portal Login — UrbanX Pest Control</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css">
   <link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon.png">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
@@ -55,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <img src="/assets/images/logo-shield.png" alt="UrbanX Pest Control" style="height: 64px; width: auto; object-fit: contain;">
         </div>
         <h1>UrbanX Admin</h1>
-        <p>Commercial Lead Management & Telemetry</p>
+        <p>Perth Pest Management & Booking Administration</p>
       </div>
 
       <?php if (!empty($errorMsg)): ?>

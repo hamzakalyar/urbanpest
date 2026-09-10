@@ -1,16 +1,19 @@
 <?php
 /**
- * UrbanPest — Homepage
- * All 10 sections: Hero, Intro Strip, Carousel, Why Choose, Industries, Trust, Stats, Sustainability, Locations, Footer
+ * UrbanX Pest Control — Homepage
+ * Precision Commercial & Residential Pest Management across Perth
+ * Operating under relevant Western Australian pest management licence and applicable legislation.
+ * All 9 original sections restored: Hero, Intro Strip, Innovation Carousel, Why Choose Us, Industries, Trust, Credibility/Stats, Sustainability, Locations
  */
 
-$pageTitle = 'UrbanPest — Precision Pest Protection for Modern Business';
-$pageDescription = 'UrbanPest delivers science-led commercial pest control and digital pest monitoring solutions to businesses across 90+ countries. Protect your facilities, your people, and your brand.';
+$pageTitle = 'UrbanX Pest Control — Precision Commercial & Residential Pest Protection Perth';
+$pageDescription = 'UrbanX Pest Control delivers science-led commercial and residential pest management, AS 3660 termite protection, and digital IoT monitoring across Perth, Western Australia.';
 $currentPage = 'home';
 
 require_once __DIR__ . '/data/services.php';
 require_once __DIR__ . '/data/sectors.php';
 require_once __DIR__ . '/data/testimonials.php';
+require_once __DIR__ . '/partials/pest-symbols.php';
 
 include __DIR__ . '/partials/header.php';
 ?>
@@ -19,22 +22,37 @@ include __DIR__ . '/partials/header.php';
      1. HERO SECTION
      ============================================ -->
 <?php
-$heroLabel    = 'AEPMA & HACCP Australia Accredited Commercial Operator';
-$heroTitle    = 'Perth Commercial Pest Control & <span class="highlight">Biosecurity</span>';
-$heroSubtitle = 'Science-led commercial pest management, AS 3660 termite protection, and connected 24/7 IoT telemetry operating exclusively across Greater Perth commercial facilities.';
-$heroCta      = 'Request Commercial Survey';
-$heroCtaLink  = '/contact.php';
-$heroCta2     = 'View Services Directory';
-$heroCtaLink2 = '/services.php';
+$heroTitle             = 'Professional Pest Control Services across <span class="highlight">Perth</span>';
+$heroSubtitle          = 'At UrbanX Pest Control, we provide professional pest management services for residential and commercial properties across Perth. Science-led IPM, AS 3660 termite protection, and connected digital biosecurity.';
+$heroCta               = 'Request Residential Survey';
+$heroCtaLink           = '/book.php?type=residential';
+$heroCtaCommercial     = 'Request Commercial Survey';
+$heroCtaCommercialLink = '/book.php?type=commercial';
 include __DIR__ . '/partials/hero.php';
 ?>
 
-
 <!-- ============================================
-     2. INTRO / VALUE PROPS STRIP
+     2. INTRO / VALUE PROPS STRIP & STATUTORY COMPLIANCE
      ============================================ -->
 <section class="section" id="value-props">
   <div class="container">
+    <!-- Western Australian Regulatory Compliance Strip -->
+    <div style="background: #FFFFFF; border-radius: 12px; padding: 18px 24px; border: 1px solid #E2E8F0; border-left: 5px solid var(--color-accent, #D91C24); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <div style="width: 44px; height: 44px; border-radius: 10px; background: #FEF2F2; color: #D91C24; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+        </div>
+        <div>
+          <strong style="color: #0B1F3A; font-size: 0.98rem; display: block;">Western Australian Pest Management Licensing Compliance</strong>
+          <span style="color: #475569; font-size: 0.875rem;">Pest management services are provided in accordance with the requirements of the relevant Western Australian pest management licence and applicable legislation.</span>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+        <a href="/book.php?type=residential" class="btn btn-sm btn-primary">Residential Survey</a>
+        <a href="/book.php?type=commercial" class="btn btn-sm btn-outline" style="border-color: #CBD5E1; color: #0B1F3A;">Commercial Survey</a>
+      </div>
+    </div>
+
     <div class="value-props">
       <!-- Pest Control Services -->
       <div class="value-prop">
@@ -42,10 +60,10 @@ include __DIR__ . '/partials/hero.php';
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
         </div>
         <div>
-          <h3>Pest Control Services</h3>
-          <p>Comprehensive, integrated pest management programs for commercial environments — from rodent control and insect management to bird deterrent systems and professional disinfection.</p>
+          <h3>Professional Pest Control Services</h3>
+          <p>Comprehensive, integrated pest management programs for residential and commercial properties across Perth — from general household pests and insects to bird deterrent systems and specialized treatments.</p>
           <a href="/services.php" class="link-arrow">
-            Learn more
+            Explore All 12 Pest Services
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
         </div>
@@ -57,8 +75,8 @@ include __DIR__ . '/partials/hero.php';
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line></svg>
         </div>
         <div>
-          <h3>Digital Pest Monitoring</h3>
-          <p>IoT-connected smart traps, sensors, and our UrbanPest Connect platform deliver 24/7 real-time visibility, predictive insights, and automated compliance reporting across all your sites.</p>
+          <h3>Digital Pest Monitoring & Telemetry</h3>
+          <p>IoT-connected smart traps, optical sensors, and our UrbanPest Connect platform deliver 24/7 real-time visibility, predictive insights, and automated compliance reporting across Perth facilities.</p>
           <a href="/services-single.php?slug=smart-traps" class="link-arrow">
             Learn more
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -68,7 +86,6 @@ include __DIR__ . '/partials/hero.php';
     </div>
   </div>
 </section>
-
 
 <!-- ============================================
      3. FEATURE CAROUSEL
@@ -146,59 +163,81 @@ include __DIR__ . '/partials/hero.php';
   </div>
 </section>
 
-
 <!-- ============================================
-     4. WHY CHOOSE URBANPEST
+     4. WHY CHOOSE URBANX (THE 6 PILLARS)
      ============================================ -->
 <section class="section" id="why-choose">
   <div class="container">
-    <div class="section-header">
-      <span class="section-label">Why UrbanPest</span>
-      <h2 class="section-title">Why Global Businesses Choose UrbanPest</h2>
-      <p class="section-subtitle centered">We combine deep technical expertise with connected technology to deliver pest management that's smarter, faster, and more transparent than anything you've experienced before.</p>
+    <div class="section-header text-center">
+      <span class="section-label">Our Service Standards</span>
+      <h2 class="section-title">Why Choose UrbanX Pest Control?</h2>
+      <p class="section-subtitle centered">We combine deep technical expertise, Western Australian regulatory compliance, and responsible pest management to protect your home and business across Perth.</p>
     </div>
 
-    <div class="feature-block">
-      <div class="feature-item">
-        <div class="feature-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+    <div class="grid grid-3 grid-gap-lg">
+      <div class="feature-item" style="background: #FFFFFF; padding: 28px; border-radius: 12px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+        <div style="width: 44px; height: 44px; border-radius: 10px; background: #FEF2F2; color: #D91C24; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
         </div>
-        <h3>Global Reach, Local Expertise</h3>
-        <p>Operating across 90+ countries with 15,000+ trained technicians, we deliver globally consistent service standards with locally expert teams who understand your region's pest ecology and regulations.</p>
+        <h4 style="color: #0B1F3A; font-size: 1.05rem; margin-bottom: 8px;">Licensed Pest Management Professional</h4>
+        <p style="color: #64748B; font-size: 0.88rem; line-height: 1.6; margin: 0;">Certified Western Australian operators operating in strict accordance with relevant pest management licensing and legislation.</p>
       </div>
 
-      <div class="feature-item">
-        <div class="feature-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line></svg>
+      <div class="feature-item" style="background: #FFFFFF; padding: 28px; border-radius: 12px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+        <div style="width: 44px; height: 44px; border-radius: 10px; background: #DCFCE7; color: #16A34A; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><polyline points="12 6 12 12 16 14"></polyline></svg>
         </div>
-        <h3>Connected Digital Platform</h3>
-        <p>UrbanPest Connect provides 24/7 real-time pest monitoring, AI-powered analytics, and automated compliance reporting — giving you total visibility and control across every site.</p>
+        <h4 style="color: #0B1F3A; font-size: 1.05rem; margin-bottom: 8px;">Safe & Responsible Practices</h4>
+        <p style="color: #64748B; font-size: 0.88rem; line-height: 1.6; margin: 0;">Family-safe, pet-friendly, and food-compliant applications designed to minimize chemical footprints while maximizing eradication.</p>
       </div>
 
-      <div class="feature-item">
-        <div class="feature-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      <div class="feature-item" style="background: #FFFFFF; padding: 28px; border-radius: 12px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+        <div style="width: 44px; height: 44px; border-radius: 10px; background: #EFF6FF; color: #2563EB; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
         </div>
-        <h3>Single Point of Contact</h3>
-        <p>One dedicated account manager, one platform, one invoice. We simplify pest management for multi-site operations — so you can focus on running your business, not managing suppliers.</p>
+        <h4 style="color: #0B1F3A; font-size: 1.05rem; margin-bottom: 8px;">Residential & Commercial Services</h4>
+        <p style="color: #64748B; font-size: 0.88rem; line-height: 1.6; margin: 0;">Specialized solutions tailored to domestic homes, apartments, commercial facilities, food retail, and logistics warehouses.</p>
+      </div>
+
+      <div class="feature-item" style="background: #FFFFFF; padding: 28px; border-radius: 12px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+        <div style="width: 44px; height: 44px; border-radius: 10px; background: #FEF3C7; color: #D97706; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        </div>
+        <h4 style="color: #0B1F3A; font-size: 1.05rem; margin-bottom: 8px;">Tailored Treatment Plans</h4>
+        <p style="color: #64748B; font-size: 0.88rem; line-height: 1.6; margin: 0;">Custom treatment programs formulated around specific pest species biology and unique property construction conditions.</p>
+      </div>
+
+      <div class="feature-item" style="background: #FFFFFF; padding: 28px; border-radius: 12px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+        <div style="width: 44px; height: 44px; border-radius: 10px; background: #F3E8FF; color: #9333EA; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        </div>
+        <h4 style="color: #0B1F3A; font-size: 1.05rem; margin-bottom: 8px;">Clear Upfront Pricing</h4>
+        <p style="color: #64748B; font-size: 0.88rem; line-height: 1.6; margin: 0;">Fixed, transparent quotations with zero hidden surprises, providing honest value and reliable accountability.</p>
+      </div>
+
+      <div class="feature-item" style="background: #FFFFFF; padding: 28px; border-radius: 12px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+        <div style="width: 44px; height: 44px; border-radius: 10px; background: #CCFBF1; color: #0D9488; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        </div>
+        <h4 style="color: #0B1F3A; font-size: 1.05rem; margin-bottom: 8px;">Professional Service & Follow-Up</h4>
+        <p style="color: #64748B; font-size: 0.88rem; line-height: 1.6; margin: 0;">Thorough inspection reports, preventative recommendations, and dedicated follow-up advice after every treatment.</p>
       </div>
     </div>
 
-    <!-- CTA -->
+    <!-- CTA Consultation Banner with Both Residential & Commercial Surveys -->
     <div class="mt-3xl">
       <?php
-      $ctaTitle  = 'Partner with UrbanPest Today';
-      $ctaText   = 'Discover how our science-led approach and connected technology can transform pest management across your organisation.';
-      $ctaLabel  = 'Request a Consultation';
-      $ctaLink   = '/contact.php';
-      $ctaLabel2 = 'View Our Services';
-      $ctaLink2  = '/services.php';
+      $ctaTitle  = 'Partner with UrbanX Pest Control Today';
+      $ctaText   = 'Discover how our science-led approach and licensed technicians can protect your home and business across Perth.';
+      $ctaLabel  = 'Request Residential Survey';
+      $ctaLink   = '/book.php?type=residential';
+      $ctaLabel2 = 'Request Commercial Survey';
+      $ctaLink2  = '/book.php?type=commercial';
       include __DIR__ . '/partials/cta-banner.php';
       ?>
     </div>
   </div>
 </section>
-
 
 <!-- ============================================
      5. INDUSTRIES GRID
@@ -219,62 +258,40 @@ include __DIR__ . '/partials/hero.php';
       <?php endforeach; ?>
     </div>
 
-    <div class="sector-toggle" id="sectorToggle">
-      <button class="btn btn-outline-emerald" id="sectorToggleBtn" onclick="toggleSectors()">
-        <span id="sectorToggleText">Show All Industries</span>
-        <svg id="sectorToggleIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    <div class="text-center mt-xl">
+      <button class="btn btn-outline" id="loadMoreSectors" type="button">
+        Show More Sectors
       </button>
     </div>
   </div>
 </section>
 
-<script>
-function toggleSectors() {
-  const hidden = document.querySelectorAll('.sector-hidden');
-  const btn = document.getElementById('sectorToggleText');
-  const icon = document.getElementById('sectorToggleIcon');
-  const isHidden = hidden.length > 0 && hidden[0].style.display !== 'block';
-
-  hidden.forEach(el => {
-    el.style.display = isHidden ? 'block' : 'none';
-  });
-
-  btn.textContent = isHidden ? 'Show Fewer Industries' : 'Show All Industries';
-  icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0)';
-}
-</script>
-
-
 <!-- ============================================
-     6. WHY PERTH CHOOSES US
+     6. TRUST / ACCREDITATIONS BAR (CLEANED)
      ============================================ -->
 <section class="section-sm" id="trust">
   <div class="container">
-    <div class="section-header text-center">
-      <span class="section-label">Our Service Commitments</span>
-      <h2 class="section-title" style="font-size: 1.75rem;">Why Perth Businesses Rely On Us</h2>
-    </div>
-    <div class="trust-strip">
+    <div class="trust-strip trust-logos">
       <div class="trust-logo">
-        <div class="trust-logo-icon" style="color: #0FA968;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <div class="trust-logo-icon" style="color: var(--color-accent, #D91C24);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
         </div>
         <span>Same-Day Rapid Dispatch</span>
       </div>
       <div class="trust-logo">
-        <div class="trust-logo-icon" style="color: #0FA968;">
+        <div class="trust-logo-icon" style="color: var(--color-accent, #D91C24);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
         </div>
         <span>Licensed & Insured Operators</span>
       </div>
       <div class="trust-logo">
-        <div class="trust-logo-icon" style="color: #0FA968;">
+        <div class="trust-logo-icon" style="color: var(--color-accent, #D91C24);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path></svg>
         </div>
         <span>Safe & Pet-Friendly Formulations</span>
       </div>
       <div class="trust-logo">
-        <div class="trust-logo-icon" style="color: #0FA968;">
+        <div class="trust-logo-icon" style="color: var(--color-accent, #D91C24);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
         </div>
         <span>100% Satisfaction Guarantee</span>
@@ -283,7 +300,6 @@ function toggleSectors() {
   </div>
 </section>
 
-
 <!-- ============================================
      7. CREDIBILITY / LOCAL STATS + TESTIMONIAL
      ============================================ -->
@@ -291,7 +307,7 @@ function toggleSectors() {
   <div class="container">
     <div class="section-header">
       <span class="section-label">Perth Dedicated</span>
-      <h2 class="section-title" style="color:#fff;">Proven Results Across Greater Perth</h2>
+      <h2 class="section-title" style="color:#fff;">Proven Results Across Perth & Western Australia</h2>
     </div>
 
     <div class="stats-grid">
@@ -299,30 +315,31 @@ function toggleSectors() {
         <div class="stat-number">
           <span data-counter="100" data-suffix="%">0</span>
         </div>
-        <div class="stat-label">Perth Owned & Operated</div>
+        <div class="stat-label">Licensed & Compliant</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">
           <span data-counter="2500" data-suffix="+">0</span>
         </div>
-        <div class="stat-label">Commercial Sites Protected</div>
+        <div class="stat-label">Properties Protected</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">
           <span data-counter="2" data-prefix="< " data-suffix=" Hrs">0</span>
         </div>
-        <div class="stat-label">Rapid Emergency Dispatch</div>
+        <div class="stat-label">Rapid Response Window</div>
       </div>
     </div>
 
     <!-- Testimonial -->
     <?php
-    $testimonial = $testimonials[0];
-    include __DIR__ . '/partials/testimonial.php';
+    $testimonial = $testimonials[0] ?? null;
+    if ($testimonial) {
+        include __DIR__ . '/partials/testimonial.php';
+    }
     ?>
   </div>
 </section>
-
 
 <!-- ============================================
      8. SUSTAINABILITY CALLOUT
@@ -364,42 +381,40 @@ function toggleSectors() {
   </div>
 </section>
 
-
 <!-- ============================================
      9. LOCATIONS CALLOUT
      ============================================ -->
 <section class="section section-alt" id="locations">
   <div class="container">
     <div class="locations-callout">
-      <span class="section-label">Global Presence</span>
-      <h2 class="section-title">Find Your Local Team</h2>
-      <p class="section-subtitle centered">With operations in 90+ countries, we're never far from your business. Find your nearest UrbanPest team.</p>
+      <span class="section-label">Service Presence</span>
+      <h2 class="section-title">Find Your Local Perth & Regional Team</h2>
+      <p class="section-subtitle centered">Providing fast, compliant pest management across Greater Perth and Western Australia commercial corridors.</p>
 
       <div class="region-grid">
         <a href="/about-locations.php" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          United Kingdom
+          Perth CBD & Docklands
         </a>
         <a href="/about-locations.php" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          North America
+          Inner Eastern Suburbs
         </a>
         <a href="/about-locations.php" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          Continental Europe
+          Northern Commercial Corridor
         </a>
         <a href="/about-locations.php" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          Asia Pacific
+          Western Industrial Precincts
         </a>
         <a href="/about-locations.php" class="region-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          Middle East & Africa
+          South East & Mornington
         </a>
       </div>
     </div>
   </div>
 </section>
-
 
 <?php include __DIR__ . '/partials/footer.php'; ?>

@@ -37,7 +37,7 @@ $recentLeads = array_slice($allLeads, 0, 5);
   <div class="metric-card">
     <div class="metric-header">
       <span class="metric-title">Total Enquiries</span>
-      <div class="metric-icon" style="background:rgba(15,169,104,0.1); color:#0FA968;">
+      <div class="metric-icon" style="background:rgba(217,28,36,0.1); color:#D91C24;">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
       </div>
     </div>
@@ -172,7 +172,7 @@ $recentLeads = array_slice($allLeads, 0, 5);
                 <span style="color:var(--admin-text-muted);"><?php echo $sCount; ?> (<?php echo $pct; ?>%)</span>
               </div>
               <div style="height:8px; background:#E2E8F0; border-radius:999px; overflow:hidden;">
-                <div style="width:<?php echo $pct; ?>%; height:100%; background:linear-gradient(90deg, #0FA968, #10B981); border-radius:999px;"></div>
+                <div style="width:<?php echo $pct; ?>%; height:100%; background:linear-gradient(90deg, #D91C24, #EF3038); border-radius:999px;"></div>
               </div>
             </div>
           <?php endforeach; ?>
@@ -182,7 +182,7 @@ $recentLeads = array_slice($allLeads, 0, 5);
       <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--admin-border);">
         <h4 style="font-size:0.85rem; margin-bottom:8px; color:var(--admin-navy);">Direct WhatsApp Gateway</h4>
         <p style="font-size:0.775rem; color:var(--admin-text-muted); line-height:1.5; margin-bottom:12px;">
-          Active Number: <strong style="color:#059669;"><?php echo htmlspecialchars($appConfig['whatsapp_number']); ?></strong>
+          Active Number: <strong style="color:var(--admin-accent, #D91C24);"><?php echo htmlspecialchars($appConfig['whatsapp_number']); ?></strong>
         </p>
         <a href="/admin/settings.php" class="btn-admin btn-admin-outline" style="width:100%; justify-content:center; font-size:0.775rem;">
           Configure WhatsApp & Notifications →

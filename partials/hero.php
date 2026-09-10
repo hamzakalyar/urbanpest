@@ -12,13 +12,15 @@
  *   $heroLabel    — Small label above title (optional)
  */
 
-$heroTitle    = $heroTitle ?? 'Protecting What Matters Most';
-$heroSubtitle = $heroSubtitle ?? '';
-$heroCta      = $heroCta ?? 'Get Started';
-$heroCtaLink  = $heroCtaLink ?? '/contact.php';
-$heroCta2     = $heroCta2 ?? '';
-$heroCtaLink2 = $heroCtaLink2 ?? '#';
-$heroLabel    = $heroLabel ?? '';
+$heroTitle             = $heroTitle ?? 'Protecting What Matters Most';
+$heroSubtitle          = $heroSubtitle ?? '';
+$heroCta               = $heroCta ?? 'Request Residential Survey';
+$heroCtaLink           = $heroCtaLink ?? '/book.php?type=residential';
+$heroCtaCommercial     = $heroCtaCommercial ?? 'Request Commercial Survey';
+$heroCtaCommercialLink = $heroCtaCommercialLink ?? '/book.php?type=commercial';
+$heroCta2              = $heroCta2 ?? '';
+$heroCtaLink2          = $heroCtaLink2 ?? '#';
+$heroLabel             = $heroLabel ?? '';
 ?>
 
 <?php
@@ -51,25 +53,34 @@ $heroBgImage = $heroBgImage ?? '/assets/images/hero-technician.jpg';
         </div>
         <div class="hero-trust-divider"></div>
         <div class="hero-trust-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-emerald-light)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span><strong>99.4%</strong> Audit Pass Rate</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-emerald-light)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span><strong>Licensed</strong> WA Professional</span>
         </div>
         <div class="hero-trust-divider"></div>
         <div class="hero-trust-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-emerald-light)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          <span><strong>2-Hour</strong> Rapid Dispatch</span>
+          <span><strong>Safe & Responsible</strong> Treatments</span>
         </div>
       </div>
       
-      <div class="hero-actions" style="display:flex; align-items:center; flex-wrap:wrap; gap:14px;">
-        <a href="<?php echo htmlspecialchars($heroCtaLink); ?>" class="btn btn-primary btn-lg"><?php echo htmlspecialchars($heroCta); ?></a>
+      <div class="hero-actions" style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+        <a href="<?php echo htmlspecialchars($heroCtaLink); ?>" class="btn btn-primary btn-lg open-booking-modal" data-service-slug="household-pest-control" data-service-name="Residential Pest Survey" data-property-type="residential">
+          <?php echo htmlspecialchars($heroCta); ?>
+        </a>
+        <?php if (!empty($heroCtaCommercial)): ?>
+          <a href="<?php echo htmlspecialchars($heroCtaCommercialLink); ?>" class="btn btn-lg open-booking-modal" data-service-slug="household-pest-control" data-service-name="Commercial Pest Survey" data-property-type="commercial" style="background: rgba(255,255,255,0.12); color:#FFFFFF; border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(8px); font-weight: 600;">
+            <?php echo htmlspecialchars($heroCtaCommercial); ?>
+          </a>
+        <?php endif; ?>
         <?php 
         require_once __DIR__ . '/../data/config.php';
-        $heroWaLink = getWhatsAppLink('Perth Commercial Biosecurity');
+        $heroWaLink = getWhatsAppLink('Perth Pest Survey');
         ?>
         <a href="<?php echo htmlspecialchars($heroWaLink); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.761.887 2.796.887 3.182 0 5.768-2.587 5.768-5.768.001-3.18-2.584-5.772-5.768-5.772zm3.393 8.163c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.18-.553-1.898-.785-3.125-2.73-3.22-2.856-.095-.127-.768-1.021-.768-1.948 0-.927.489-1.383.663-1.572.174-.189.381-.237.508-.237.126 0 .253.002.364.007.117.006.275-.044.43.329.16.386.545 1.33.593 1.428.048.098.08.213.016.34-.064.127-.096.206-.19.317-.095.11-.2.246-.285.331-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.317.727.649 1.339.851 1.53.946.19.095.302.079.414-.047.111-.127.476-.554.603-.744.127-.19.254-.159.428-.095.174.063 1.109.523 1.3.618.19.095.317.143.365.222.048.079.048.46-.096.865z"/></svg>
-          Chat on WhatsApp
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 21.65a.75.75 0 0 0 .9.9l4.582-1.388A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.86 13.67c-.22.61-1.07 1.18-1.74 1.25-.62.06-1.42.09-3.95-1.02-2.92-1.28-4.83-4.27-4.97-4.47-.15-.2-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1-2.41.27-.29.58-.36.78-.36.2 0 .39.01.56.01.18 0 .42-.07.66.5.25.6.85 2.07.93 2.22.07.15.12.33.02.53-.1.2-.15.32-.3.49-.14.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.14.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.14.27.1 1.71.81 2 .95.3.15.49.22.56.34.07.12.07.71-.15 1.32z" fill="currentColor"/>
+          </svg>
+          WhatsApp
         </a>
         <a href="tel:<?php echo htmlspecialchars($appConfig['phone_raw'] ?? '+61410148126'); ?>" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2);">
           Call <?php echo htmlspecialchars($appConfig['phone_display'] ?? '+61 410 148 126'); ?>

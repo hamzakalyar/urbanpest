@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileToggle    = document.getElementById('mobileToggle');
   const mobileDrawer    = document.getElementById('mobileDrawer');
   const mobileOverlay   = document.getElementById('mobileOverlay');
+  const mobileClose     = document.getElementById('mobileClose');
   const searchToggle    = document.getElementById('searchToggle');
   const searchOverlay   = document.getElementById('searchOverlay');
   const searchClose     = document.getElementById('searchClose');
@@ -142,6 +143,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (mobileOverlay) {
     mobileOverlay.addEventListener('click', closeMobileNav);
+  }
+
+  if (mobileClose) {
+    mobileClose.addEventListener('click', closeMobileNav);
+  }
+
+  // Close mobile drawer when clicking internal links
+  if (mobileDrawer) {
+    mobileDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        closeMobileNav();
+      });
+    });
   }
 
   function openMobileNav() {

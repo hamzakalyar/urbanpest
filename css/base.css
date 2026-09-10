@@ -8,17 +8,25 @@
 
 /* --- Design Tokens --- */
 :root {
-  /* Colors - Primary */
-  --color-navy:           #0B1F3A;
-  --color-navy-light:     #132D52;
-  --color-navy-dark:      #071428;
+  /* Colors - Primary Brand */
+  --color-navy:           #0B1320;
+  --color-navy-light:     #162438;
+  --color-navy-dark:      #060B12;
 
-  /* Colors - Accent */
-  --color-emerald:        #0FA968;
-  --color-emerald-light:  #12C678;
-  --color-emerald-dark:   #0C8A54;
-  --color-emerald-bg:     #E8F8F0;
-  --color-emerald-glow:   rgba(15, 169, 104, 0.15);
+  /* Colors - UrbanX Signature Crimson Red Accent */
+  --color-accent:         #D91C24;
+  --color-accent-light:   #EF3038;
+  --color-accent-dark:    #B31219;
+  --color-accent-bg:      #FEF2F2;
+  --color-accent-border:  #FECACA;
+  --color-accent-glow:    rgba(217, 28, 36, 0.16);
+
+  /* Semantic Compatibility Tokens */
+  --color-emerald:        #D91C24;
+  --color-emerald-light:  #EF3038;
+  --color-emerald-dark:   #B31219;
+  --color-emerald-bg:     #FEF2F2;
+  --color-emerald-glow:   rgba(217, 28, 36, 0.16);
 
   /* Colors - Neutral */
   --color-white:          #FFFFFF;
@@ -35,20 +43,20 @@
   --color-black:          #000000;
 
   /* Colors - Semantic */
-  --color-text:           #1A1A2E;
+  --color-text:           #0F172A;
   --color-text-muted:     #5A6270;
   --color-text-light:     #8C939D;
   --color-text-inverse:   #FFFFFF;
   --color-border:         #E2E6EA;
   --color-bg-page:        #FFFFFF;
-  --color-bg-alt:         #F5F6F8;
-  --color-bg-dark:        #0B1F3A;
+  --color-bg-alt:         #F8FAFC;
+  --color-bg-dark:        #0B1320;
 
   /* Colors - Status */
-  --color-success:        #0FA968;
-  --color-error:          #E74C3C;
-  --color-warning:        #F5A623;
-  --color-info:           #3498DB;
+  --color-success:        #10B981;
+  --color-error:          #D91C24;
+  --color-warning:        #F59E0B;
+  --color-info:           #2563EB;
 
   /* Typography — Authoritative Corporate Grotesque */
   --font-heading:         'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -103,7 +111,7 @@
   --shadow-md:            0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
   --shadow-lg:            0 12px 32px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.04);
   --shadow-xl:            0 24px 48px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.06);
-  --shadow-glow:          0 0 24px rgba(15, 169, 104, 0.2);
+  --shadow-glow:          0 0 24px rgba(217, 28, 36, 0.2);
 
   /* Transitions */
   --transition-fast:      150ms ease;
@@ -277,8 +285,9 @@ small {
   color: var(--color-text-light);
 }
 
-.text-emerald {
-  color: var(--color-emerald);
+.text-emerald,
+.text-accent {
+  color: var(--color-accent);
 }
 
 .text-navy {
@@ -381,14 +390,16 @@ small {
   color: var(--color-white);
 }
 
-.btn-outline-emerald {
+.btn-outline-emerald,
+.btn-outline-accent {
   background: transparent;
-  color: var(--color-emerald);
-  border-color: var(--color-emerald);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
-.btn-outline-emerald:hover {
-  background: var(--color-emerald);
+.btn-outline-emerald:hover,
+.btn-outline-accent:hover {
+  background: var(--color-accent);
   color: var(--color-white);
 }
 
@@ -465,9 +476,10 @@ small {
   border-radius: var(--radius-full);
 }
 
-.badge-emerald {
-  background: var(--color-emerald-bg);
-  color: var(--color-emerald-dark);
+.badge-emerald,
+.badge-accent {
+  background: var(--color-accent-bg);
+  color: var(--color-accent-dark);
 }
 
 .badge-navy {

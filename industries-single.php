@@ -8,10 +8,16 @@ require_once __DIR__ . '/data/services.php';
 require_once __DIR__ . '/data/testimonials.php';
 require_once __DIR__ . '/partials/pest-symbols.php';
 
+// Canonical Clean URL Redirect
+if (strpos($_SERVER['REQUEST_URI'] ?? '', 'industries-single.php') !== false && !empty($_GET['slug'])) {
+    header('Location: /industries/' . urlencode($_GET['slug']), true, 301);
+    exit;
+}
+
 $slug = isset($_GET['slug']) ? $_GET['slug'] : 'food-processing';
 $sector = isset($sectorsLookup[$slug]) ? $sectorsLookup[$slug] : $sectorsLookup['food-processing'];
 
-$pageTitle = $sector['name'] . ' Pest Management — UrbanPest';
+$pageTitle = $sector['name'] . ' Pest Management — UrbanX Pest Control Perth';
 $pageDescription = $sector['short_desc'];
 $currentPage = 'industries';
 
@@ -22,17 +28,17 @@ include __DIR__ . '/partials/header.php';
 <?php
 $heroTitle       = $sector['name'];
 $heroDesc        = $sector['short_desc'];
-$heroTag         = 'Perth Sector Biosecurity — ' . (isset($sector['accent_tag']) ? $sector['accent_tag'] : 'Commercial Defense Standard');
+$heroTag         = 'Perth Commercial Pest Division — ' . (isset($sector['accent_tag']) ? $sector['accent_tag'] : 'Commercial Defense Standard');
 $heroBadge       = isset($sector['badge_text']) ? $sector['badge_text'] : 'Commercial Defense Standard';
 $heroImage       = isset($sector['image']) ? $sector['image'] : '/assets/images/food-inspection.jpg';
 $heroStatVal     = isset($sector['stat_val']) ? $sector['stat_val'] : '99.8%';
 $heroStatLabel   = isset($sector['stat_label']) ? $sector['stat_label'] : 'Audit Compliance Rate';
-$heroCtaText     = 'Request ' . $sector['name'] . ' Audit';
+$heroCtaText     = 'Request ' . $sector['name'] . ' Survey';
 $heroCtaLink     = '/contact.php?sector=' . urlencode($sector['slug']);
-$heroWaLink      = getWhatsAppLink($sector['name'] . ' Facility Audit');
+$heroWaLink      = getWhatsAppLink($sector['name'] . ' Pest Service');
 $heroBreadcrumbs = [
     ['label' => 'Home', 'url' => '/index.php'],
-    ['label' => 'Perth Sectors', 'url' => '/industries.php'],
+    ['label' => 'Industries', 'url' => '/industries.php'],
     ['label' => $sector['name']]
 ];
 include __DIR__ . '/partials/page-hero.php';

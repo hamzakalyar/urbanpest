@@ -45,6 +45,10 @@ function getCSRFToken() {
     return $_SESSION['csrf_token'];
 }
 
+function generateCSRFToken() {
+    return getCSRFToken();
+}
+
 // Render hidden CSRF form input
 function renderCSRFField() {
     $token = getCSRFToken();

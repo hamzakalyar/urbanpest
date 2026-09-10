@@ -275,7 +275,78 @@ function getPestSymbol($riskName) {
         ];
     }
 
-    // 13. Operational / Disruption / Downtime / Multi-site
+    // 13. Spiders / Arachnids / Redbacks / Webbing
+    if (strpos($name, 'spider') !== false || strpos($name, 'arachnid') !== false || strpos($name, 'web') !== false || strpos($name, 'redback') !== false) {
+        return [
+            'color'    => '#7C2D12',
+            'bg'       => 'rgba(124, 45, 18, 0.12)',
+            'border'   => 'rgba(124, 45, 18, 0.28)',
+            'tag'      => 'VENOMOUS SPIDER RISK',
+            'tag_bg'   => 'rgba(124, 45, 18, 0.1)',
+            'tag_color'=> '#9A3412',
+            'severity' => 'Bite Hazard',
+            'pic'      => '/assets/images/food-inspection.jpg',
+            'svg'      => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C2D12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 9V3M12 21v-6M4 5l5 4M15 15l5 4M4 19l5-4M15 9l5-4M2 12h7M15 12h7"/>
+                          </svg>'
+        ];
+    }
+
+    // 14. Wasps & Bees / Stinging Insects / Nest
+    if (strpos($name, 'wasp') !== false || strpos($name, 'bee') !== false || strpos($name, 'sting') !== false || strpos($name, 'hive') !== false) {
+        return [
+            'color'    => '#CA8A04',
+            'bg'       => 'rgba(202, 138, 4, 0.12)',
+            'border'   => 'rgba(202, 138, 4, 0.28)',
+            'tag'      => 'STINGING INSECT HAZARD',
+            'tag_bg'   => 'rgba(202, 138, 4, 0.1)',
+            'tag_color'=> '#A16207',
+            'severity' => 'Anaphylaxis Alert',
+            'pic'      => '/assets/images/smart-iot-trap.jpg',
+            'svg'      => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CA8A04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15 8 22 9 17 14 18 21 12 17 6 21 7 14 2 9 9 8 12 2"/>
+                          </svg>'
+        ];
+    }
+
+    // 15. Ants / Trails / Queens / Subterranean Nests
+    if (strpos($name, 'ant') !== false || strpos($name, 'trail') !== false) {
+        return [
+            'color'    => '#B45309',
+            'bg'       => 'rgba(180, 83, 9, 0.12)',
+            'border'   => 'rgba(180, 83, 9, 0.28)',
+            'tag'      => 'COLONY TRAILING INVASION',
+            'tag_bg'   => 'rgba(180, 83, 9, 0.1)',
+            'tag_color'=> '#92400E',
+            'severity' => 'Persistent Foraging',
+            'pic'      => '/assets/images/food-inspection.jpg',
+            'svg'      => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="6" r="2"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="18" r="2.5"/>
+                            <path d="M9 12H3M21 12h-6M9 6L5 3M15 6l4-3M9 18l-4 3M15 18l4 3"/>
+                          </svg>'
+        ];
+    }
+
+    // 16. Silverfish / Booklice / Archive Damage
+    if (strpos($name, 'silverfish') !== false || strpos($name, 'archive') !== false || strpos($name, 'paper') !== false) {
+        return [
+            'color'    => '#64748B',
+            'bg'       => 'rgba(100, 116, 139, 0.12)',
+            'border'   => 'rgba(100, 116, 139, 0.28)',
+            'tag'      => 'ARCHIVAL DAMAGE RISK',
+            'tag_bg'   => 'rgba(100, 116, 139, 0.1)',
+            'tag_color'=> '#475569',
+            'severity' => 'Property Deterioration',
+            'pic'      => '/assets/images/food-inspection.jpg',
+            'svg'      => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3c-4 5-5 11-2 18 3-7 2-13-2-18z"/>
+                            <path d="M8 8L3 6M16 8l5-2M7 14l-4 2M17 14l4 2M9 19l-3 4M15 19l3 4"/>
+                          </svg>'
+        ];
+    }
+
+    // 17. Operational / Disruption / Downtime / Multi-site
     return [
         'color'    => '#2563EB',
         'bg'       => 'rgba(37, 99, 235, 0.12)',
@@ -298,11 +369,11 @@ function getPestSymbol($riskName) {
  */
 function getServiceVisual($serviceSlug) {
     switch ($serviceSlug) {
-        case 'termite-control':
+        case 'household-pest-control':
             return [
-                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M7 7l5 5 5-5M7 17l5-5 5 5"/><rect x="4" y="3" width="16" height="18" rx="2" stroke-dasharray="2 2"/></svg>',
-                'pic'   => '/assets/images/termite-inspection.jpg',
-                'color' => '#C2410C'
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+                'pic'   => '/assets/images/hero-technician.jpg',
+                'color' => '#059669'
             ];
         case 'cockroach-control':
             return [
@@ -310,35 +381,29 @@ function getServiceVisual($serviceSlug) {
                 'pic'   => '/assets/images/cockroach-control.jpg',
                 'color' => '#B45309'
             ];
-        case 'bed-bug-control':
+        case 'ant-control':
             return [
-                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><path d="M6 14a6 6 0 0 0 12 0c0-3-2-5-6-5s-6 2-6 5z"/><path d="M9 14h6M9 17h6M12 9v11"/></svg>',
-                'pic'   => '/assets/images/hotel-hospitality.jpg',
-                'color' => '#DB2777'
-            ];
-        case 'stored-product-pests':
-            return [
-                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4 12h4M16 12h4"/><path d="M12 6a6 6 0 0 0-6 6v2a6 6 0 0 0 12 0v-2a6 6 0 0 0-6-6z"/></svg>',
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="2"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="18" r="2.5"/><path d="M9 12H3M21 12h-6M9 6L5 3M15 6l4-3M9 18l-4 3M15 18l4 3"/></svg>',
                 'pic'   => '/assets/images/food-inspection.jpg',
                 'color' => '#D97706'
             ];
-        case 'rodent-control':
+        case 'spider-control':
             return [
-                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 2 5 5 5 9c0 3 1.5 5.5 3 7.5L7 21h10l-1-4.5c1.5-2 3-4.5 3-7.5 0-4-3-7-7-7z"/><circle cx="10" cy="9" r="1"/><circle cx="14" cy="9" r="1"/><path d="M8 12l-4 1M16 12l4 1"/></svg>',
-                'pic'   => '/assets/images/connected-monitoring.jpg',
-                'color' => '#EF4444'
-            ];
-        case 'insect-control':
-            return [
-                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4 12h4M16 12h4"/><path d="M12 6a6 6 0 0 0-6 6v2a6 6 0 0 0 12 0v-2a6 6 0 0 0-6-6z"/><path d="M7 8l-3-3M17 8l3-3"/></svg>',
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 9V3M12 21v-6M4 5l5 4M15 15l5 4M4 19l5-4M15 9l5-4M2 12h7M15 12h7"/></svg>',
                 'pic'   => '/assets/images/food-inspection.jpg',
-                'color' => '#D97706'
+                'color' => '#7C2D12'
             ];
-        case 'bird-control':
+        case 'wasp-bee-control':
             return [
-                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18c3-4 6-5 9-3 3-4 7-6 10-6-1.5 3-2 5-2 7 0 2 1 3 1.6 4-2 0-4-.5-5.6-1.5-2.4 1-5 1.5-8 1.5-2 0-4-.7-6-2z"/></svg>',
-                'pic'   => '/assets/images/bird-proofing.jpg',
-                'color' => '#6366F1'
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8 22 9 17 14 18 21 12 17 6 21 7 14 2 9 9 8 12 2"/></svg>',
+                'pic'   => '/assets/images/smart-iot-trap.jpg',
+                'color' => '#CA8A04'
+            ];
+        case 'silverfish-control':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 5-5 11-2 18 3-7 2-13-2-18z"/><path d="M8 8L3 6M16 8l5-2M7 14l-4 2M17 14l4 2M9 19l-3 4M15 19l3 4"/></svg>',
+                'pic'   => '/assets/images/food-inspection.jpg',
+                'color' => '#64748B'
             ];
         case 'fly-control':
             return [
@@ -346,11 +411,53 @@ function getServiceVisual($serviceSlug) {
                 'pic'   => '/assets/images/smart-iot-trap.jpg',
                 'color' => '#0284C7'
             ];
-        case 'disinfection-services':
+        case 'crawling-flying-insects':
             return [
-                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/></svg>',
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4 12h4M16 12h4"/><path d="M12 6a6 6 0 0 0-6 6v2a6 6 0 0 0 12 0v-2a6 6 0 0 0-6-6z"/><path d="M7 8l-3-3M17 8l3-3"/></svg>',
+                'pic'   => '/assets/images/hero-technician.jpg',
+                'color' => '#D97706'
+            ];
+        case 'preventative-pest-treatments':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>',
+                'pic'   => '/assets/images/connected-monitoring.jpg',
+                'color' => '#059669'
+            ];
+        case 'internal-external-treatments':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/></svg>',
+                'pic'   => '/assets/images/food-inspection.jpg',
+                'color' => '#2563EB'
+            ];
+        case 'pest-inspections-identification':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><circle cx="11" cy="11" r="3"/></svg>',
+                'pic'   => '/assets/images/termite-inspection.jpg',
+                'color' => '#7C3AED'
+            ];
+        case 'targeted-pest-treatments':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
                 'pic'   => '/assets/images/pharma-cleanroom.jpg',
                 'color' => '#DC2626'
+            ];
+        case 'termite-control':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M7 7l5 5 5-5M7 17l5-5 5 5"/><rect x="4" y="3" width="16" height="18" rx="2" stroke-dasharray="2 2"/></svg>',
+                'pic'   => '/assets/images/termite-inspection.jpg',
+                'color' => '#C2410C'
+            ];
+        case 'rodent-control':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 2 5 5 5 9c0 3 1.5 5.5 3 7.5L7 21h10l-1-4.5c1.5-2 3-4.5 3-7.5 0-4-3-7-7-7z"/><circle cx="10" cy="9" r="1"/><circle cx="14" cy="9" r="1"/><path d="M8 12l-4 1M16 12l4 1"/></svg>',
+                'pic'   => '/assets/images/connected-monitoring.jpg',
+                'color' => '#EF4444'
+            ];
+        case 'bird-control':
+            return [
+                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18c3-4 6-5 9-3 3-4 7-6 10-6-1.5 3-2 5-2 7 0 2 1 3 1.6 4-2 0-4-.5-5.6-1.5-2.4 1-5 1.5-8 1.5-2 0-4-.7-6-2z"/></svg>',
+                'pic'   => '/assets/images/bird-proofing.jpg',
+                'color' => '#6366F1'
             ];
         case 'smart-traps':
             return [
@@ -358,17 +465,11 @@ function getServiceVisual($serviceSlug) {
                 'pic'   => '/assets/images/smart-iot-trap.jpg',
                 'color' => '#059669'
             ];
-        case 'connected-rodent-monitoring':
-            return [
-                'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
-                'pic'   => '/assets/images/connected-monitoring.jpg',
-                'color' => '#2563EB'
-            ];
         default:
             return [
                 'icon'  => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
                 'pic'   => '/assets/images/hero-technician.jpg',
-                'color' => '#0FA968'
+                'color' => '#D91C24'
             ];
     }
 }

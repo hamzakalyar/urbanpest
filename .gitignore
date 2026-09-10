@@ -11,6 +11,7 @@ desktop.ini
 *.userosscache
 *.sln.docstates
 
-# Logs
+# Logs & Scratch
 *.log
 data/contact-log.txt
+scratch/
