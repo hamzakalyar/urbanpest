@@ -82,7 +82,7 @@ require_once __DIR__ . '/../data/config.php';
               <li><a href="/services/targeted-pest-treatments">Targeted Species Plans</a></li>
               <li><a href="/services/termite-control">Termite Protection (AS 3660)</a></li>
               <li><a href="/services/bird-control">Bird Proofing & Exclusion</a></li>
-              <li><a href="/services/smart-traps">Digital Smart Monitoring</a></li>
+              <li><a href="/services/smart-traps">Commercial Trap Monitoring</a></li>
             </ul>
           </div>
 

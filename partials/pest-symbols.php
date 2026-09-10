@@ -235,17 +235,17 @@ function getPestSymbol($riskName) {
         ];
     }
 
-    // 11. Smart Traps / IoT Telemetry / Depletion / Sensor / Alerts
+    // 11. Commercial Traps / Perimeter Monitoring / Inspection Logs
     if (strpos($name, 'trap') !== false || strpos($name, 'sensor') !== false || strpos($name, 'telemetry') !== false || 
         strpos($name, 'depletion') !== false || strpos($name, 'latency') !== false || strpos($name, 'real-time') !== false) {
         return [
             'color'    => '#059669',
             'bg'       => 'rgba(5, 150, 105, 0.12)',
             'border'   => 'rgba(5, 150, 105, 0.28)',
-            'tag'      => 'IOT SURVEILLANCE TELEMETRY',
+            'tag'      => 'COMMERCIAL TRAP SURVEILLANCE',
             'tag_bg'   => 'rgba(5, 150, 105, 0.1)',
             'tag_color'=> '#047857',
-            'severity' => 'Continuous Telemetry',
+            'severity' => 'Active Monitoring',
             'pic'      => '/assets/images/smart-iot-trap.jpg',
             'svg'      => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>

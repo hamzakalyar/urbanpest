@@ -7,7 +7,7 @@
  */
 
 $pageTitle = 'UrbanX Pest Control — Precision Commercial & Residential Pest Protection Perth';
-$pageDescription = 'UrbanX Pest Control delivers science-led commercial and residential pest management, AS 3660 termite protection, and digital IoT monitoring across Perth, Western Australia.';
+$pageDescription = 'UrbanX Pest Control delivers science-led commercial and residential pest management, AS 3660 termite protection, and commercial pest monitoring across Perth, Western Australia.';
 $currentPage = 'home';
 
 require_once __DIR__ . '/data/services.php';
@@ -23,7 +23,7 @@ include __DIR__ . '/partials/header.php';
      ============================================ -->
 <?php
 $heroTitle             = 'Professional Pest Control Services across <span class="highlight">Perth</span>';
-$heroSubtitle          = 'At UrbanX Pest Control, we provide professional pest management services for residential and commercial properties across Perth. Science-led IPM, AS 3660 termite protection, and connected digital biosecurity.';
+$heroSubtitle          = 'At UrbanX Pest Control, we provide professional pest management services for residential and commercial properties across Perth. Science-led IPM, AS 3660 termite protection, and commercial perimeter biosecurity.';
 $heroCta               = 'Request Residential Survey';
 $heroCtaLink           = '/book.php?type=residential';
 $heroCtaCommercial     = 'Request Commercial Survey';
@@ -69,14 +69,14 @@ include __DIR__ . '/partials/hero.php';
         </div>
       </div>
 
-      <!-- Digital Pest Monitoring -->
+      <!-- Commercial Pest Monitoring -->
       <div class="value-prop">
         <div class="value-prop-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line></svg>
         </div>
         <div>
-          <h3>Digital Pest Monitoring & Telemetry</h3>
-          <p>IoT-connected smart traps, optical sensors, and our UrbanPest Connect platform deliver 24/7 real-time visibility, predictive insights, and automated compliance reporting across Perth facilities.</p>
+          <h3>Pest Monitoring & Management</h3>
+          <p>Commercial bait stations, scheduled inspections, and structured service documentation deliver proactive site protection, trend insights, and certified compliance reporting across Perth facilities.</p>
           <a href="/services-single.php?slug=smart-traps" class="link-arrow">
             Learn more
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -94,7 +94,7 @@ include __DIR__ . '/partials/hero.php';
   <div class="container">
     <div class="section-header">
       <span class="section-label">Innovation Spotlight</span>
-      <h2 class="section-title">Leading the Digital Pest Revolution</h2>
+      <h2 class="section-title">Modern Commercial Pest Defense</h2>
     </div>
 
     <div class="carousel" id="mainCarousel">
@@ -103,13 +103,13 @@ include __DIR__ . '/partials/hero.php';
         <div class="carousel-slide" aria-hidden="false">
           <div class="carousel-slide-inner">
             <div class="carousel-slide-content">
-              <span class="section-label">Smart Technology</span>
-              <h3>Smart Insect Traps with AI Identification</h3>
-              <p>Our IoT-enabled traps use optical sensors and machine-learning models to detect, classify, and report insect activity in real time — giving you species-level data without waiting for a technician visit.</p>
-              <a href="/services-single.php?slug=smart-traps" class="btn btn-primary">Discover Smart Traps</a>
+              <span class="section-label">Targeted Technology</span>
+              <h3>Precision Insect Trapping & Species Identification</h3>
+              <p>Our specialized commercial monitors and targeted inspection protocols detect and accurately classify insect activity, giving you clear species-level data and actionable treatment recommendations without delay.</p>
+              <a href="/services-single.php?slug=smart-traps" class="btn btn-primary">Discover Insect Control</a>
             </div>
             <div class="carousel-slide-image" style="background: url('/assets/images/smart-iot-trap.jpg') center/cover no-repeat;">
-              <div class="slide-badge">IoT Sensor Network</div>
+              <div class="slide-badge">Precision Monitoring Network</div>
             </div>
           </div>
         </div>

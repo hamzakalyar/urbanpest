@@ -273,12 +273,12 @@ $iconSvgs = [
             <option value="/assets/images/hero-technician.jpg">Technician Specialist (Default)</option>
             <option value="/assets/images/ant-control.jpg">Ant & Insect Management</option>
             <option value="/assets/images/cockroach-control.jpg">Commercial Kitchen Treatment</option>
-            <option value="/assets/images/connected-monitoring.jpg">Connected IoT Traps</option>
+            <option value="/assets/images/connected-monitoring.jpg">Commercial Trap Network</option>
             <option value="/assets/images/termite-inspection.jpg">Structural & Termite Inspection</option>
             <option value="/assets/images/bird-proofing.jpg">Bird Proofing & Deterrents</option>
             <option value="/assets/images/food-inspection.jpg">Food Hygiene & Safety Inspection</option>
             <option value="/assets/images/green-fleet.jpg">Commercial Green Fleet</option>
-            <option value="/assets/images/smart-iot-trap.jpg">Smart IoT Sensor Trap</option>
+            <option value="/assets/images/smart-iot-trap.jpg">Commercial Bait & Trap Station</option>
           </select>
         </div>
       </div>

@@ -505,33 +505,33 @@ $serviceCategories = [
             ],
             [
                 'slug'        => 'smart-traps',
-                'name'        => 'Digital Connected Pest Monitoring',
+                'name'        => 'Commercial Pest Monitoring & Trapping',
                 'icon'        => 'smart-traps',
                 'image'       => '/assets/images/smart-iot-trap.jpg',
-                'watermark'   => 'CONNECTED MONITORING',
-                'accent_tag'  => '24/7 Smart Traps & Instant Cloud Telemetry',
+                'watermark'   => 'TRAP MONITORING',
+                'accent_tag'  => 'Commercial Trap Surveillance & Protection',
                 'badge_text'  => 'Zero-Chemical Monitoring',
-                'stat_val'    => '24/7',
-                'stat_label'  => 'Autonomous Telemetry Uptime',
-                'short_desc'  => 'Continuous 24/7 connected pest sensors and smart traps with instant trigger alerts for Perth commercial sites.',
-                'description' => 'For Perth food manufacturers, logistics hubs, and sensitive commercial facilities, our digital connected traps provide around-the-clock autonomous surveillance. Infrared sensors record activity in real time, transmitting instant alerts and timestamped compliance logs to management.',
+                'stat_val'    => '100%',
+                'stat_label'  => 'Audit Compliance Standards',
+                'short_desc'  => 'Comprehensive commercial pest monitoring, tamper-proof station networks, and prompt technical response across Greater Perth.',
+                'description' => 'For Perth food manufacturers, logistics hubs, and sensitive commercial facilities, our specialized trap monitoring networks provide reliable scheduled surveillance and rapid response. Licensed technicians inspect stations, maintain activity logs, and provide certified compliance documentation.',
                 'includes'    => [
-                    '24/7 autonomous infrared sensor monitoring',
-                    'Instant cloud alerts upon trap trigger activation',
-                    'Zero-chemical, non-toxic mechanical trigger mechanism',
-                    'Digital timestamped activity reports ready for health audits',
-                    'Automated technician dispatch for rapid trap reset'
+                    'Commercial-grade tamper-proof bait and monitoring stations',
+                    'Routine inspection logs ready for health and food safety audits',
+                    'Zero-chemical, non-toxic mechanical trapping options',
+                    'Detailed property trend analysis and activity reports',
+                    'Fast-track technician dispatch upon any pest activity'
                 ],
                 'steps'       => [
                     ['title' => 'Critical Zone Setup', 'desc' => 'Traps positioned along perimeter corridors, cleanrooms, and warehouse docks.'],
-                    ['title' => 'Cellular Cloud Connection', 'desc' => 'Autonomous cellular telemetry connects without touching your internal Wi-Fi.'],
-                    ['title' => 'Continuous Surveillance', 'desc' => 'Live telemetry streams 24 hours a day to the management portal.'],
-                    ['title' => 'Immediate Service Dispatch', 'desc' => 'Activation triggers an automated visit by a licensed technician.']
+                    ['title' => 'Scheduled Monitoring', 'desc' => 'Licensed technicians inspect, service, and document station activity on a set roster.'],
+                    ['title' => 'Compliance Documentation', 'desc' => 'Activity data is logged directly into certified reports for auditor verification.'],
+                    ['title' => 'Immediate Service Dispatch', 'desc' => 'Any evidence of pest activity triggers prompt remediation by a licensed technician.']
                 ],
                 'key_challenges' => [
-                    ['name' => 'Undetected Trap Triggers', 'desc' => 'Manual traps remain sprung for weeks between visits; smart traps notify instantly.'],
-                    ['name' => 'Stringent Food Safety Compliance', 'desc' => 'Commercial audits require continuous monitoring data with digital logs.'],
-                    ['name' => 'Minimizing Operational Downtime', 'desc' => 'Instant detection stops breaches before contamination causes costly product recalls.']
+                    ['name' => 'Unmonitored Perimeter Risks', 'desc' => 'Unmonitored perimeters allow pests to enter buildings undetected between regular services.'],
+                    ['name' => 'Stringent Food Safety Compliance', 'desc' => 'Commercial audits require continuous monitoring records and verified inspection trails.'],
+                    ['name' => 'Minimizing Operational Downtime', 'desc' => 'Early detection prevents pest breaches before contamination can cause costly shutdowns.']
                 ],
                 'related_industries' => ['food-processing', 'logistics-warehousing', 'hospitality', 'pharmaceutical']
             ],
@@ -635,28 +635,28 @@ $serviceCategories = [
             ],
             [
                 'slug'        => 'connected-rodent-monitoring',
-                'name'        => 'Connected Rodent Surveillance Network',
+                'name'        => 'Commercial Rodent Surveillance Network',
                 'icon'        => 'connected-rodent',
                 'image'       => '/assets/images/connected-monitoring.jpg',
-                'watermark'   => 'RADAR TELEMETRY',
-                'accent_tag'  => 'Enterprise Multi-Site Dashboard — Perth Hub',
-                'badge_text'  => 'Always-On Cloud Biosecurity',
-                'stat_val'    => '24/7',
-                'stat_label'  => 'Live Automated Telemetry Uptime',
-                'short_desc'  => 'Autonomous connected rodent surveillance network delivering live heat-maps and automated compliance reporting for Perth logistics hubs.',
-                'description' => 'Transform passive perimeter bait stations into an active digital radar network. Our connected rodent surveillance platform continuously monitors multi-hectare distribution centres and manufacturing plants across Greater Perth, detecting rodent runway activity in real time and providing certified compliance audit trails.',
+                'watermark'   => 'PERIMETER SURVEILLANCE',
+                'accent_tag'  => 'Enterprise Perimeter Protection — Perth Hub',
+                'badge_text'  => 'Commercial Rodent Biosecurity',
+                'stat_val'    => '100%',
+                'stat_label'  => 'Audit Compliance Standards',
+                'short_desc'  => 'Structured commercial rodent surveillance network delivering comprehensive property coverage and certified compliance reporting for Perth logistics hubs.',
+                'description' => 'Transform passive perimeter bait stations into an active, systematically inspected rodent defense network. Our surveillance framework continuously protects multi-hectare distribution centres and manufacturing plants across Greater Perth, inspecting runways and maintaining certified compliance audit trails.',
                 'includes'    => [
-                    'Motion and vibration telemetry embedded in tamper-proof stations',
-                    'Centralized multi-site dashboard with live activity heat mapping',
-                    'Instant threshold-breach notifications to facility management',
-                    'Automated audit reports directly formatted for HACCP and SQF inspectors',
-                    'Predictive analytics identifying seasonal pest migration patterns'
+                    'Tamper-resistant perimeter bait and monitoring stations',
+                    'Comprehensive multi-site reporting formatted for HACCP and SQF audits',
+                    'Prompt notifications to facility management upon pest evidence',
+                    'Certified inspection records ready for health authority review',
+                    'Seasonal pest trend analysis and physical proofing advice'
                 ],
                 'steps'       => [
-                    ['title' => 'Network Architecture Mapping', 'desc' => 'Map all perimeter boundaries, loading dock thresholds, and internal racking runways.'],
-                    ['title' => 'Mesh Sensor Deployment', 'desc' => 'Install ruggedized connected stations built to withstand industrial forklift traffic and weather.'],
-                    ['title' => 'Live Telemetry Integration', 'desc' => 'Your management team receives live portal access with custom alert thresholds and permissions.'],
-                    ['title' => 'Predictive Data Refinement', 'desc' => 'Monthly AI trend analysis guides preventative physical proofing before infestations begin.']
+                    ['title' => 'Perimeter Architecture Mapping', 'desc' => 'Map all perimeter boundaries, loading dock thresholds, and internal racking runways.'],
+                    ['title' => 'Station Deployment', 'desc' => 'Install ruggedized tamper-proof stations built to withstand industrial forklift traffic and weather.'],
+                    ['title' => 'Scheduled Inspections', 'desc' => 'Technicians service stations on a strict roster, logging consumption and rodent runway traces.'],
+                    ['title' => 'Preventative Proofing', 'desc' => 'Actionable recommendations and targeted exclusion seal potential ingress routes before infestations begin.']
                 ],
                 'key_challenges' => [
                     ['name' => 'Vast Logistics Perimeter Blind Spots', 'desc' => 'Large distribution facilities in Welshpool and Kewdale have extensive fence lines where ingress goes unnoticed.'],

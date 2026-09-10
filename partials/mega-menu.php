@@ -76,7 +76,7 @@ require_once __DIR__ . '/../data/config.php';
                   <a href="/services/bird-control" class="dropdown-link" role="menuitem">Bird Proofing & Netting</a>
                   <a href="/services/fly-control" class="dropdown-link" role="menuitem">Commercial Fly Control</a>
                   <a href="/services/bed-bug-control" class="dropdown-link" role="menuitem">Bed Bug Management</a>
-                  <a href="/services/smart-traps" class="dropdown-link" role="menuitem">Digital Connected Traps</a>
+                  <a href="/services/smart-traps" class="dropdown-link" role="menuitem">Commercial Trap Monitoring</a>
                 </div>
               </div>
               <div class="dropdown-footer">
@@ -125,7 +125,7 @@ require_once __DIR__ . '/../data/config.php';
                 <a href="/about.php" class="dropdown-link" role="menuitem">Our Company & Operations</a>
                 <a href="/about-sustainability.php" class="dropdown-link" role="menuitem">Sustainability & Responsible Practices</a>
                 <a href="/about-locations.php" class="dropdown-link" role="menuitem">Perth Service Areas</a>
-                <a href="/about-innovation.php" class="dropdown-link" role="menuitem">Connect™ Digital Platform</a>
+                <a href="/about-innovation.php" class="dropdown-link" role="menuitem">UrbanX Service Platform</a>
                 <a href="/about-careers.php" class="dropdown-link" role="menuitem">Careers</a>
               </div>
             </div>
@@ -195,7 +195,7 @@ require_once __DIR__ . '/../data/config.php';
         <a href="/services/spider-control">Spider Control</a>
         <a href="/services/wasp-bee-control">Wasp & Bee Control</a>
         <a href="/services/fly-control">Fly Control</a>
-        <a href="/services/smart-traps">Digital Connected Traps</a>
+        <a href="/services/smart-traps">Commercial Trap Monitoring</a>
       </div>
     </li>
     <li class="mobile-nav-item" data-mobile-menu="about">
