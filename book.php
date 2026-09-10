@@ -35,30 +35,30 @@ include __DIR__ . '/partials/header.php';
 ?>
 
 <!-- Page Hero -->
-<section class="page-hero" style="background: linear-gradient(135deg, #070F1E 0%, #0B1F3A 60%, #152E52 100%); color: #fff; padding: var(--space-3xl) 0 var(--space-2xl);">
+<section class="page-hero book-hero">
   <div class="container">
-    <div style="max-width: 800px;">
-      <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(217, 28, 36, 0.15); border: 1px solid rgba(217, 28, 36, 0.35); padding: 5px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; color: #FF6B6B; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-md);">
+    <div class="book-hero-content">
+      <div class="book-hero-badge">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
         Perth Residential & Commercial Pest Survey
       </div>
-      <h1 style="color: #FFFFFF; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.15; margin-bottom: var(--space-md);">
-        Request <span style="color: var(--color-accent, #D91C24);"><?php echo htmlspecialchars($serviceName); ?></span>
+      <h1 class="book-hero-title">
+        Request <span class="highlight-red"><?php echo htmlspecialchars($serviceName); ?></span>
       </h1>
-      <p style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.6; margin-bottom: var(--space-lg);">
+      <p class="book-hero-desc">
         <?php echo htmlspecialchars($serviceDesc); ?> Dedicated residential and commercial dispatch across Greater Perth.
       </p>
 
-      <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: #94A3B8;">
-        <div style="display: flex; align-items: center; gap: 6px;">
+      <div class="book-hero-pills">
+        <div class="book-hero-pill">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
           <span>Licensed Western Australian Pest Technicians</span>
         </div>
-        <div style="display: flex; align-items: center; gap: 6px;">
+        <div class="book-hero-pill">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
           <span>Safe & Responsible Practices</span>
         </div>
-        <div style="display: flex; align-items: center; gap: 6px;">
+        <div class="book-hero-pill">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
           <span>Clear Upfront Pricing</span>
         </div>
@@ -68,9 +68,9 @@ include __DIR__ . '/partials/header.php';
 </section>
 
 <!-- Statutory Western Australian Licensing Notice -->
-<div style="background: #F8FAFC; border-bottom: 1px solid #E2E8F0; padding: 14px 0;">
+<div class="book-licensing-bar">
   <div class="container">
-    <p style="margin: 0; font-size: 0.86rem; color: #475569; display: flex; align-items: center; gap: 8px;">
+    <p class="book-licensing-text">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent, #D91C24)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
       <span><strong>Western Australian Licensing Statement:</strong> Pest management services are provided in accordance with the requirements of the relevant Western Australian pest management licence and applicable legislation.</span>
     </p>
@@ -78,12 +78,12 @@ include __DIR__ . '/partials/header.php';
 </div>
 
 <!-- Main Booking Form Section -->
-<section class="section" style="background: #F8FAFC; padding-top: var(--space-2xl); padding-bottom: var(--space-4xl);">
+<section class="section book-main-section">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: var(--space-2xl); align-items: start;">
+    <div class="book-layout-grid">
 
       <!-- Left Column: Booking Form -->
-      <div style="background: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; padding: clamp(20px, 4vw, 36px); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+      <div class="book-form-card">
         
         <?php if ($isSuccess): ?>
           <div style="text-align: center; padding: 24px 12px;">
@@ -109,9 +109,9 @@ include __DIR__ . '/partials/header.php';
         <?php else: ?>
 
           <!-- Selected Service Banner -->
-          <div class="booking-selected-service-pill" style="margin-bottom: 24px;">
+          <div class="booking-selected-service-pill book-selected-service">
             <div style="display: flex; align-items: center; gap: 12px;">
-              <div style="width: 42px; height: 42px; border-radius: 8px; background: rgba(217, 28, 36, 0.08); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+              <div style="width: 42px; height: 42px; border-radius: 8px; background: rgba(217, 28, 36, 0.08); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
                 🛡️
               </div>
               <div>
@@ -126,16 +126,16 @@ include __DIR__ . '/partials/header.php';
             <input type="hidden" name="service" value="<?php echo htmlspecialchars($selectedSlug); ?>">
 
             <!-- Survey Scope Toggle: Residential vs Commercial -->
-            <div class="form-group-modal" style="margin-bottom: 22px;">
-              <label style="font-size: 0.875rem; font-weight: 700; color: #0B1F3A; display: block; margin-bottom: 8px;">
+            <div class="form-group-modal book-scope-group">
+              <label class="book-scope-label">
                 Select Survey Scope <span class="req">*</span>
               </label>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-                <label id="bookPageScopeResLabel" style="display: flex; align-items: center; justify-content: center; gap: 10px; border: <?php echo !$isCommercial ? '2px solid var(--color-accent, #D91C24)' : '1px solid #CBD5E1'; ?>; background: <?php echo !$isCommercial ? '#FEF2F2' : '#FFFFFF'; ?>; padding: 12px 16px; border-radius: 8px; cursor: pointer; font-weight: <?php echo !$isCommercial ? '700' : '600'; ?>; font-size: 0.95rem; color: <?php echo !$isCommercial ? '#991B1B' : '#475569'; ?>; transition: all 0.2s ease;">
+              <div class="book-scope-grid">
+                <label id="bookPageScopeResLabel" class="book-scope-card <?php echo !$isCommercial ? 'active' : 'inactive'; ?>">
                   <input type="radio" name="survey_scope" value="Residential Survey" id="bookPageScopeRes" <?php echo !$isCommercial ? 'checked' : ''; ?> style="accent-color: var(--color-accent, #D91C24);">
                   <span>🏡 Request Residential Survey</span>
                 </label>
-                <label id="bookPageScopeCommLabel" style="display: flex; align-items: center; justify-content: center; gap: 10px; border: <?php echo $isCommercial ? '2px solid var(--color-accent, #D91C24)' : '1px solid #CBD5E1'; ?>; background: <?php echo $isCommercial ? '#FEF2F2' : '#FFFFFF'; ?>; padding: 12px 16px; border-radius: 8px; cursor: pointer; font-weight: <?php echo $isCommercial ? '700' : '600'; ?>; font-size: 0.95rem; color: <?php echo $isCommercial ? '#991B1B' : '#475569'; ?>; transition: all 0.2s ease;">
+                <label id="bookPageScopeCommLabel" class="book-scope-card <?php echo $isCommercial ? 'active' : 'inactive'; ?>">
                   <input type="radio" name="survey_scope" value="Commercial Survey" id="bookPageScopeComm" <?php echo $isCommercial ? 'checked' : ''; ?> style="accent-color: var(--color-accent, #D91C24);">
                   <span>🏢 Request Commercial Survey</span>
                 </label>
@@ -241,30 +241,20 @@ include __DIR__ . '/partials/header.php';
 
               function updatePageScope(isComm) {
                 if (isComm) {
-                  commLbl.style.border = '2px solid var(--color-accent, #D91C24)';
-                  commLbl.style.background = '#FEF2F2';
-                  commLbl.style.color = '#991B1B';
-                  commLbl.style.fontWeight = '700';
-
-                  resLbl.style.border = '1px solid #CBD5E1';
-                  resLbl.style.background = '#FFFFFF';
-                  resLbl.style.color = '#475569';
-                  resLbl.style.fontWeight = '600';
+                  commLbl.classList.add('active');
+                  commLbl.classList.remove('inactive');
+                  resLbl.classList.add('inactive');
+                  resLbl.classList.remove('active');
 
                   if (propSelect && propSelect.value.startsWith('Residential')) {
                     propSelect.value = 'Commercial Office';
                   }
                   if (compInput) compInput.placeholder = 'e.g. Business / Commercial Facility Name';
                 } else {
-                  resLbl.style.border = '2px solid var(--color-accent, #D91C24)';
-                  resLbl.style.background = '#FEF2F2';
-                  resLbl.style.color = '#991B1B';
-                  resLbl.style.fontWeight = '700';
-
-                  commLbl.style.border = '1px solid #CBD5E1';
-                  commLbl.style.background = '#FFFFFF';
-                  commLbl.style.color = '#475569';
-                  commLbl.style.fontWeight = '600';
+                  resLbl.classList.add('active');
+                  resLbl.classList.remove('inactive');
+                  commLbl.classList.add('inactive');
+                  commLbl.classList.remove('active');
 
                   if (propSelect && !propSelect.value.startsWith('Residential')) {
                     propSelect.value = 'Residential Home / House';
@@ -284,38 +274,34 @@ include __DIR__ . '/partials/header.php';
       </div>
 
       <!-- Right Column: Service Guarantees & Contact Info -->
-      <div>
-        <div style="background: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; padding: 28px; margin-bottom: 24px;">
-          <h3 style="color: #0B1F3A; font-size: 1.15rem; margin-bottom: 16px;">
-            Why Choose UrbanX?
-          </h3>
-          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px;">
-            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: #334155;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#16A34A" style="flex-shrink: 0; margin-top: 2px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      <div class="book-sidebar">
+        <div class="book-guarantees-card">
+          <h3>Why Choose UrbanX?</h3>
+          <ul class="book-guarantees-list">
+            <li class="book-guarantee-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
               <span><strong>Licensed Pest Professional:</strong> Operating under relevant Western Australian pest management licensing and legislation.</span>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: #334155;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#16A34A" style="flex-shrink: 0; margin-top: 2px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <li class="book-guarantee-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
               <span><strong>Safe & Responsible Practices:</strong> Pet-safe, family-conscious formulations with minimal chemical footprint.</span>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: #334155;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#16A34A" style="flex-shrink: 0; margin-top: 2px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <li class="book-guarantee-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
               <span><strong>Tailored Treatment Plans:</strong> Custom solutions matched to pest biology and your Perth property conditions.</span>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: #334155;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#16A34A" style="flex-shrink: 0; margin-top: 2px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <li class="book-guarantee-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
               <span><strong>Clear Upfront Pricing:</strong> Fixed, itemized quotes before treatment commences. Zero hidden surprises.</span>
             </li>
           </ul>
         </div>
 
         <!-- Direct Contact Box -->
-        <div style="background: #0B1F3A; color: #FFFFFF; border-radius: 12px; padding: 28px;">
-          <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-accent, #D91C24); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Perth Service Desk</span>
-          <h4 style="color: #FFFFFF; font-size: 1.15rem; margin-bottom: 12px;">Need Immediate Assistance?</h4>
-          <p style="font-size: 0.88rem; color: #CBD5E1; line-height: 1.5; margin-bottom: 18px;">
-            For urgent pest questions or same-day inspections across Perth, call us directly or chat on WhatsApp.
-          </p>
+        <div class="book-contact-card">
+          <span class="card-tag">Perth Service Desk</span>
+          <h4>Need Immediate Assistance?</h4>
+          <p>For urgent pest questions or same-day inspections across Perth, call us directly or chat on WhatsApp.</p>
           
           <div style="display: flex; flex-direction: column; gap: 12px;">
             <a href="tel:<?php echo htmlspecialchars($appConfig['phone_raw'] ?? '+61410148126'); ?>" style="display: flex; align-items: center; gap: 10px; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 1.05rem;">

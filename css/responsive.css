@@ -398,8 +398,9 @@
     gap: var(--space-sm);
   }
 
-  .login-link span {
-    display: none;
+  .login-link span,
+  .util-email-text {
+    display: none !important;
   }
 
   /* Hero */
